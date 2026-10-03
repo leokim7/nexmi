@@ -373,3 +373,16 @@ body:has(.tray) .page{padding-bottom:140px}
 .suggest li{padding:12px 16px;border-radius:14px;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:8px}
 .suggest li[aria-selected="true"],.suggest li:hover{background:var(--blue-soft)}
 .suggest li .muted{font-weight:500;font-size:13px}
+
+/* ---------- task level picker ---------- */
+.level-row{border:0;margin:0;padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;min-width:0}
+.level-row:last-child{border-bottom:0}
+.level-row .name{font-weight:700;font-size:15px}
+.level-opts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.level-opts button{min-height:44px;border:1.5px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-weight:800;font-size:14px;cursor:pointer;padding:0 6px;white-space:nowrap}
+.level-opts button:hover{border-color:#b9c9e6}
+.level-opts button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.level-opts button:first-child[aria-pressed="true"]{background:var(--ink);border-color:var(--ink)}
+.dist-bar{display:flex;height:14px;border-radius:999px;overflow:hidden;gap:2px;background:var(--line)}
+.dist-bar span{display:block;background:var(--blue)}
+@media(max-width:400px){.level-opts button{font-size:12.5px;padding:0 2px}}

@@ -37,7 +37,7 @@ export function missingWorker(d: WorkerDraft): string[] {
   const m: string[] = []
   if (!d.occupation_id) m.push('직군')
   if (!d.career_level) m.push('역할 수준')
-  if (d.weights && Math.abs(sumOf(d.weights) - 100) > 1e-9) m.push('업무 비중 합계 100%')
+  if (d.weights && Math.abs(sumOf(d.weights) - 100) > 1e-6) m.push('업무 (한 가지 이상 선택)')
   if (!d.ai_maturity) m.push('회사의 AI 도입 단계')
   PERSONAL.forEach((p) => d.personal[p.key] === undefined && m.push(p.label))
   return m

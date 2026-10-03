@@ -19,3 +19,4 @@ playwright-report/
 
 # local dev database
 backend/nexmi-local.db
+*.tsbuildinfo

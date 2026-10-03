@@ -53,7 +53,7 @@ export default function WorkerWhatIf() {
         <div className="stack lg">
           <details className="card" open>
             <summary className="h3" style={{ cursor: 'pointer' }}>업무 비중</summary>
-            <WeightsEditor draft={wi.draft} onChange={(weights) => setDraft((d) => ({ ...d, weights }))} compact />
+            <WeightsEditor draft={wi.draft} onChange={(weights, levels) => setDraft((d) => ({ ...d, weights, levels }))} compact />
           </details>
           <div className="card stack">
             <h2 className="h3">회사의 AI 도입과 나의 역할</h2>

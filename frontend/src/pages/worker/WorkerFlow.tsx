@@ -30,7 +30,7 @@ export default function WorkerFlow() {
 
   const stepOk = (s: number) => {
     if (s === 1) return !!draft.occupation_id && !!draft.career_level
-    if (s === 2) return !draft.weights || Math.abs(sumOf(draft.weights) - 100) < 1e-9
+    if (s === 2) return !draft.weights || Math.abs(sumOf(draft.weights) - 100) < 1e-6
     if (s === 3) return !!draft.ai_maturity && PERSONAL.every((p) => draft.personal[p.key] !== undefined)
     return missingWorker(draft).length === 0
   }
@@ -145,7 +145,7 @@ function StepOccupation({ draft, setDraft, error }: { draft: WorkerDraft; setDra
               <div className="options cols-3">
                 {list.map((o) => (
                   <label key={o.occupation_id} className={`opt ${draft.occupation_id === o.occupation_id ? 'selected' : ''}`}>
-                    <input type="radio" name="occupation" checked={draft.occupation_id === o.occupation_id} onChange={() => change({ occupation_id: o.occupation_id, weights: undefined })} />
+                    <input type="radio" name="occupation" checked={draft.occupation_id === o.occupation_id} onChange={() => change({ occupation_id: o.occupation_id, weights: undefined, levels: undefined })} />
                     <span className="t">{o.name_ko}</span>
                   </label>
                 ))}
@@ -161,7 +161,7 @@ function StepOccupation({ draft, setDraft, error }: { draft: WorkerDraft; setDra
         <div className="options cols-3">
           {CAREER_LEVELS.map((l) => (
             <label key={l.id} className={`opt ${draft.career_level === l.id ? 'selected' : ''}`}>
-              <input type="radio" name="level" checked={draft.career_level === l.id} onChange={() => change({ career_level: l.id, weights: undefined })} />
+              <input type="radio" name="level" checked={draft.career_level === l.id} onChange={() => change({ career_level: l.id, weights: undefined, levels: undefined })} />
               <span className="t">{l.label}</span>
               <span className="d">{l.desc}</span>
             </label>
@@ -177,7 +177,7 @@ function StepOccupation({ draft, setDraft, error }: { draft: WorkerDraft; setDra
         confirmLabel="바꾸고 초기화"
         onCancel={() => setPending(null)}
         onConfirm={() => {
-          setDraft((d) => ({ ...d, ...pending, weights: undefined }))
+          setDraft((d) => ({ ...d, ...pending, weights: undefined, levels: undefined }))
           setPending(null)
         }}
       >
@@ -194,12 +194,12 @@ function StepWeights({ draft, setDraft, error }: { draft: WorkerDraft; setDraft:
       <div className="stack sm">
         <div className="eyebrow">STEP 2 · TASKS</div>
         <h1 id="s2" className="h1">어떤 업무에 시간을 쓰나요?</h1>
-        <p className="lead">{cat.occupationById.get(draft.occupation_id!)?.name_ko}의 업무 14개예요. 최근 한 달을 떠올려 시간 비중을 맞춰주세요. 하지 않는 업무는 0%로 두세요.</p>
+        <p className="lead">{cat.occupationById.get(draft.occupation_id!)?.name_ko}의 업무 14개예요. 최근 한 달을 떠올려 각 업무를 얼마나 하는지 골라주세요. 하지 않는 일은 ‘안 함’이에요.</p>
       </div>
-      <WeightsEditor draft={draft} onChange={(weights) => setDraft((d) => ({ ...d, weights }))} />
+      <WeightsEditor draft={draft} onChange={(weights, levels) => setDraft((d) => ({ ...d, weights, levels }))} />
       {error && (
         <Notice kind="error" role="alert">
-          업무 비중의 합계가 100%여야 다음으로 갈 수 있어요. 값을 고치거나 ‘합계 100%로 맞추기’를 눌러주세요.
+          적어도 한 가지 업무는 ‘조금’ 이상으로 골라주세요.
         </Notice>
       )}
     </section>
@@ -276,7 +276,7 @@ function StepReview({ draft, example }: { draft: WorkerDraft; example: boolean }
   const rows: { k: string; v: React.ReactNode; to: string }[] = [
     { k: '직군', v: occ?.name_ko, to: '/worker/start/1' },
     { k: '역할 수준', v: CAREER_LEVELS.find((l) => l.id === draft.career_level)?.label, to: '/worker/start/1' },
-    { k: '업무 비중', v: draft.weights ? `직접 입력 · 합계 ${sumOf(draft.weights).toFixed(0)}%` : <span>평균값 그대로 <span className="chip warn">확인 필요</span></span>, to: '/worker/start/2' },
+    { k: '업무 비중', v: draft.weights ? '직접 고름' : <span>평균값 그대로 <span className="chip warn">확인 필요</span></span>, to: '/worker/start/2' },
     { k: 'AI 도입 단계', v: draft.ai_maturity ? MATURITY[draft.ai_maturity].label : <span className="muted">미응답</span>, to: '/worker/start/3' },
     ...PERSONAL.map((p) => ({ k: p.label, v: draft.personal[p.key] !== undefined ? BEHAVIOR_SCALE.find((b) => b.v === draft.personal[p.key])?.label : <span className="muted">미응답</span>, to: '/worker/start/3' })),
     { k: '일자리 수요', v: <span className="muted">자료가 없어 계산에서 뺐어요</span>, to: '' },

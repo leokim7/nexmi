@@ -9,6 +9,8 @@ export interface WorkerDraft {
   career_level?: CareerLevel
   /** percent per task. undefined = 아직 임시 분포(직군·역할 기본값)를 그대로 사용 */
   weights?: Record<string, number>
+  /** 업무별 ‘얼마나 하는지’ 단계 (0·1·2·4·8). weights 는 여기서 자동 계산된다 */
+  levels?: Record<string, number>
   ai_maturity?: string
   personal: Record<string, number | undefined>
   company_size?: string
