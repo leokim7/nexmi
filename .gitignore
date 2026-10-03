@@ -16,3 +16,6 @@ frontend/dist/
 test-results/
 playwright-report/
 .DS_Store
+
+# local dev database
+backend/nexmi-local.db

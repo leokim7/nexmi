@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { Comments } from '../../components/Comments'
 import { CompareToggle } from '../../components/CompareTray'
 import { Icon } from '../../components/Icon'
 import { useTitle } from '../../components/Layout'
@@ -8,7 +9,7 @@ import { useCatalog } from '../../lib/catalog'
 import { CAPABILITY_LABELS, EVIDENCE_LABEL, familyLabel, fmt, minutesText, STAGES } from '../../lib/labels'
 import { useStore } from '../../lib/store'
 
-type Tab = 'tasks' | 'activities' | 'path' | 'ai'
+type Tab = 'tasks' | 'activities' | 'path' | 'ai' | 'talk'
 
 export default function OccupationDetail() {
   const { id } = useParams()
@@ -16,7 +17,8 @@ export default function OccupationDetail() {
   const cat = useCatalog()
   const { data, update } = useStore()
   const occ = id ? cat.occupationById.get(id) : undefined
-  const [tab, setTab] = useState<Tab>('tasks')
+  const [sp] = useSearchParams()
+  const [tab, setTab] = useState<Tab>(sp.get('tab') === 'talk' ? 'talk' : 'tasks')
   useTitle(occ?.name_ko ?? '직군을 찾을 수 없어요')
 
   if (!occ)
@@ -94,9 +96,11 @@ export default function OccupationDetail() {
               { id: 'activities', label: '체험 2개' },
               { id: 'path', label: '학습 경로' },
               { id: 'ai', label: 'AI와 업무 변화' },
+              { id: 'talk', label: '한마디' },
             ]}
           />
           <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
+            {tab === 'talk' && <Comments occupationId={occ.occupation_id} occupationName={occ.name_ko} />}
             {tab === 'tasks' && (
               <div className="stack">
                 <ol className="grid-2" style={{ listStyle: 'none', gap: 10 }}>

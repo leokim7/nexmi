@@ -43,20 +43,27 @@ http://127.0.0.1:8000 을 엽니다. 프런트엔드를 고치면서 보려면 �
 cd backend && ../.venv/bin/python -m pytest -q
 ```
 
-API 24개 + 원본 진로 엔진 13개. 원본 재직자 엔진 테스트는 `cd backend/model/student_career_v1_3/career_engine_v1_2 && python3 validate.py` (12개).
+API·공유·한마디 31개 + 원본 진로 엔진 13개. 원본 재직자 엔진 테스트는 `cd backend/model/student_career_v1_3/career_engine_v1_2 && python3 validate.py` (12개).
 
 ## Railway 배포
 
 1. Railway 에서 **New Project → Deploy from GitHub repo → `leokim7/nexmi`** 선택.
-2. 저장소 루트의 `railway.json` 이 Dockerfile 빌드와 헬스체크(`/api/health`)를 설정합니다. 환경변수는 필요 없습니다(`PORT` 는 Railway 가 주입).
-3. Settings → Networking → **Generate Domain** 으로 공개 주소를 만듭니다.
+2. 같은 프로젝트에 **+ New → Database → PostgreSQL** 추가 후, 앱 서비스의 Variables 에 `DATABASE_URL = ${{Postgres.DATABASE_URL}}` 를 연결합니다. (공유 링크·한마디 저장용. 없으면 컨테이너 안 SQLite 를 써서 **재배포 때마다 사라집니다**)
+3. Variables 에 추가 권장: `HASH_SALT`(임의의 긴 문자열, 익명 사용자 구분용), `ADMIN_TOKEN`(부적절한 한마디 삭제용).
+4. Settings → Networking → **Generate Domain**. 배포 후 `/api/health` 의 `"db": "postgresql"` 을 확인하세요.
 
-P0 는 데이터베이스가 필요 없습니다. 계정·공유·관리자(P1)를 시작할 때 Railway PostgreSQL 을 추가하고 `docs/handoff/STORAGE.sql` 을 기반으로 마이그레이션을 작성합니다.
+테이블은 서버 시작 시 자동으로 만들어집니다. 저장하는 것은 사용자가 직접 공개한 공유 카드와 한마디뿐이고, 진단 입력은 저장하지 않습니다.
+
+부적절한 한마디 삭제:
+
+```bash
+curl -X DELETE https://<도메인>/api/admin/comments/<id> -H "x-admin-token: $ADMIN_TOKEN"
+```
 
 ## 지키는 원칙
 
 - 엔진 계수·기준연도는 UI 편의로 바꾸지 않는다. LLM 으로 점수·날짜를 만들지 않는다.
 - 재직자 ‘예상 종료일’은 조건부 전환 연도이며 해고일이 아니다. null 은 ‘2040년까지 기준 미도달’.
 - 진로 ‘탐색 적합지수’는 적성 확률이 아니다. 준비 수준은 순위에 반영하지 않는다.
-- 서버는 입력을 저장하지 않는다. 기기 저장은 사용자가 켰을 때만.
+- 서버는 진단 입력을 저장하지 않는다. 공유 카드(직업명·결과 숫자만)와 한마디는 사용자가 직접 올린 것만 저장한다.
 - 채용공고·기업 추천·입사지원 기능은 없다.

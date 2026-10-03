@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CompareToggle } from '../../components/CompareTray'
 import { Icon } from '../../components/Icon'
+import { ShareButton } from '../../components/ShareCard'
 import { useTitle } from '../../components/Layout'
 import { Empty, Notice } from '../../components/ui'
 import { useCatalog } from '../../lib/catalog'
@@ -48,6 +49,7 @@ export default function ExplorerResult() {
             <Link to="/explore/interests/1" className="btn sm">
               응답 고치기
             </Link>
+            {r.status === 'exploration_ready' && r.recommendations.length > 0 && <ShareButton mode="explorer" input={cur.input_snapshot} title="나와 맞는 직업은?" />}
             <Link to="/report/explorer" className="btn sm">
               <Icon name="print" /> 리포트
             </Link>

@@ -353,3 +353,23 @@ body:has(.tray) .page{padding-bottom:140px}
   .opt[aria-checked="true"],.opt[aria-pressed="true"]{outline:3px solid CanvasText}
   .btn.primary{border:2px solid ButtonText}
 }
+
+/* ---------- share card ---------- */
+.share-card{text-align:left;border-radius:28px;padding:28px;background:radial-gradient(circle at 100% 0,rgba(20,100,255,.55),rgba(20,100,255,0) 60%),var(--navy);color:#fff;display:flex;flex-direction:column;gap:10px;max-width:440px;width:100%;box-shadow:var(--shadow)}
+.share-card .brand-mark i{background:#fff}
+.share-big{font-size:clamp(40px,8vw,64px);font-weight:900;letter-spacing:-.05em;line-height:1.12;margin-top:6px}
+
+/* ---------- comments ---------- */
+.reaction-bar{display:flex;height:10px;border-radius:999px;overflow:hidden;background:var(--line);gap:2px}
+.reaction-bar span{display:block}
+.rb-worried{background:#071d49}.rb-unsure{background:#8fb3ff}.rb-preparing{background:#1464ff}.rb-fine{background:#c9dbff}
+.comment{display:flex;flex-direction:column;gap:8px;padding:16px 18px;border-radius:18px;background:var(--paper)}
+
+/* ---------- home search ---------- */
+.job-search{position:relative;max-width:560px}
+.job-search input{height:62px;border-radius:999px;padding-left:50px;font-size:17px;box-shadow:0 10px 30px rgba(21,38,79,.10);border-color:#fff}
+.job-search>svg{position:absolute;left:18px;top:21px;width:22px;height:22px;color:var(--muted)}
+.suggest{position:absolute;left:0;right:0;top:68px;z-index:30;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);list-style:none;padding:6px;max-height:320px;overflow:auto}
+.suggest li{padding:12px 16px;border-radius:14px;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:8px}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--blue-soft)}
+.suggest li .muted{font-weight:500;font-size:13px}

@@ -5,6 +5,7 @@ import { Icon } from '../../components/Icon'
 import { useTitle } from '../../components/Layout'
 import { ConfirmDialog, Empty, Notice, PageHead } from '../../components/ui'
 import { useCatalog } from '../../lib/catalog'
+import { community } from '../../lib/community'
 import { dateText, stageLabel, yearText } from '../../lib/labels'
 import { useStore } from '../../lib/store'
 
@@ -21,7 +22,7 @@ export default function Me() {
   const subs = Object.values(data.explorer.submissions)
   const completed = subs.filter((x) => x.completions.length > 0)
   const drafts = subs.filter((x) => x.status === 'draft')
-  const empty = !w && !e && subs.length === 0 && data.practice.journal.length === 0
+  const empty = !w && !e && data.shares.length === 0 && subs.length === 0 && data.practice.journal.length === 0
 
   const confirmText: Record<Exclude<Pending, null>, { title: string; body: string; label: string; danger?: boolean; run: () => void }> = {
     'device-on': { title: '이 기기에 기록을 저장할까요?', body: '분석 결과·체험 초안·기록이 이 브라우저(localStorage)에 저장되고, 다음에 열면 자동으로 이어져요. 서버로 보내지 않아요. 여러 사람이 쓰는 기기라면 켜지 마세요.', label: '저장 켜기', run: s.enableDevice },
@@ -115,6 +116,8 @@ export default function Me() {
           </p>
         </section>
 
+        {data.shares.length > 0 && <MyShares />}
+
         <section className="card paper" aria-labelledby="dm-h">
           <h2 id="dm-h" className="h3">기록 관리</h2>
           <p className="small muted">모드별로 따로 지울 수 있어요. 현재 탭과 기기 저장본에 함께 적용돼요.</p>
@@ -173,6 +176,39 @@ function DeviceCard({ onAsk }: { onAsk: (p: Pending) => void }) {
         {device.status === 'corrupt' && <button className="btn sm dark" onClick={() => onAsk('corrupt')}>손상된 저장본 삭제</button>}
       </div>
       {device.error && <Notice kind="error" role="alert">{device.error}</Notice>}
+    </section>
+  )
+}
+
+function MyShares() {
+  const { data, update } = useStore()
+  const [msg, setMsg] = useState<string>()
+  const remove = async (id: string, key: string) => {
+    try {
+      await community.deleteShare(id, key)
+    } catch (e: any) {
+      if (e.status !== 404) return setMsg(e.message)
+    }
+    update((d) => ({ ...d, shares: d.shares.filter((s) => s.id !== id) }))
+    setMsg('공유를 삭제했어요.')
+  }
+  return (
+    <section className="card" aria-labelledby="sh-h">
+      <h2 id="sh-h" className="h3">내가 만든 공유 링크</h2>
+      <p className="small muted">삭제하면 링크를 받은 사람도 더 이상 볼 수 없어요. 90일이 지나면 자동으로 사라져요.</p>
+      <ul className="stack sm" style={{ listStyle: 'none' }}>
+        {data.shares.map((s) => (
+          <li key={s.id} className="row between">
+            <span className="small">
+              <a className="link" href={s.path} target="_blank" rel="noreferrer">{s.title}</a> <span className="muted">· {dateText(s.created_at)}</span>
+            </span>
+            <button className="btn sm ghost" onClick={() => remove(s.id, s.delete_key)}>
+              <Icon name="trash" /> 삭제
+            </button>
+          </li>
+        ))}
+      </ul>
+      <p role="status" className="small strong">{msg}</p>
     </section>
   )
 }

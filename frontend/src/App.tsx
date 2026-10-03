@@ -22,6 +22,8 @@ import Practice from './pages/common/Practice'
 import Me from './pages/common/Me'
 import History from './pages/common/History'
 import Report from './pages/common/Report'
+import Shared from './pages/common/Shared'
+import Quick from './pages/worker/Quick'
 
 function NotFound() {
   useTitle('페이지를 찾을 수 없어요')
@@ -46,6 +48,8 @@ const router = createBrowserRouter([
     element: <Shell />,
     children: [
       { path: '/', element: <Home /> },
+      { path: '/quick/:occ', element: <Quick /> },
+      { path: '/s/:token', element: <Shared /> },
       { path: '/worker', element: <WorkerIntro /> },
       { path: '/worker/start/:step', element: <WorkerFlow /> },
       { path: '/worker/result', element: <WorkerResult /> },

@@ -7,6 +7,7 @@ the user explicitly opts in to device storage.
 from __future__ import annotations
 
 import datetime as dt
+import html
 import logging
 import os
 import pathlib
@@ -16,11 +17,11 @@ from typing import Any
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.gzip import GZipMiddleware
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from . import engines
+from . import community, db, engines
 from .validation import InputError, validate_explorer, validate_worker
 
 log = logging.getLogger("nexmi")
@@ -29,6 +30,12 @@ DIST = pathlib.Path(os.environ.get("FRONTEND_DIST", pathlib.Path(__file__).resol
 
 app = FastAPI(title="NEXMI API", version=engines.PACKAGE_VERSION, docs_url="/api/docs", openapi_url="/api/openapi.json")
 app.add_middleware(GZipMiddleware, minimum_size=1000)
+app.include_router(community.router)
+
+
+@app.on_event("startup")
+def _startup() -> None:
+    db.init_db()
 
 
 def error(status: int, code: str, message: str, request: Request, field_errors: dict[str, str] | None = None) -> JSONResponse:
@@ -94,7 +101,7 @@ def envelope(mode: str, model_version: str, profile: dict, result: dict) -> dict
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "package_version": engines.PACKAGE_VERSION}
+    return {"status": "ok", "package_version": engines.PACKAGE_VERSION, "db": db.backend_name()}
 
 
 @app.get("/api/catalog")
@@ -172,6 +179,36 @@ def api_not_found(rest: str):
 # ---- Frontend (built by Vite into frontend/dist) -------------------------------
 if (DIST / "assets").is_dir():
     app.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")
+
+
+def _share_meta(token: str) -> tuple[str, str]:
+    status, share = community.load_share(token)
+    if status != 200 or not share:
+        return "NEXMI", "AI가 내 일을 맡기까지, 몇 년 남았을까요?"
+    p = share["payload"]
+    if share["mode"] == "worker":
+        c = p["crossings"]["base"]
+        if c["career_transformation"]:
+            line = f"{c['career_transformation']}년쯤 지금 방식으로 일하기 어려워져요"
+        elif c["task_disruption"]:
+            line = f"{c['task_disruption']}년쯤부터 AI가 업무 일부를 맡기 시작해요"
+        else:
+            line = "2040년까지 큰 변화는 오지 않아요"
+        return f"{p['occupation_name']} — {line}", "내 직업은 언제 바뀔까? NEXMI에서 3문항으로 확인해보세요."
+    names = ", ".join(t["name_ko"] for t in p.get("top", [])) or "조금 더 알아보는 중"
+    return f"나와 맞는 직업 후보: {names}", "나에게 맞는 진로는? NEXMI에서 확인해보세요."
+
+
+@app.get("/s/{token}", include_in_schema=False)
+def share_page(token: str):
+    """SPA 그대로 서빙하되, SNS 미리보기용 OG 태그만 공유 내용으로 바꿔 넣는다."""
+    index = DIST / "index.html"
+    if not index.is_file():
+        return JSONResponse({"error": {"code": "FRONTEND_NOT_BUILT", "message": "frontend/dist 가 없습니다."}}, status_code=503)
+    title, desc = (html.escape(x) for x in _share_meta(token))
+    meta = f'<meta property="og:title" content="{title}" /><meta property="og:description" content="{desc}" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" />'
+    body = index.read_text(encoding="utf-8").replace("</head>", meta + "</head>", 1)
+    return HTMLResponse(body, headers={"Cache-Control": "no-cache"})
 
 
 @app.get("/{path:path}", include_in_schema=False)

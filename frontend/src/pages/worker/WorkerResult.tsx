@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CrossingTimeline, DisruptionChart } from '../../components/charts'
+import { Comments } from '../../components/Comments'
 import { Icon } from '../../components/Icon'
+import { ShareButton } from '../../components/ShareCard'
+import { workerHeadline } from '../../lib/community'
 import { useTitle } from '../../components/Layout'
 import { Empty, Metric, Notice, Segmented, Tabs } from '../../components/ui'
 import { useCatalog } from '../../lib/catalog'
@@ -66,6 +69,18 @@ export default function WorkerResult() {
           </div>
         </section>
 
+        {cur.quick && (
+          <div className="card soft row between" style={{ flexDirection: 'row' }}>
+            <div className="stack sm" style={{ gap: 2, flex: '1 1 280px' }}>
+              <strong>평균값으로 계산한 빠른 결과예요</strong>
+              <span className="small muted">내가 실제로 어떤 업무에 시간을 쓰는지, 어떤 역할을 하는지 넣으면 결과가 꽤 달라질 수 있어요.</span>
+            </div>
+            <Link to="/worker/start/1" className="btn primary sm">
+              내 상황에 맞게 정확히 보기 <Icon name="arrow" />
+            </Link>
+          </div>
+        )}
+
         <Notice>
           AI가 퍼지는 속도를 세 가지로 나눠 계산했어요. 위 버튼으로 바꿔보세요. 점수는 모두 0~100 사이의 <strong>비교용 점수</strong>이고, 일어날 확률이 아니에요.
         </Notice>
@@ -93,7 +108,8 @@ export default function WorkerResult() {
         <section className="card soft no-print">
           <h2 className="h3">다음으로 할 수 있는 일</h2>
           <div className="btn-row stretch">
-            <Link to="/worker/whatif" className="btn primary">
+            <ShareButton mode="worker" input={cur.input_snapshot} quick={cur.quick} title={`${occ?.name_ko}의 일, 언제 바뀔까?`} />
+            <Link to="/worker/whatif" className="btn">
               <Icon name="scale" /> 업무 구성을 바꿔보기
             </Link>
             <Link to="/worker/plan" className="btn">
@@ -109,6 +125,8 @@ export default function WorkerResult() {
             )}
           </div>
         </section>
+
+        {occ && <Comments occupationId={occ.occupation_id} occupationName={occ.name_ko} />}
       </div>
     </div>
   )
@@ -116,22 +134,13 @@ export default function WorkerResult() {
 
 /** 큰 숫자 하나 + 한 문장. 종합 전환점이 없으면 실제로 값이 있는 ‘업무 일부를 맡기 시작’ 연도를 앞에 보여준다. */
 function Headline({ c, scenarioDesc }: { c: Crossing; scenarioDesc: string }) {
-  const ct = c.career_transformation
-  const td = c.task_disruption
-  let big: string, line: string, sub: string
-  if (ct != null) {
-    big = ct === 2026 ? '이미 지금' : `${ct}년쯤`
-    line = '지금 방식으로 일하기 어려워져요'
-    sub = '해고되는 날이 아니에요. 지금처럼 일하는 방식이 크게 바뀌는 때예요. 미리 업무를 바꿔두면 늦출 수 있어요.'
-  } else if (td != null) {
-    big = td === 2026 ? '이미 지금' : `${td}년쯤부터`
-    line = td === 2026 ? 'AI가 내 업무 일부를 맡기 시작했어요' : 'AI가 내 업무 일부를 맡기 시작해요'
-    sub = '다만 2040년까지 내 일 전체가 바뀌는 시점은 오지 않았어요. 2040년 이후는 계산하지 않았어요.'
-  } else {
-    big = '2040년까지'
-    line = '큰 변화는 오지 않아요'
-    sub = '계산한 기간(2026~2040년) 안의 이야기예요. 그 뒤는 계산하지 않았으니 ‘영원히 안전하다’는 뜻은 아니에요.'
-  }
+  const { big, line } = workerHeadline(c)
+  const sub =
+    c.career_transformation != null
+      ? '해고되는 날이 아니에요. 지금처럼 일하는 방식이 크게 바뀌는 때예요. 미리 업무를 바꿔두면 늦출 수 있어요.'
+      : c.task_disruption != null
+        ? '다만 2040년까지 내 일 전체가 바뀌는 시점은 오지 않았어요. 2040년 이후는 계산하지 않았어요.'
+        : '계산한 기간(2026~2040년) 안의 이야기예요. 그 뒤는 계산하지 않았으니 ‘영원히 안전하다’는 뜻은 아니에요.'
   return (
     <div className="stack">
       <span className="small strong" style={{ color: '#8fb3ff' }}>{scenarioDesc}</span>

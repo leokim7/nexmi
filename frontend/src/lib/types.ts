@@ -117,7 +117,8 @@ export interface WorkerResult {
   paths: Record<Scenario, YearResult[]>
   interpretation: string
 }
-export type WorkerDiagnosis = Diagnosis<WorkerResult, WorkerInput>
+/** quick: 3문항 빠른 진단 — 업무 비중·나머지 역할은 평균값으로 계산함 (화면에서 표시) */
+export type WorkerDiagnosis = Diagnosis<WorkerResult, WorkerInput> & { quick?: boolean }
 
 // ---- explorer ----
 export interface ActivityResultInput { activity_id: string; completed: boolean; enjoyment: number | null; repeat_interest: number | null }

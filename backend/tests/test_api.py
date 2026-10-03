@@ -136,6 +136,6 @@ def test_oversized_and_bad_json():
 
 
 def test_no_recruiting_routes():
-    paths = [r.path for r in app.routes]
+    paths = [getattr(r, "path", "") for r in app.routes]
     assert not any(k in p for p in paths for k in ("job", "apply", "recruit", "company"))
     assert client.get("/api/jobs").status_code == 404

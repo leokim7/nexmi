@@ -1,10 +1,67 @@
-import { Link } from 'react-router-dom'
+import { useMemo, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { Icon } from '../components/Icon'
 import { useTitle } from '../components/Layout'
 import { useReveal } from '../components/ui'
 import { useCatalog } from '../lib/catalog'
-import { stageLabel, yearText } from '../lib/labels'
+import { familyLabel, stageLabel, yearText } from '../lib/labels'
 import { useStore } from '../lib/store'
+
+const POPULAR = ['O15', 'O26', 'O05', 'O33', 'O37', 'O09', 'O22', 'O30']
+
+/** 직업 검색 콤보박스: 고르면 바로 3문항 빠른 진단으로. */
+function JobSearch() {
+  const cat = useCatalog()
+  const nav = useNavigate()
+  const [q, setQ] = useState('')
+  const [open, setOpen] = useState(false)
+  const [active, setActive] = useState(0)
+  const list = useMemo(() => {
+    const t = q.trim().toLowerCase()
+    return t ? cat.occupations.filter((o) => o.name_ko.toLowerCase().includes(t)).slice(0, 8) : []
+  }, [q, cat])
+  const go = (id: string) => nav(`/quick/${id}`)
+  const onKey = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowDown') (e.preventDefault(), setActive((a) => Math.min(list.length - 1, a + 1)))
+    else if (e.key === 'ArrowUp') (e.preventDefault(), setActive((a) => Math.max(0, a - 1)))
+    else if (e.key === 'Enter' && list[active]) (e.preventDefault(), go(list[active].occupation_id))
+    else if (e.key === 'Escape') setOpen(false)
+  }
+  return (
+    <div className="job-search">
+      <Icon name="search" />
+      <input
+        type="search"
+        role="combobox"
+        aria-expanded={open && list.length > 0}
+        aria-controls="job-list"
+        aria-activedescendant={list[active] ? `job-${list[active].occupation_id}` : undefined}
+        aria-label="내 직업 검색"
+        placeholder="내 직업 검색 — 예: 마케터, 개발자, 간호사"
+        value={q}
+        onChange={(e) => (setQ(e.target.value), setOpen(true), setActive(0))}
+        onFocus={() => setOpen(true)}
+        onBlur={() => setTimeout(() => setOpen(false), 150)}
+        onKeyDown={onKey}
+      />
+      {open && q.trim() && (
+        <ul className="suggest" id="job-list" role="listbox">
+          {list.length === 0 ? (
+            <li aria-disabled="true" className="muted">
+              비슷한 직업이 없어요. 가장 가까운 일을 골라주세요 — <Link to="/occupations" className="link">전체 보기</Link>
+            </li>
+          ) : (
+            list.map((o, i) => (
+              <li key={o.occupation_id} id={`job-${o.occupation_id}`} role="option" aria-selected={i === active} onMouseDown={() => go(o.occupation_id)}>
+                {o.name_ko} <span className="muted">{familyLabel(o.family)}</span>
+              </li>
+            ))
+          )}
+        </ul>
+      )}
+    </div>
+  )
+}
 
 export default function Home() {
   useTitle('')
@@ -21,27 +78,31 @@ export default function Home() {
         <div className="stack lg">
           <div className="eyebrow">MY WORK · MY NEXT</div>
           <h1 className="display">
-            지금 하는 일의 미래, <br />
-            <strong>나에게 맞는 다음 일.</strong>
+            AI가 내 일을 맡기까지, <br />
+            <strong>몇 년 남았을까요?</strong>
           </h1>
-          <p className="lead" style={{ maxWidth: 520 }}>
-            어떤 질문에서 시작할지 고르세요. 결과는 정답이 아니라 다음 행동을 고르는 출발점이에요.
-          </p>
-          <div className="btn-row stretch">
-            <Link to="/worker" className="btn primary lg">
-              내 직업 미래 분석 <Icon name="arrow" />
-            </Link>
-            <Link to="/explore" className="btn lg">
-              진로·직업 탐색 <Icon name="arrow" />
-            </Link>
+          <p className="lead" style={{ maxWidth: 520 }}>직업을 고르고 두 가지만 답하면 바로 알려드려요. 30초면 충분해요.</p>
+          <JobSearch />
+          <div className="stack sm">
+            <span className="small strong muted">많이 찾는 직업</span>
+            <div className="chips">
+              {POPULAR.map((id) => (
+                <Link key={id} to={`/quick/${id}`} className="chip line">
+                  {cat.occupationById.get(id)?.name_ko}
+                </Link>
+              ))}
+            </div>
           </div>
+          <Link to="/explore" className="link" style={{ alignSelf: 'flex-start' }}>
+            학생·취업 준비생이라면 → 나와 맞는 직업 찾기
+          </Link>
         </div>
         <div className="hero-visual" aria-hidden="true">
           <span className="chip line" style={{ alignSelf: 'flex-start' }}>예시 화면</span>
           <div className="float-card">
-            <div className="small muted">내 일이 크게 바뀌는 해</div>
-            <div className="h2 num">2031년</div>
-            <div className="small muted">AI가 퍼지는 속도별로 보여줘요</div>
+            <div className="small muted">SW개발자 · AI가 지금 속도로 퍼진다면</div>
+            <div className="h2 num">2032년쯤부터</div>
+            <div className="small muted">AI가 내 업무 일부를 맡기 시작해요</div>
           </div>
           <div className="float-card" style={{ marginLeft: 48 }}>
             <div className="small muted">탐색 후보</div>
@@ -129,7 +190,7 @@ export default function Home() {
             </ul>
             <div>
               <Link to="/worker" className="btn" style={{ marginTop: 6 }}>
-                시작하기 · 약 5분 <Icon name="arrow" />
+                정밀 분석 · 약 5분 <Icon name="arrow" />
               </Link>
             </div>
           </article>

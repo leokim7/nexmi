@@ -56,7 +56,10 @@ export interface AppData {
   worker: { draft: WorkerDraft; current?: WorkerDiagnosis; history: WorkerDiagnosis[]; whatif?: { draft: WorkerDraft; result?: WorkerDiagnosis }; planDone: Record<string, boolean> }
   explorer: { draft: ExplorerDraft; current?: ExplorerDiagnosis; history: ExplorerDiagnosis[]; compare: string[]; submissions: Record<string, Submission>; planDone: Record<string, boolean> }
   practice: { journal: JournalEntry[]; goals: Goal[]; missionsDone: string[] }
+  /** 내가 만든 공유 링크 (삭제 키 포함 — 이 기기에서만 지울 수 있음) */
+  shares: MyShare[]
 }
+export interface MyShare { id: string; path: string; delete_key: string; mode: Mode; title: string; created_at: string; expires_at: string }
 
 export const emptyWorkerDraft = (): WorkerDraft => ({ personal: {} })
 export const emptyExplorerDraft = (): ExplorerDraft => ({ interests: {}, skills: {}, experiences: [], favorites: [], values: [] })
@@ -64,6 +67,7 @@ const empty = (): AppData => ({
   worker: { draft: emptyWorkerDraft(), history: [], planDone: {} },
   explorer: { draft: emptyExplorerDraft(), history: [], compare: [], submissions: {}, planDone: {} },
   practice: { journal: [], goals: [], missionsDone: [] },
+  shares: [],
 })
 
 export const HISTORY_LIMIT = 10
@@ -116,6 +120,7 @@ function readDevice(): { status: DeviceStatus; data?: AppData; savedAt?: string 
       worker: { ...base.worker, ...parsed.data.worker },
       explorer: { ...base.explorer, ...parsed.data.explorer },
       practice: { ...base.practice, ...parsed.data.practice },
+      shares: Array.isArray(parsed.data.shares) ? parsed.data.shares : [],
     }
     return { status: 'on', data, savedAt: parsed.saved_at }
   } catch {
@@ -130,7 +135,7 @@ interface Store {
   device: { status: DeviceStatus; savedAt?: string; error?: string }
   enableDevice: () => void
   disableDevice: () => void
-  resetMode: (mode: Mode | 'practice') => void
+  resetMode: (mode: Mode | 'practice' | 'shares') => void
   resetAll: () => void
   /** 작성 중인 체험 초안이 있으면 이탈 경고를 띄운다 */
   dirtyActivity: string | null
@@ -179,7 +184,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setDevice({ status: storageAvailable() ? 'off' : 'unavailable' })
   }, [])
 
-  const resetMode = useCallback((mode: Mode | 'practice') => {
+  const resetMode = useCallback((mode: Mode | 'practice' | 'shares') => {
     const e = empty()
     setData((d) => ({ ...d, [mode]: e[mode] }))
   }, [])
