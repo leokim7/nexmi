@@ -7,7 +7,7 @@ import { Empty, Metric, Notice, Segmented, Tabs } from '../../components/ui'
 import { useCatalog } from '../../lib/catalog'
 import { CAREER_LEVELS, CROSSING_LABELS, dateText, EVIDENCE_LABEL, fmt, MATURITY, METRICS, SCENARIOS, yearText } from '../../lib/labels'
 import { TASK_YEARS, useStore } from '../../lib/store'
-import type { Scenario, WorkerDiagnosis } from '../../lib/types'
+import type { Crossing, Scenario, WorkerDiagnosis } from '../../lib/types'
 
 type Tab = 'summary' | 'tasks' | 'outlook' | 'evidence'
 
@@ -30,49 +30,45 @@ export default function WorkerResult() {
 
   const occ = cat.occupationById.get(cur.input_snapshot.occupation_id)
   const c = cur.result.crossings[scenario]
-  const ct = c.career_transformation
-
   return (
     <div className="wrap page">
       <div className="stack lg">
         <div className="row between top">
           <div className="stack sm">
-            <div className="eyebrow">CAREER TRANSFORMATION</div>
-            <h1 className="h1">{occ?.name_ko}의 예상 전환점</h1>
+            <div className="eyebrow">MY WORK, NEXT</div>
+            <h1 className="h1">{occ?.name_ko}의 일, 언제 바뀔까요?</h1>
             <div className="chips">
               <span className="chip gray">{CAREER_LEVELS.find((l) => l.id === cur.input_snapshot.career_level)?.label}</span>
-              <span className="chip gray">AI {MATURITY[cur.input_snapshot.ai_maturity]?.label}</span>
-              <span className="chip line">모델 {cur.model_version}</span>
+              <span className="chip gray">회사 AI: {MATURITY[cur.input_snapshot.ai_maturity]?.label}</span>
               <span className="chip line">{dateText(cur.created_at)} 계산</span>
             </div>
           </div>
-          <Segmented label="가정 선택" options={SCENARIOS} value={scenario} onChange={setScenario} />
+          <Segmented label="AI가 퍼지는 속도" options={SCENARIOS} value={scenario} onChange={setScenario} />
         </div>
 
         <section className="result-hero" aria-live="polite">
-          <div className="stack">
-            <span className="small strong" style={{ color: '#8fb3ff' }}>{SCENARIOS.find((s) => s.id === scenario)?.label} · 현재 업무 방식의 전환점</span>
-            <p className={`year num ${ct == null ? 'none' : ''}`}>{yearText(ct)}</p>
-            <p className="muted">
-              {ct == null
-                ? '현재 모델·가정·계산 범위(2026–2040)에서는 기준에 닿지 않았어요. 영원히 안전하다는 뜻은 아니에요.'
-                : `초기 모델의 종합 재편 지수가 ${cat.thresholds.career_transformation}에 처음 닿는 해예요. 해고일이나 직업이 사라지는 날이 아니에요.`}
-            </p>
-          </div>
-          <div className="crossings">
-            {(Object.keys(CROSSING_LABELS) as (keyof typeof CROSSING_LABELS)[]).map((k) => (
-              <div className="crossing" key={k}>
-                <div>
-                  <div className="strong">{CROSSING_LABELS[k].label}</div>
-                  <div className="small muted">{CROSSING_LABELS[k].desc}</div>
-                </div>
-                <b>{c[k] == null ? '미도달' : `${c[k]}년`}</b>
-              </div>
-            ))}
+          <Headline c={c} scenarioDesc={SCENARIOS.find((s) => s.id === scenario)!.desc} />
+          <div className="stack sm">
+            <span className="small strong" style={{ color: '#8fb3ff' }}>이렇게 바뀌어요</span>
+            <ol className="crossings" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {(Object.keys(CROSSING_LABELS) as (keyof typeof CROSSING_LABELS)[]).map((k, i) => (
+                <li className="crossing" key={k}>
+                  <div>
+                    <div className="strong">
+                      {i + 1}. {CROSSING_LABELS[k].label}
+                    </div>
+                    <div className="small muted">{CROSSING_LABELS[k].desc}</div>
+                  </div>
+                  <b style={{ whiteSpace: 'nowrap' }}>{yearText(c[k])}</b>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 
-        <Notice>세 가정은 통계적 신뢰구간이 아니라 AI 능력·도입 속도에 대한 서로 다른 시나리오예요. 모든 수치는 확률이 아닌 지수(0–100)예요.</Notice>
+        <Notice>
+          AI가 퍼지는 속도를 세 가지로 나눠 계산했어요. 위 버튼으로 바꿔보세요. 점수는 모두 0~100 사이의 <strong>비교용 점수</strong>이고, 일어날 확률이 아니에요.
+        </Notice>
 
         <div>
           <Tabs
@@ -81,9 +77,9 @@ export default function WorkerResult() {
             onChange={setTab}
             tabs={[
               { id: 'summary', label: '요약' },
-              { id: 'tasks', label: '업무별 변화' },
-              { id: 'outlook', label: '연도별 전망' },
-              { id: 'evidence', label: '계산 근거' },
+              { id: 'tasks', label: '업무별로 보기' },
+              { id: 'outlook', label: '해마다 보기' },
+              { id: 'evidence', label: '어떻게 계산했나요' },
             ]}
           />
           <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
@@ -118,6 +114,34 @@ export default function WorkerResult() {
   )
 }
 
+/** 큰 숫자 하나 + 한 문장. 종합 전환점이 없으면 실제로 값이 있는 ‘업무 일부를 맡기 시작’ 연도를 앞에 보여준다. */
+function Headline({ c, scenarioDesc }: { c: Crossing; scenarioDesc: string }) {
+  const ct = c.career_transformation
+  const td = c.task_disruption
+  let big: string, line: string, sub: string
+  if (ct != null) {
+    big = ct === 2026 ? '이미 지금' : `${ct}년쯤`
+    line = '지금 방식으로 일하기 어려워져요'
+    sub = '해고되는 날이 아니에요. 지금처럼 일하는 방식이 크게 바뀌는 때예요. 미리 업무를 바꿔두면 늦출 수 있어요.'
+  } else if (td != null) {
+    big = td === 2026 ? '이미 지금' : `${td}년쯤부터`
+    line = td === 2026 ? 'AI가 내 업무 일부를 맡기 시작했어요' : 'AI가 내 업무 일부를 맡기 시작해요'
+    sub = '다만 2040년까지 내 일 전체가 바뀌는 시점은 오지 않았어요. 2040년 이후는 계산하지 않았어요.'
+  } else {
+    big = '2040년까지'
+    line = '큰 변화는 오지 않아요'
+    sub = '계산한 기간(2026~2040년) 안의 이야기예요. 그 뒤는 계산하지 않았으니 ‘영원히 안전하다’는 뜻은 아니에요.'
+  }
+  return (
+    <div className="stack">
+      <span className="small strong" style={{ color: '#8fb3ff' }}>{scenarioDesc}</span>
+      <p className="year num">{big}</p>
+      <p className="h2" style={{ color: '#fff' }}>{line}</p>
+      <p className="muted">{sub}</p>
+    </div>
+  )
+}
+
 function Summary({ d, scenario }: { d: WorkerDiagnosis; scenario: Scenario }) {
   const cat = useCatalog()
   const y0 = d.result.paths[scenario][0]
@@ -127,18 +151,18 @@ function Summary({ d, scenario }: { d: WorkerDiagnosis; scenario: Scenario }) {
     <div className="stack lg">
       <div className="grid-2">
         <div className="card">
-          <h2 className="h3">세 가지 전환점</h2>
+          <h2 className="h3">속도별로 언제 바뀔까</h2>
           <CrossingTimeline crossings={d.result.crossings} />
         </div>
         <div className="card">
-          <h2 className="h3">종합 재편 지수 추이</h2>
+          <h2 className="h3">전체 변화 점수 (60점을 넘으면 큰 변화)</h2>
           <DisruptionChart paths={d.result.paths} threshold={cat.thresholds.career_transformation} highlight={scenario} />
         </div>
       </div>
       <div className="stack">
         <div className="row between">
-          <h2 className="h3">기준연도 {cat.base_year} 지표</h2>
-          <span className="small muted">지수 0–100 · 확률 아님</span>
+          <h2 className="h3">지금({cat.base_year}년) 내 일의 상태</h2>
+          <span className="small muted">0~100점 · 확률 아님</span>
         </div>
         <div className="grid-4">
           {METRICS.map((m) => (
@@ -148,23 +172,23 @@ function Summary({ d, scenario }: { d: WorkerDiagnosis; scenario: Scenario }) {
       </div>
       <div className="grid-2">
         <div className="card">
-          <h2 className="h3">먼저 바뀔 가능성이 큰 업무</h2>
-          <p className="small muted">자동화 압력 × 내 시간 비중이 큰 순서</p>
+          <h2 className="h3">AI가 먼저 맡게 될 내 업무</h2>
+          <p className="small muted">AI가 대신할 가능성이 높고, 내가 시간을 많이 쓰는 순서</p>
           <ol className="stack sm" style={{ paddingLeft: 20 }}>
             {top.map((t) => (
               <li key={t.task_id}>
-                <strong>{t.name_ko}</strong> <span className="muted small num">· 비중 {fmt(t.weight * 100)}% · 자동화 압력 {fmt(t.automation)}</span>
+                <strong>{t.name_ko}</strong> <span className="muted small num">· 비중 {fmt(t.weight * 100)}% · AI가 대신할 가능성 {fmt(t.automation)}</span>
               </li>
             ))}
           </ol>
         </div>
         <div className="card">
-          <h2 className="h3">사람의 역할이 크게 남는 업무</h2>
-          <p className="small muted">신뢰·책임·규제·현장 역할이 큰 순서</p>
+          <h2 className="h3">계속 사람이 해야 할 내 업무</h2>
+          <p className="small muted">신뢰·책임·법·현장 때문에 사람이 필요한 순서</p>
           <ol className="stack sm" style={{ paddingLeft: 20 }}>
             {keep.map((t) => (
               <li key={t.task_id}>
-                <strong>{t.name_ko}</strong> <span className="muted small num">· 인간 역할 {fmt(t.human_moat)}</span>
+                <strong>{t.name_ko}</strong> <span className="muted small num">· 사람이 필요한 정도 {fmt(t.human_moat)}</span>
               </li>
             ))}
           </ol>
@@ -182,7 +206,7 @@ function TasksTab({ d, scenario }: { d: WorkerDiagnosis; scenario: Scenario }) {
     <div className="stack">
       <div className="row between">
         <Segmented label="연도" options={TASK_YEARS.map((y) => ({ id: String(y), label: `${y}` }))} value={String(year)} onChange={(v) => setYear(Number(v))} />
-        <span className="small muted">자동화 압력 높은 순 · {SCENARIOS.find((s) => s.id === scenario)?.label}</span>
+        <span className="small muted">AI가 대신할 가능성 높은 순 · {SCENARIOS.find((s) => s.id === scenario)?.label}</span>
       </div>
       <p className="scroll-hint">← 표를 옆으로 밀어 더 볼 수 있어요 →</p>
       <div className="table-wrap">
@@ -192,11 +216,11 @@ function TasksTab({ d, scenario }: { d: WorkerDiagnosis; scenario: Scenario }) {
             <tr>
               <th scope="col">업무</th>
               <th scope="col" className="num">내 비중</th>
-              <th scope="col" className="num">AI 노출</th>
-              <th scope="col" className="num">자동화 압력</th>
-              <th scope="col" className="num">AI 증강</th>
-              <th scope="col" className="num">인간 역할</th>
-              <th scope="col">근거</th>
+              <th scope="col" className="num">AI가 할 수 있음</th>
+              <th scope="col" className="num">AI가 대신할 가능성</th>
+              <th scope="col" className="num">AI 도움 여지</th>
+              <th scope="col" className="num">사람 필요</th>
+              <th scope="col">근거 상태</th>
             </tr>
           </thead>
           <tbody>
@@ -218,16 +242,16 @@ function TasksTab({ d, scenario }: { d: WorkerDiagnosis; scenario: Scenario }) {
           </tbody>
         </table>
       </div>
-      <Notice>업무별 수치는 직군 템플릿의 초기 설계값으로 계산한 지수예요. 관측된 확률이 아니며, 내 비중이 0%인 업무는 종합 지표에 영향을 주지 않아요.</Notice>
+      <Notice>업무별 점수는 전문가 검토 전의 초기 추정값으로 계산했어요. 확률이 아니에요. 내가 0%로 둔 업무는 전체 결과에 들어가지 않아요.</Notice>
     </div>
   )
 }
 
 const OUTLOOK_METRICS = [
-  { id: 'career_disruption_index', label: '종합 재편' },
-  { id: 'automation', label: '자동화 압력' },
-  { id: 'augmentation', label: 'AI 증강' },
-  { id: 'exposure', label: 'AI 노출' },
+  { id: 'career_disruption_index', label: '전체 변화 점수' },
+  { id: 'automation', label: 'AI가 대신할 가능성' },
+  { id: 'augmentation', label: 'AI 도움 받을 여지' },
+  { id: 'exposure', label: 'AI가 할 수 있는 정도' },
 ]
 function Outlook({ d }: { d: WorkerDiagnosis }) {
   const [metric, setMetric] = useState('career_disruption_index')
@@ -258,7 +282,7 @@ function Outlook({ d }: { d: WorkerDiagnosis }) {
           </tbody>
         </table>
       </div>
-      <Notice>기준연도는 2026으로 고정돼 있어요. 달력이 바뀌어도 자동으로 연도를 옮기거나 전환점을 앞당기지 않아요. 새 모델은 검토·발행 후 반영돼요.</Notice>
+      <Notice>2026년을 출발점으로 계산했어요. 해가 바뀐다고 결과가 저절로 당겨지지 않아요. 계산 방법이 바뀌면 새 버전으로 알려드려요.</Notice>
     </div>
   )
 }
@@ -269,20 +293,20 @@ function Evidence({ d }: { d: WorkerDiagnosis }) {
     <div className="stack lg">
       <div className="grid-2">
         <div className="card paper">
-          <h2 className="h3">기술과 도입</h2>
-          <p className="muted">업무가 요구하는 능력 대비 AI 능력(언어·문제해결·창의 등 10가지), 업무의 디지털성·표준화·검증 가능성, 회사의 AI 도입 단계를 곱해 자동화 압력을 계산해요.</p>
+          <h2 className="h3">AI가 할 수 있는가</h2>
+          <p className="muted">업무에 필요한 능력을 AI가 얼마나 갖췄는지, 그 일이 컴퓨터로 하는 일인지·정해진 방식이 있는지·결과를 확인하기 쉬운지, 그리고 회사가 AI를 얼마나 쓰는지를 함께 봐요.</p>
         </div>
         <div className="card paper">
-          <h2 className="h3">남는 역할</h2>
-          <p className="muted">신뢰·책임·규제·현장 중 가장 큰 장벽이 자동화를 늦추고, 나의 AI 활용과 업무 이동 역량(전문지식·문제정의·학습·확장·결정권)이 압력을 일부 완화해요.</p>
+          <h2 className="h3">그래도 사람이 해야 하는가</h2>
+          <p className="muted">신뢰·책임·법·현장 때문에 사람이 필요한 일은 늦게 바뀌어요. 내가 AI를 잘 쓰고, 전문성·문제 정의·학습·결정권이 있을수록 변화의 충격이 줄어요.</p>
         </div>
       </div>
       <div className="card">
-        <h2 className="h3">근거 상태</h2>
+        <h2 className="h3">솔직하게 알려드려요</h2>
         <ul className="stack sm" style={{ paddingLeft: 20 }}>
-          <li>700개 업무 점수와 모든 계수는 <strong>저자 설계값</strong>이에요. 전문가 검토·관측자료 검증 전이에요.</li>
-          <li>아래 연구는 개념 틀을 참고한 것이고, 이 서비스의 업무 점수를 제공하지 않아요.</li>
-          <li>시장 수요는 자료가 없어 계산에서 제외했어요.</li>
+          <li>700개 업무 점수와 계산식은 <strong>초기 추정값</strong>이에요. 아직 전문가 검토와 실제 데이터 검증 전이에요.</li>
+          <li>아래 연구는 생각의 틀을 참고했을 뿐, 점수를 그대로 가져온 것은 아니에요.</li>
+          <li>일자리 수요는 자료가 없어 계산에서 뺐어요.</li>
         </ul>
         <ul className="stack sm" style={{ listStyle: 'none' }}>
           {cat.sources.map((s) => (
@@ -296,7 +320,7 @@ function Evidence({ d }: { d: WorkerDiagnosis }) {
         </ul>
       </div>
       <div className="card">
-        <h2 className="h3">이 결과의 계산 조건</h2>
+        <h2 className="h3">계산 조건 (전문가용)</h2>
         <p className="small muted">
           모델 {d.model_version} · 기준연도 {cat.base_year} · 범위 {cat.base_year}–{cat.horizon_year} · 전환 기준: 종합 재편 {cat.thresholds.career_transformation}, 자동화 압력 {cat.thresholds.task_disruption}, AI 증강 {cat.thresholds.assistance}
         </p>

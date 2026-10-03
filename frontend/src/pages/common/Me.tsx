@@ -54,7 +54,7 @@ export default function Me() {
                 <>
                   <p>
                     <strong>{cat.occupationById.get(w.input_snapshot.occupation_id)?.name_ko}</strong>{' '}
-                    <span className="muted">· 기준 가정 전환점 {yearText(w.result.crossings.base.career_transformation)}</span>
+                    <span className="muted">· 크게 바뀌는 해(지금 속도) {yearText(w.result.crossings.base.career_transformation)}</span>
                   </p>
                   <p className="small muted">{dateText(w.created_at)} · 모델 {w.model_version}</p>
                   <div className="btn-row">

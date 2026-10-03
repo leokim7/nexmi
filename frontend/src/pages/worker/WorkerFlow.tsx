@@ -73,7 +73,7 @@ export default function WorkerFlow() {
         )}
         {step === 4 && runner.loading && (
           <Notice kind="info" role="status">
-            느린 변화·기준·빠른 변화 세 가지 가정으로 2026–2040년을 계산하고 있어요…
+            AI가 천천히·지금 속도로·빠르게 퍼질 때를 2040년까지 계산하고 있어요…
             {runner.slow && <> 평소보다 오래 걸리고 있어요. 입력은 그대로 있으니 잠시 기다리거나 다시 시도해주세요.</>}
           </Notice>
         )}
@@ -213,7 +213,7 @@ function StepPersonal({ draft, setDraft, touched }: { draft: WorkerDraft; setDra
       <div className="stack sm">
         <div className="eyebrow">STEP 3 · ORGANIZATION & ROLE</div>
         <h1 id="s3" className="h1">회사와 나는 AI를 어떻게 쓰고 있나요?</h1>
-        <p className="lead">회사의 도입 단계와 나의 실제 행동을 나눠서 물어봐요. 기본값은 없어요 — 직접 골라주세요.</p>
+        <p className="lead">회사가 AI를 얼마나 쓰는지, 내가 요즘 어떻게 일하는지 물어볼게요.</p>
       </div>
 
       <fieldset className="stack">
@@ -236,7 +236,7 @@ function StepPersonal({ draft, setDraft, touched }: { draft: WorkerDraft; setDra
           <span className="chip gray num">{answered} / 6 응답</span>
         </div>
         <p className="muted small" style={{ marginTop: -14 }}>
-          능력 평가가 아니라 최근 실제로 하는 행동을 기준으로 골라주세요. 자기보고 값으로 계산해요.
+          시험이 아니에요. 요즘 실제로 하고 있는 만큼 솔직하게 골라주세요.
         </p>
         {PERSONAL.map((p) => (
           <ScaleRadio
@@ -276,17 +276,17 @@ function StepReview({ draft, example }: { draft: WorkerDraft; example: boolean }
   const rows: { k: string; v: React.ReactNode; to: string }[] = [
     { k: '직군', v: occ?.name_ko, to: '/worker/start/1' },
     { k: '역할 수준', v: CAREER_LEVELS.find((l) => l.id === draft.career_level)?.label, to: '/worker/start/1' },
-    { k: '업무 비중', v: draft.weights ? `직접 입력 · 합계 ${sumOf(draft.weights).toFixed(0)}%` : <span>임시 분포 그대로 <span className="chip warn">확인 필요</span></span>, to: '/worker/start/2' },
+    { k: '업무 비중', v: draft.weights ? `직접 입력 · 합계 ${sumOf(draft.weights).toFixed(0)}%` : <span>평균값 그대로 <span className="chip warn">확인 필요</span></span>, to: '/worker/start/2' },
     { k: 'AI 도입 단계', v: draft.ai_maturity ? MATURITY[draft.ai_maturity].label : <span className="muted">미응답</span>, to: '/worker/start/3' },
     ...PERSONAL.map((p) => ({ k: p.label, v: draft.personal[p.key] !== undefined ? BEHAVIOR_SCALE.find((b) => b.v === draft.personal[p.key])?.label : <span className="muted">미응답</span>, to: '/worker/start/3' })),
-    { k: '시장 수요', v: <span className="muted">자료 없음 — 계산에서 제외</span>, to: '' },
+    { k: '일자리 수요', v: <span className="muted">자료가 없어 계산에서 뺐어요</span>, to: '' },
   ]
   return (
     <section className="stack lg" aria-labelledby="s4">
       <div className="stack sm">
         <div className="eyebrow">STEP 4 · REVIEW</div>
         <h1 id="s4" className="h1">입력 내용을 확인해주세요</h1>
-        <p className="lead">계산하는 순간의 입력이 결과와 함께 보관돼요. 나중에 바꿔도 이 결과는 바뀌지 않아요.</p>
+        <p className="lead">지금 입력으로 결과를 만들어요. 나중에 입력을 바꿔도 이번 결과는 그대로 남아요.</p>
       </div>
       {example && <Notice kind="info">예시 입력(SW개발자 · 미들)이에요. 그대로 계산해보거나, 내 상황에 맞게 고쳐보세요.</Notice>}
       <div className="table-wrap">
@@ -313,9 +313,9 @@ function StepReview({ draft, example }: { draft: WorkerDraft; example: boolean }
           아직 입력하지 않은 항목이 있어요: {missing.join(', ')}
         </Notice>
       )}
-      {!draft.weights && <Notice>업무 비중을 고치지 않으면 직군·역할의 임시 분포로 계산해요. 실제 비중과 다를수록 결과도 달라져요.</Notice>}
+      {!draft.weights && <Notice>업무 시간을 직접 고치지 않으면 이 직군의 평균적인 값으로 계산해요. 내 실제와 다를수록 결과도 달라져요.</Notice>}
       <Notice>
-        모든 계수는 전문가 검토 전 설계값(모델 {cat.worker_model_version}, 기준연도 {cat.base_year})이에요. 세 가정은 통계적 신뢰구간이 아니에요.
+        결과는 전문가 검토 전의 초기 계산 방식(버전 {cat.worker_model_version})으로 만들어요. 미래를 맞히는 예언이 아니라, 준비를 돕는 참고 자료예요.
       </Notice>
     </section>
   )

@@ -73,7 +73,7 @@ export default function ExplorerIntro() {
               <Icon name="search" /> 직군 둘러보기
             </Link>
           </div>
-          <Notice>‘탐색 적합지수’는 관심을 정리하는 지수예요. 적성검사나 합격·성공 확률이 아니에요.</Notice>
+          <Notice>‘관심 맞춤 점수’는 내 관심과 직업이 얼마나 겹치는지 보여줘요. 적성검사나 합격 확률이 아니에요.</Notice>
         </aside>
       </div>
     </div>

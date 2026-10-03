@@ -80,39 +80,39 @@ export const FAMILY_LABELS: Record<string, string> = {
 export const familyLabel = (f: string) => FAMILY_LABELS[f] ?? f
 
 export const SCENARIOS: { id: Scenario; label: string; desc: string }[] = [
-  { id: 'slow', label: '느린 변화', desc: 'AI 능력·도입이 천천히 늘어나는 가정' },
-  { id: 'base', label: '기준 가정', desc: '현재 추세가 이어지는 가정' },
-  { id: 'fast', label: '빠른 변화', desc: 'AI 능력·도입이 빠르게 늘어나는 가정' },
+  { id: 'slow', label: 'AI가 천천히', desc: 'AI가 지금보다 천천히 퍼질 때' },
+  { id: 'base', label: '지금 속도로', desc: 'AI가 지금 속도로 퍼질 때' },
+  { id: 'fast', label: 'AI가 빠르게', desc: 'AI가 지금보다 빠르게 퍼질 때' },
 ]
 
 export const METRICS: { key: string; label: string; desc: string }[] = [
-  { key: 'exposure', label: 'AI 노출', desc: 'AI가 업무 요구능력을 얼마나 충족하는지' },
-  { key: 'automation', label: '자동화 압력', desc: '실제 도입·장벽을 반영한 대체 압력' },
-  { key: 'augmentation', label: 'AI 증강', desc: 'AI로 내 업무가 강화될 여지' },
-  { key: 'compression', label: '역할 압축', desc: '다른 사람의 일이 AI로 흡수되는 정도' },
-  { key: 'expansion', label: '역할 확장', desc: 'AI로 다른 영역까지 넓힐 여지' },
-  { key: 'human_moat', label: '인간 역할', desc: '신뢰·책임·규제·현장으로 남는 역할' },
-  { key: 'task_migration', label: '업무 이동', desc: '내 역할을 옮겨갈 수 있는 개인 역량' },
-  { key: 'market_demand', label: '시장 수요', desc: '현재 자료 없음 — 계산에서 제외' },
+  { key: 'exposure', label: 'AI가 할 수 있는 정도', desc: '내 업무를 AI가 기술적으로 해낼 수 있는 정도' },
+  { key: 'automation', label: 'AI가 대신할 가능성', desc: '회사 상황까지 따졌을 때 AI가 실제로 맡게 될 정도' },
+  { key: 'augmentation', label: 'AI 도움 받을 여지', desc: 'AI를 쓰면 내 일이 더 빠르고 좋아질 여지' },
+  { key: 'compression', label: '일이 줄어드는 정도', desc: '팀의 일이 AI로 줄어 자리가 좁아지는 정도' },
+  { key: 'expansion', label: '할 일이 넓어지는 정도', desc: 'AI 덕분에 다른 일까지 맡을 수 있는 여지' },
+  { key: 'human_moat', label: '사람이 꼭 필요한 정도', desc: '신뢰·책임·법·현장 때문에 사람이 해야 하는 정도' },
+  { key: 'task_migration', label: '다른 일로 옮겨갈 힘', desc: '내 역량으로 새로운 일로 옮겨갈 수 있는 정도' },
+  { key: 'market_demand', label: '일자리 수요', desc: '아직 자료가 없어 계산에서 뺐어요' },
 ]
 
 export const CROSSING_LABELS = {
-  assistance: { label: 'AI 보조 본격화', desc: 'AI 증강 지수 60 도달' },
-  task_disruption: { label: '업무 재편 시작', desc: '자동화 압력 30 도달' },
-  career_transformation: { label: '현재 업무 방식 전환점', desc: '종합 재편 지수 60 도달' },
+  assistance: { label: 'AI가 내 일을 본격적으로 돕기 시작', desc: '‘AI 도움 받을 여지’가 60점을 넘는 해' },
+  task_disruption: { label: 'AI가 내 업무 일부를 맡기 시작', desc: '‘AI가 대신할 가능성’이 30점을 넘는 해' },
+  career_transformation: { label: '지금 방식으로 일하기 어려워지는 해', desc: '전체 변화 점수가 60점을 넘는 해' },
 } as const
 
 export const EVIDENCE_LABEL: Record<string, string> = {
-  synthetic_prior: '설계값 · 검토 전',
-  author_designed_seed: '설계값 · 검토 전',
-  author_seed_pending_review: '설계값 · 검토 대기',
+  synthetic_prior: '초기 추정값 · 검토 전',
+  author_designed_seed: '초기 추정값 · 검토 전',
+  author_seed_pending_review: '초기 추정값 · 검토 대기',
   not_verified: '공식 진입요건 미확인',
   unreviewed: '전문가 검토 전',
 }
 
 export function yearText(v: number | null | undefined, horizon = 2040) {
-  if (v == null) return `${horizon}년까지 기준 미도달`
-  if (v === 2026) return '2026년 (기준 시점에 이미 도달)'
+  if (v == null) return `${horizon}년 안엔 없음`
+  if (v === 2026) return '이미 시작됨'
   return `${v}년`
 }
 

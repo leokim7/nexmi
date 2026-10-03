@@ -7,9 +7,9 @@ import { useStore } from '../../lib/store'
 
 export const WORKER_PLAN = [
   { id: 'record', title: '이번 주 업무 시간 기록하기', desc: '실제 업무 비중이 입력과 같은지 확인해요. 다르면 다시 분석해요.' },
-  { id: 'experiment', title: '반복 업무 하나에 AI 적용해보기', desc: '자동화 압력이 높은 업무부터. 작업 전후 시간과 검토 시간을 같이 기록해요.' },
+  { id: 'experiment', title: '반복 업무 하나에 AI 적용해보기', desc: 'AI가 대신할 가능성이 높은 업무부터. 걸린 시간과 확인하는 데 쓴 시간을 함께 적어요.' },
   { id: 'review', title: '검토 기준 정하기', desc: 'AI 결과에서 사람이 판단할 부분과 승인 기준을 적어둬요.' },
-  { id: 'reallocate', title: '절약한 시간 재배분', desc: '판단·고객·검증처럼 인간 역할이 큰 업무로 시간을 옮겨요.' },
+  { id: 'reallocate', title: '절약한 시간 재배분', desc: '판단·고객 응대·확인처럼 사람이 꼭 필요한 일로 시간을 옮겨요.' },
   { id: 'check', title: '한 달 뒤 점검과 재분석', desc: '역할·회사 도입·업무 비중이 실제로 바뀌었을 때만 다시 계산해요.' },
 ]
 
@@ -30,7 +30,7 @@ export default function WorkerPlan() {
           <div className="card soft">
             <span className="small strong">먼저 실험해볼 업무</span>
             <p className="h3">{focus.name_ko}</p>
-            <p className="small muted num">내 비중 {fmt(focus.weight * 100)}% · 자동화 압력 {fmt(focus.automation)} (2026 기준)</p>
+            <p className="small muted num">내 비중 {fmt(focus.weight * 100)}% · AI가 대신할 가능성 {fmt(focus.automation)}점</p>
           </div>
         )}
         <div className="row between">
@@ -50,7 +50,7 @@ export default function WorkerPlan() {
             </li>
           ))}
         </ul>
-        <Notice>계획을 완료해도 점수나 전환점이 자동으로 바뀌지 않아요. 실제로 바뀐 업무 비중·역할을 입력해 다시 분석했을 때만 결과가 달라져요.</Notice>
+        <Notice>체크한다고 점수가 바로 바뀌지는 않아요. 실제로 일하는 방식이 바뀌면 다시 분석해서 확인해보세요.</Notice>
         <div className="btn-row stretch">
           <Link to="/practice?mode=worker" className="btn primary">
             <Icon name="pen" /> 업무 적용 기록하기

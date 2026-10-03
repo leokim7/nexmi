@@ -36,7 +36,7 @@ export function DisruptionChart({ paths, threshold, highlight }: { paths: Record
   return (
     <figure className="stack sm" style={{ margin: 0 }}>
       <svg className="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="dc-title">
-        <title id="dc-title">가정별 종합 재편 지수 추이, 기준선 {threshold}</title>
+        <title id="dc-title">속도별 전체 변화 점수, 큰 변화 기준 {threshold}점</title>
         {[0, 20, 40, 60, 80, 100].map((v) => (
           <g key={v}>
             <line x1={m.l} x2={W - m.r} y1={y(v)} y2={y(v)} stroke="#e7ebf0" />
@@ -47,7 +47,7 @@ export function DisruptionChart({ paths, threshold, highlight }: { paths: Record
           <text key={yr} x={x(yr)} y={H - 8} textAnchor="middle">{yr}</text>
         ))}
         <line x1={m.l} x2={W - m.r} y1={y(threshold)} y2={y(threshold)} stroke="#0b1220" strokeDasharray="3 4" strokeWidth={1.2} />
-        <text x={W - m.r} y={y(threshold) - 6} textAnchor="end" style={{ fontWeight: 800, fill: '#0b1220' }}>전환 기준 {threshold}</text>
+        <text x={W - m.r} y={y(threshold) - 6} textAnchor="end" style={{ fontWeight: 800, fill: '#0b1220' }}>큰 변화 기준 {threshold}점</text>
         {(['slow', 'fast', 'base'] as Scenario[])
           .sort((a) => (a === highlight ? 1 : -1))
           .map((s) => (
@@ -88,7 +88,7 @@ export function CrossingTimeline({ crossings }: { crossings: Record<Scenario, Cr
   return (
     <figure className="stack sm" style={{ margin: 0 }}>
       <svg className="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="ct-title">
-        <title id="ct-title">가정별 세 전환점 연도</title>
+        <title id="ct-title">속도별로 바뀌는 해</title>
         {[2026, 2031, 2036, 2040].map((yr) => (
           <g key={yr}>
             <line x1={x(yr)} x2={x(yr)} y1={m.t - 8} y2={H - m.b} stroke="#e7ebf0" />
@@ -96,7 +96,7 @@ export function CrossingTimeline({ crossings }: { crossings: Record<Scenario, Cr
           </g>
         ))}
         <line x1={W - m.r + 44} x2={W - m.r + 44} y1={m.t - 8} y2={H - m.b} stroke="#e7ebf0" strokeDasharray="2 3" />
-        <text x={W - m.r + 44} y={H - 8} textAnchor="middle">미도달</text>
+        <text x={W - m.r + 44} y={H - 8} textAnchor="middle">2040 이후</text>
         {SCENARIOS.map((s, i) => {
           const cy = m.t + rowH * i + rowH / 2
           const c = crossings[s.id]

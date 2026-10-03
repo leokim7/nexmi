@@ -48,7 +48,7 @@ export default function WorkerWhatIf() {
 
   return (
     <div className="wrap page">
-      <PageHead eyebrow="WHAT IF" title="업무 구성을 바꾸면?" lead="원본 결과는 그대로 두고, 같은 모델·같은 기준연도로 바꾼 가정만 다시 계산해 나란히 비교해요." />
+      <PageHead eyebrow="WHAT IF" title="업무 구성을 바꾸면?" lead="내 업무나 역할을 바꾼다면 결과가 어떻게 달라질지 미리 계산해봐요. 원래 결과는 그대로 남아요." />
       <div className="grid-side">
         <div className="stack lg">
           <details className="card" open>
@@ -121,12 +121,12 @@ export default function WorkerWhatIf() {
 function Comparison({ before, after }: { before: WorkerDiagnosis; after: WorkerDiagnosis }) {
   const m = (d: WorkerDiagnosis, k: string) => d.result.paths.base[0].metrics[k] as number
   const rows: { k: string; a: string; b: string; delta?: number }[] = [
-    ...SCENARIOS.map((s) => ({ k: `전환점 · ${s.label}`, a: yearText(before.result.crossings[s.id].career_transformation), b: yearText(after.result.crossings[s.id].career_transformation) })),
+    ...SCENARIOS.map((s) => ({ k: `바뀌는 해 · ${s.label}`, a: yearText(before.result.crossings[s.id].career_transformation), b: yearText(after.result.crossings[s.id].career_transformation) })),
     ...[
-      ['automation', '자동화 압력'],
-      ['augmentation', 'AI 증강'],
-      ['task_migration', '업무 이동'],
-      ['career_disruption_index', '종합 재편 지수'],
+      ['automation', 'AI가 대신할 가능성'],
+      ['augmentation', 'AI 도움 받을 여지'],
+      ['task_migration', '다른 일로 옮겨갈 힘'],
+      ['career_disruption_index', '전체 변화 점수'],
     ].map(([k, l]) => ({ k: `${l} (2026)`, a: fmt(m(before, k)), b: fmt(m(after, k)), delta: m(after, k) - m(before, k) })),
   ]
   return (
@@ -157,7 +157,7 @@ function Comparison({ before, after }: { before: WorkerDiagnosis; after: WorkerD
           </tbody>
         </table>
       </div>
-      <p className="small muted">조건부 비교예요. 교육·역할 변경의 효과를 보장하지 않고, 여러 가정을 함께 바꾸면 어떤 변화 때문인지 나눌 수 없어요.</p>
+      <p className="small muted">‘이렇게 바꾸면 어떨까’를 계산해본 거예요. 실제로 이렇게 된다는 보장은 아니에요. 여러 개를 한꺼번에 바꾸면 어느 것 때문인지 알기 어려워요.</p>
       <Link to="/worker/plan" className="btn sm primary">
         실행 계획으로 <Icon name="arrow" />
       </Link>

@@ -31,7 +31,7 @@ export default function WorkerIntro() {
             예상 종료일은?
           </h1>
           <p className="lead" style={{ maxWidth: 560 }}>
-            지금과 같은 방식으로 일하기 어려워지는 시점을 세 가지 가정으로 계산하고, 어떤 업무부터 바꿀 수 있는지 함께 살펴봐요.
+            직군과 하는 일을 알려주면, AI 때문에 지금처럼 일하기 어려워지는 해를 계산해드려요. 어떤 업무부터 바꾸면 좋을지도 함께 알려드려요.
           </p>
           <div className="btn-row stretch">
             <Link to="/worker/start/1" className="btn primary lg">
@@ -53,23 +53,22 @@ export default function WorkerIntro() {
         </div>
         <aside className="stack">
           <div className="card paper">
-            <h2 className="h3">‘예상 종료일’은 이런 뜻이에요</h2>
+            <h2 className="h3">‘종료일’은 해고일이 아니에요</h2>
             <p className="muted">
-              지금 업무 구성 그대로일 때, 초기 모델의 <strong>종합 재편 지수</strong>가 기준(60)에 처음 닿는 연도예요. 지금 하는 방식의 일이 크게 바뀌는 시점이지,
-              <strong> 해고일이나 직업이 사라지는 날이 아니에요.</strong>
+              지금처럼 일한다면, AI 때문에 <strong>일하는 방식이 크게 바뀌는 해</strong>예요. 그날 직업이 사라진다는 뜻이 아니라, 그 전에 준비하면 좋다는 신호예요.
             </p>
-            <p className="muted small">2040년까지 기준에 닿지 않으면 ‘2040년까지 기준 미도달’로 보여드려요. 영원히 안전하다는 뜻은 아니에요.</p>
+            <p className="muted small">2040년까지만 계산해요. 그 안에 큰 변화가 없으면 그렇게 알려드리고, AI가 내 업무 일부를 맡기 시작하는 해를 대신 보여드려요.</p>
           </div>
           <div className="card">
             <h2 className="h3">4단계 · 약 5분</h2>
             <ol className="stack sm" style={{ paddingLeft: 20 }}>
               <li>직군과 역할 수준</li>
-              <li>업무 14개에 쓰는 시간 비중</li>
-              <li>회사의 AI 도입 단계와 나의 역할 6가지</li>
-              <li>입력 확인 후 계산</li>
+              <li>업무 14개에 시간을 얼마나 쓰는지</li>
+              <li>회사가 AI를 얼마나 쓰는지, 내가 하는 역할 6가지</li>
+              <li>확인하고 결과 보기</li>
             </ol>
           </div>
-          <Notice>입력은 계산에만 쓰이고 서버에 저장되지 않아요. 새로고침하면 사라지니, 남기고 싶다면 ‘내 기록’에서 기기 저장을 켜주세요.</Notice>
+          <Notice>입력한 내용은 계산에만 쓰고 저장하지 않아요. 새로고침하면 사라지니, 남기려면 ‘내 기록’에서 ‘이 기기에 저장’을 켜주세요.</Notice>
         </aside>
       </div>
     </div>

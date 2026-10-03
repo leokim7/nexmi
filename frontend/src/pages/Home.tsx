@@ -39,9 +39,9 @@ export default function Home() {
         <div className="hero-visual" aria-hidden="true">
           <span className="chip line" style={{ alignSelf: 'flex-start' }}>예시 화면</span>
           <div className="float-card">
-            <div className="small muted">현재 업무 방식의 전환점 · 기준 가정</div>
+            <div className="small muted">내 일이 크게 바뀌는 해</div>
             <div className="h2 num">2031년</div>
-            <div className="small muted">세 가지 가정으로 함께 보여줘요</div>
+            <div className="small muted">AI가 퍼지는 속도별로 보여줘요</div>
           </div>
           <div className="float-card" style={{ marginLeft: 48 }}>
             <div className="small muted">탐색 후보</div>
@@ -75,7 +75,7 @@ export default function Home() {
               <Link to="/worker/result" className="card hover card-link">
                 <span className="chip gray">직업 미래</span>
                 <span className="h3">{cat.occupationById.get(w.input_snapshot.occupation_id)?.name_ko}</span>
-                <span className="muted">기준 가정 전환점 · {yearText(w.result.crossings.base.career_transformation)}</span>
+                <span className="muted">지금 속도 기준 · {yearText(w.result.crossings.base.career_transformation)}</span>
               </Link>
             )}
             {e && (
@@ -117,10 +117,10 @@ export default function Home() {
             <span className="eyebrow" style={{ color: '#fff', opacity: 0.8 }}>FOR WORKERS</span>
             <h3 className="h2">내 직업 예상 종료일은?</h3>
             <p className="muted">
-              지금 업무 구성 그대로라면 언제 일하는 방식이 크게 바뀌는지, 세 가지 가정으로 보여드려요. 해고일이나 직업이 사라지는 날이 아니에요.
+              지금처럼 일한다면 AI 때문에 언제 일하는 방식이 크게 바뀌는지 알려드려요. 해고일이 아니라, 준비를 시작할 때를 알려주는 신호예요.
             </p>
             <ul className="stack sm" style={{ listStyle: 'none' }}>
-              {['직군·역할 선택 → 업무 비중 → AI 도입·개인 역할', '업무 14개별 변화와 연도별 전망', '업무 구성을 바꿔보는 대응 시뮬레이션'].map((t) => (
+              {['직군·역할 선택 → 업무 비중 → AI 도입·개인 역할', 'AI가 먼저 맡게 될 내 업무', '업무를 바꾸면 어떻게 달라지는지 미리 계산'].map((t) => (
                 <li key={t} className="row" style={{ flexWrap: 'nowrap' }}>
                   <Icon name="check" size={18} />
                   {t}
@@ -188,13 +188,13 @@ export default function Home() {
         <h2 id="trust-h" className="h2">이 서비스가 하지 않는 것</h2>
         <div className="grid-3" style={{ marginTop: 6 }}>
           <p className="muted">
-            <strong style={{ color: '#fff' }}>예측을 확정하지 않아요.</strong> 모든 계수는 전문가 검토 전 설계값({cat.worker_model_version}, {cat.explorer_model_version})이에요.
+            <strong style={{ color: '#fff' }}>미래를 맞히는 예언이 아니에요.</strong> 아직 전문가 검토 전의 초기 계산 방식이라, 준비를 돕는 참고 자료로 써주세요.
           </p>
           <p className="muted">
-            <strong style={{ color: '#fff' }}>적성 확률이 아니에요.</strong> 진로 적합도는 탐색을 돕는 지수이고, 준비 수준은 순위에 반영하지 않아요.
+            <strong style={{ color: '#fff' }}>적성검사가 아니에요.</strong> 내 관심과 직업이 얼마나 겹치는지 보여줄 뿐, 합격·성공 확률을 말하지 않아요.
           </p>
           <p className="muted">
-            <strong style={{ color: '#fff' }}>입력을 서버에 저장하지 않아요.</strong> 계산만 하고, 기기 저장은 직접 켰을 때만 해요. 채용공고·입사지원과도 연결하지 않아요.
+            <strong style={{ color: '#fff' }}>입력한 내용을 저장하지 않아요.</strong> 계산만 하고 바로 잊어요. 남기고 싶을 때만 내 기기에 저장해요.
           </p>
         </div>
       </section>

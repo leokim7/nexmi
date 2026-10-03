@@ -47,13 +47,13 @@ export function WeightsEditor({ draft, onChange, compact }: { draft: WorkerDraft
       </div>
       <div className="row between">
         {isDefault ? (
-          <span className="chip warn">임시 분포 — 직군·역할 기본값이에요. 실제 비중으로 바꿔주세요</span>
+          <span className="chip warn">이 직군의 평균값이에요. 내 실제에 맞게 바꿔주세요</span>
         ) : (
-          <span className="chip ok"><Icon name="check" />직접 입력한 비중</span>
+          <span className="chip ok"><Icon name="check" />내가 직접 고친 값</span>
         )}
         {!isDefault && (
           <button type="button" className="link small" onClick={() => onChange(undefined)}>
-            임시 분포로 되돌리기
+            평균값으로 되돌리기
           </button>
         )}
       </div>

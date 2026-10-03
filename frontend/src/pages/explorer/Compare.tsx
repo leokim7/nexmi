@@ -31,7 +31,7 @@ export default function Compare() {
     { k: '영역', render: (id) => familyLabel(cat.occupationById.get(id)!.family) },
     { k: '관련 관심 활동', render: (id) => cat.occupationById.get(id)!.interest_tags.map((t) => cat.axes[t]).join(', ') },
     {
-      k: '탐색 적합지수',
+      k: '관심 맞춤 점수',
       render: (id) => {
         const r = recs.get(id)
         return r ? <><strong className="num">{fmt(r.exploration_index)}</strong> <span className="muted small">· 체험 {r.evidence_count}개</span></> : <span className="muted">추천 결과에 없음</span>
@@ -41,7 +41,7 @@ export default function Compare() {
       k: '준비 상태',
       render: (id) => {
         const r = recs.get(id)
-        return !r ? <span className="muted">—</span> : r.readiness_index == null ? <span className="muted">확인 안 한 역량 있음</span> : `준비 지수 ${fmt(r.readiness_index)}`
+        return !r ? <span className="muted">—</span> : r.readiness_index == null ? <span className="muted">확인 안 한 역량 있음</span> : `준비 점수 ${fmt(r.readiness_index)}`
       },
     },
     {

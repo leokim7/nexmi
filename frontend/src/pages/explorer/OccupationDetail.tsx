@@ -69,14 +69,14 @@ export default function OccupationDetail() {
                 <p className="small">{rec.why.join(' · ')}</p>
               </div>
               <div>
-                <span className="small strong">탐색 적합지수</span>
+                <span className="small strong">관심 맞춤 점수</span>
                 <p className="small">
                   <strong className="num">{fmt(rec.exploration_index)}</strong> <span className="muted">· 체험 근거 {rec.evidence_count}개 · 확률 아님</span>
                 </p>
               </div>
               <div>
                 <span className="small strong">준비 상태</span>
-                <p className="small">{rec.readiness_index == null ? '아직 확인하지 않은 역량이 있어요' : `준비 지수 ${fmt(rec.readiness_index)} (자기보고)`}</p>
+                <p className="small">{rec.readiness_index == null ? '아직 확인하지 않은 역량이 있어요' : `준비 점수 ${fmt(rec.readiness_index)} (내가 답한 기준)`}</p>
               </div>
             </div>
           ) : (
@@ -110,7 +110,7 @@ export default function OccupationDetail() {
                     </li>
                   ))}
                 </ol>
-                <Notice>업무 목록과 비중은 직군 템플릿 설계값이에요. 실제 회사·역할에 따라 달라요.</Notice>
+                <Notice>업무 목록과 비중은 평균적인 예시예요. 회사와 역할에 따라 달라요.</Notice>
               </div>
             )}
             {tab === 'activities' && (

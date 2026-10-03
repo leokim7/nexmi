@@ -107,9 +107,9 @@ function WorkerDiff({ a, b }: { a: WorkerDiagnosis; b: WorkerDiagnosis }) {
     ['업무 비중', '—', changedTasks == null ? '직군이 달라 비교 불가' : changedTasks === 0 ? '—' : `${changedTasks}개 업무 변경`],
   ]
   const results: [string, React.ReactNode, React.ReactNode][] = [
-    ...SCENARIOS.map((s) => [`전환점 · ${s.label}`, yearText(a.result.crossings[s.id].career_transformation), yearText(b.result.crossings[s.id].career_transformation)] as [string, string, string]),
-    ['자동화 압력 (2026)', fmt(a.result.paths.base[0].metrics.automation), fmt(b.result.paths.base[0].metrics.automation)],
-    ['종합 재편 지수 (2026)', fmt(a.result.paths.base[0].metrics.career_disruption_index), fmt(b.result.paths.base[0].metrics.career_disruption_index)],
+    ...SCENARIOS.map((s) => [`바뀌는 해 · ${s.label}`, yearText(a.result.crossings[s.id].career_transformation), yearText(b.result.crossings[s.id].career_transformation)] as [string, string, string]),
+    ['AI가 대신할 가능성 (2026)', fmt(a.result.paths.base[0].metrics.automation), fmt(b.result.paths.base[0].metrics.automation)],
+    ['전체 변화 점수 (2026)', fmt(a.result.paths.base[0].metrics.career_disruption_index), fmt(b.result.paths.base[0].metrics.career_disruption_index)],
   ]
   return (
     <div className="grid-2">

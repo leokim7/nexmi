@@ -48,7 +48,7 @@ function WorkerReport() {
     <article className="report-sheet">
       <Head title={`${cat.occupationById.get(i.occupation_id)?.name_ko} · 직업 미래 리포트`} sub={`${dateText(d.created_at)} 계산 · 모델 ${d.model_version} · 기준연도 ${cat.base_year} · 진단 ID ${d.diagnosis_id.slice(0, 8)}`} />
       <section className="stack sm">
-        <h2 className="h3">현재 업무 방식의 전환점</h2>
+        <h2 className="h3">언제 바뀔까요</h2>
         <div className="table-wrap">
           <table className="table">
             <thead>
@@ -71,7 +71,7 @@ function WorkerReport() {
             </tbody>
           </table>
         </div>
-        <p className="small muted">연도 단위 조건부 시나리오예요. 해고일·직업 소멸일이 아니며, 세 가정은 통계적 신뢰구간이 아니에요. 미도달은 2040년까지 기준에 닿지 않았다는 뜻이에요.</p>
+        <p className="small muted">해고일이나 직업이 사라지는 날이 아니라, 일하는 방식이 크게 바뀌는 해예요. AI가 퍼지는 속도를 세 가지로 나눠 계산했고, 2040년까지만 계산했어요.</p>
       </section>
       <section className="stack sm">
         <h2 className="h3">입력한 내용</h2>
@@ -81,7 +81,7 @@ function WorkerReport() {
         </p>
       </section>
       <section className="stack sm">
-        <h2 className="h3">기준연도 지표</h2>
+        <h2 className="h3">지금 내 일의 상태</h2>
         <div className="grid-4">
           {METRICS.map((m) => (
             <div key={m.key} className="metric">
@@ -99,9 +99,9 @@ function WorkerReport() {
               <tr>
                 <th scope="col">업무</th>
                 <th scope="col" className="num">비중</th>
-                <th scope="col" className="num">자동화 압력</th>
-                <th scope="col" className="num">AI 증강</th>
-                <th scope="col" className="num">인간 역할</th>
+                <th scope="col" className="num">AI가 대신할 가능성</th>
+                <th scope="col" className="num">AI 도움 여지</th>
+                <th scope="col" className="num">사람 필요</th>
               </tr>
             </thead>
             <tbody>
@@ -129,8 +129,8 @@ function WorkerReport() {
         </ul>
       </section>
       <section className="stack sm">
-        <h2 className="h3">검토 상태와 한계</h2>
-        <p className="small muted">700개 업무 점수와 모든 계수는 전문가 검토 전 설계값이에요. 시장 수요는 자료가 없어 제외했어요. 확률·백분위·동일 직군 평균은 제공하지 않아요.</p>
+        <h2 className="h3">알아두세요</h2>
+        <p className="small muted">점수와 계산식은 전문가 검토 전의 초기 추정값이에요. 일자리 수요는 자료가 없어 뺐어요. 확률이나 다른 사람과의 비교는 제공하지 않아요.</p>
       </section>
     </article>
   )
@@ -163,7 +163,7 @@ function ExplorerReport() {
               <thead>
                 <tr>
                   <th scope="col">직군</th>
-                  <th scope="col" className="num">탐색 적합지수</th>
+                  <th scope="col" className="num">관심 맞춤 점수</th>
                   <th scope="col">추천 이유</th>
                   <th scope="col">체험 근거</th>
                   <th scope="col">준비 상태</th>
@@ -183,7 +183,7 @@ function ExplorerReport() {
             </table>
           </div>
         )}
-        <p className="small muted">탐색 적합지수는 관심과 체험 반응으로 만든 탐색용 지수예요. 적성 확률이 아니며, 준비 수준은 순위에 반영하지 않아요.</p>
+        <p className="small muted">관심 맞춤 점수는 내 관심과 체험 느낌으로 만든 점수예요. 적성 확률이 아니에요.</p>
       </section>
       <section className="stack sm">
         <h2 className="h3">완료한 체험</h2>
@@ -225,7 +225,7 @@ function ExplorerReport() {
         </ul>
       </section>
       <section className="stack sm">
-        <h2 className="h3">검토 상태와 한계</h2>
+        <h2 className="h3">알아두세요</h2>
         <ul style={{ paddingLeft: 20 }}>
           {d.result.uncertainties.map((u) => (
             <li key={u} className="small muted">{u}</li>

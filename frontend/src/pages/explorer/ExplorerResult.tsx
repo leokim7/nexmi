@@ -81,7 +81,7 @@ export default function ExplorerResult() {
               </div>
             )}
             <p className="small muted">
-              정렬: 탐색 적합지수가 높은 순, 같은 영역은 최대 2개. 점수가 같으면 ID 순서이며 우열을 뜻하지 않아요.
+              관심 맞춤 점수가 높은 순서예요. 다양하게 보여드리려고 같은 영역은 2개까지만 넣었어요. 점수가 같으면 어느 쪽이 더 낫다는 뜻은 아니에요.
             </p>
           </>
         )}
@@ -164,7 +164,7 @@ function RecCard({ rec }: { rec: Recommendation }) {
           <div className="score-line">
             <b>{fmt(rec.exploration_index)}</b>
           </div>
-          <span className="small muted">탐색 적합지수 · 확률 아님</span>
+          <span className="small muted">관심 맞춤 점수 · 확률 아님</span>
         </div>
       </div>
       <div className="grid-3" style={{ gap: 14 }}>
@@ -183,7 +183,7 @@ function RecCard({ rec }: { rec: Recommendation }) {
             <p className="small muted">아직 확인하지 않은 역량이 있어요{gaps.some((g) => g.status === 'unknown') && ` (${gaps.filter((g) => g.status === 'unknown').map((g) => CAPABILITY_LABELS[g.capability]).slice(0, 2).join(', ')})`}.</p>
           ) : (
             <p className="small">
-              준비 지수 <strong className="num">{fmt(rec.readiness_index)}</strong> <span className="muted">· 자기보고 기준, 순위에 반영 안 함</span>
+              준비 점수 <strong className="num">{fmt(rec.readiness_index)}</strong> <span className="muted">· 내가 답한 기준, 순서에는 안 씀</span>
             </p>
           )}
         </div>
