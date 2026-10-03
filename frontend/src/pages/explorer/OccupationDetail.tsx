@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
-import { Comments } from '../../components/Comments'
+import { SidePoll } from '../../components/Board'
 import { CompareToggle } from '../../components/CompareTray'
 import { Icon } from '../../components/Icon'
 import { useTitle } from '../../components/Layout'
@@ -96,11 +96,11 @@ export default function OccupationDetail() {
               { id: 'activities', label: '체험 2개' },
               { id: 'path', label: '학습 경로' },
               { id: 'ai', label: 'AI와 업무 변화' },
-              { id: 'talk', label: '한마디' },
+              { id: 'talk', label: 'AI vs 인간' },
             ]}
           />
           <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
-            {tab === 'talk' && <Comments occupationId={occ.occupation_id} occupationName={occ.name_ko} />}
+            {tab === 'talk' && <SidePoll occupationId={occ.occupation_id} occupationName={occ.name_ko} />}
             {tab === 'tasks' && (
               <div className="stack">
                 <ol className="grid-2" style={{ listStyle: 'none', gap: 10 }}>

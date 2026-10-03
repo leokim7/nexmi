@@ -1,9 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Icon } from '../components/Icon'
 import { useTitle } from '../components/Layout'
 import { useReveal } from '../components/ui'
+import { SideBar } from '../components/Board'
 import { useCatalog } from '../lib/catalog'
+import { community, SIDES, type Board } from '../lib/community'
 import { familyLabel, stageLabel, yearText } from '../lib/labels'
 import { useStore } from '../lib/store'
 
@@ -60,6 +62,50 @@ function JobSearch() {
         </ul>
       )}
     </div>
+  )
+}
+
+/** 홈의 AI vs 인간 미리보기: 실제 편 비율과 공감 많은 글 3개. */
+function VsTeaser() {
+  const [board, setBoard] = useState<Board | null>(null)
+  useEffect(() => {
+    community.posts({ sort: 'top', limit: 3 }).then(setBoard, () => setBoard(null))
+  }, [])
+  return (
+    <section className="section" style={{ paddingTop: 0 }} aria-labelledby="vs-h">
+      <div className="section-head">
+        <div>
+          <div className="eyebrow">AI VS 인간</div>
+          <h2 id="vs-h" className="h1">당신은 어느 편?</h2>
+        </div>
+        <p>결과를 봤다면, 편을 골라 한마디 남겨보세요. 다른 직업 사람들은 어떻게 생각하는지도 볼 수 있어요.</p>
+      </div>
+      <div className="grid-side">
+        <div className="card stack">
+          <SideBar counts={board?.side_counts ?? { ai: 0, human: 0 }} />
+          {board && board.items.length > 0 ? (
+            <ul className="stack sm" style={{ listStyle: 'none' }}>
+              {board.items.map((p) => (
+                <li key={p.id} className={`post ${p.side}`}>
+                  <span className="small strong">{SIDES.find((x) => x.id === p.side)!.emoji} {p.nickname || '익명'}{p.occupation_name ? ` · ${p.occupation_name}` : ''}</span>
+                  <p>{p.body}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="muted">아직 글이 없어요. 첫 번째로 편을 골라보세요.</p>
+          )}
+        </div>
+        <div className="stack">
+          {SIDES.map((x) => (
+            <p key={x.id} className={`quip ${x.id}`}>{x.emoji} {x.quip}</p>
+          ))}
+          <Link to="/community" className="btn primary lg">
+            <Icon name="users" /> 편 고르고 한마디 남기기
+          </Link>
+        </div>
+      </div>
+    </section>
   )
 }
 
@@ -218,31 +264,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" style={{ paddingTop: 0 }} aria-labelledby="loop-h">
-        <div className="section-head">
-          <div>
-            <div className="eyebrow">AFTER THE RESULT</div>
-            <h2 id="loop-h" className="h1">결과 다음이 더 중요해요</h2>
-          </div>
-          <p>분석 → 이번 주 작은 행동 → 기록 → 다시 계산. 날짜를 흔드는 알림이나 가짜 소식은 보내지 않아요.</p>
-        </div>
-        <div className="grid-4">
-          {[
-            { i: 'chart', t: '분석', d: '엔진 계산 결과를 근거와 함께 확인' },
-            { i: 'flag', t: '이번 주 과제', d: '검토된 목록에서 시간에 맞는 작은 행동' },
-            { i: 'pen', t: '기록', d: '업무 적용·체험 결과를 내 기록으로' },
-            { i: 'refresh', t: '다시 계산', d: '실제로 바뀐 입력으로 변화 비교' },
-          ].map((s, i) => (
-            <div key={s.t} className={`card tight reveal delay-${i % 4}`}>
-              <div className="icon-box">
-                <Icon name={s.i} />
-              </div>
-              <h3 className="h3">{s.t}</h3>
-              <p className="muted small">{s.d}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <VsTeaser />
 
       <section className="card dark reveal" aria-labelledby="trust-h">
         <div className="eyebrow" style={{ color: '#8fb3ff' }}>HONEST BY DESIGN</div>

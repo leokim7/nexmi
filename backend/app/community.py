@@ -1,8 +1,8 @@
-"""Share cards and per-occupation comments.
+"""Share cards and the "AI vs 인간" board.
 
 Share cards are rebuilt on the server from the engine, so a card always matches a
 real calculation and never contains the raw answers (only a fixed projection).
-Comments are anonymous, short, rate-limited, reportable and hidden after 3 reports.
+Posts pick a side (AI / 인간), are anonymous, short, rate-limited, reportable and hidden after 3 reports.
 """
 from __future__ import annotations
 
@@ -15,16 +15,16 @@ from typing import Any
 
 from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse, Response
-from sqlalchemy import and_, delete, func, insert, select, update
+from sqlalchemy import and_, delete, false, func, insert, or_, select, update
 
 from . import engines
-from .db import comment_votes, comments, engine, shares
+from .db import engine, post_votes, posts, shares
 from .validation import InputError, validate_explorer, validate_worker
 
 router = APIRouter()
 
 SHARE_DAYS = 90
-REACTIONS = ("worried", "unsure", "preparing", "fine")
+SIDES = ("ai", "human")
 HIDE_AFTER_REPORTS = 3
 RATE_WINDOW = dt.timedelta(minutes=10)
 RATE_MAX = 3
@@ -139,13 +139,16 @@ def delete_share(token: str, request: Request):
     return Response(status_code=204)
 
 
-# ---------------------------------------------------------------- comments
+# ---------------------------------------------------------------- AI vs 인간 board
 def _public(row: Any, me: str, liked: set[int]) -> dict:
+    occ = engines_occ.get(row["occupation_id"]) if row["occupation_id"] else None
     return {
         "id": row["id"],
-        "reaction": row["reaction"],
+        "side": row["side"],
         "body": row["body"],
         "nickname": row["nickname"],
+        "occupation_id": row["occupation_id"],
+        "occupation_name": occ,
         "likes": row["likes"],
         "liked": row["id"] in liked,
         "mine": row["author_hash"] == me,
@@ -153,27 +156,65 @@ def _public(row: Any, me: str, liked: set[int]) -> dict:
     }
 
 
-@router.get("/api/occupations/{oid}/comments")
-def list_comments(oid: str, request: Request, sort: str = "new", limit: int = 20):
-    if oid not in engines.OCCUPATION_IDS:
-        return _err(request, 404, "NOT_FOUND", "직군을 찾을 수 없어요.")
+engines_occ = {o["occupation_id"]: o["name_ko"] for o in engines.OCCUPATIONS}
+
+
+def _liked(c, ids: list[int], me: str) -> set[int]:
+    if not ids:
+        return set()
+    return set(c.execute(select(post_votes.c.post_id).where(and_(post_votes.c.post_id.in_(ids), post_votes.c.voter_hash == me, post_votes.c.kind == "like"))).scalars())
+
+
+@router.get("/api/posts")
+def list_posts(request: Request, side: str = "", occupation_id: str = "", tag: str = "", sort: str = "new", before: int = 0, limit: int = 20, q: str = ""):
+    """tag=job → 직업이 붙은 글만, tag=none → 직업 없는 글만. 편 비율은 같은 필터(편 제외) 기준."""
     limit = max(1, min(50, limit))
     me = _who(request)
-    order = (comments.c.likes.desc(), comments.c.id.desc()) if sort == "top" else (comments.c.id.desc(),)
-    visible = and_(comments.c.occupation_id == oid, comments.c.hidden.is_(False))
+    base = [posts.c.hidden.is_(False)]
+    if occupation_id:
+        if occupation_id not in engines.OCCUPATION_IDS:
+            return _err(request, 404, "NOT_FOUND", "직군을 찾을 수 없어요.")
+        base.append(posts.c.occupation_id == occupation_id)
+    if tag == "job":
+        base.append(posts.c.occupation_id.is_not(None))
+    elif tag == "none":
+        base.append(posts.c.occupation_id.is_(None))
+    if q.strip():
+        like = f"%{q.strip()[:30]}%"
+        ids = [k for k, v in engines_occ.items() if q.strip() in v]
+        base.append(or_(posts.c.body.like(like), posts.c.nickname.like(like), posts.c.occupation_id.in_(ids) if ids else false()))
+    listed = list(base)
+    if side in SIDES:
+        listed.append(posts.c.side == side)
+    if before > 0 and sort != "top":
+        listed.append(posts.c.id < before)
+    order = (posts.c.likes.desc(), posts.c.id.desc()) if sort == "top" else (posts.c.id.desc(),)
     with engine.connect() as c:
-        rows = c.execute(select(comments).where(visible).order_by(*order).limit(limit)).mappings().all()
-        counts = dict(c.execute(select(comments.c.reaction, func.count()).where(visible).group_by(comments.c.reaction)).all())
-        total = sum(counts.values())
-        ids = [r["id"] for r in rows]
-        liked = set(c.execute(select(comment_votes.c.comment_id).where(and_(comment_votes.c.comment_id.in_(ids), comment_votes.c.voter_hash == me, comment_votes.c.kind == "like"))).scalars()) if ids else set()
-    return {"items": [_public(r, me, liked) for r in rows], "counts": {k: counts.get(k, 0) for k in REACTIONS}, "total": total}
+        rows = c.execute(select(posts).where(and_(*listed)).order_by(*order).limit(limit + 1)).mappings().all()
+        counts = dict(c.execute(select(posts.c.side, func.count()).where(and_(*base)).group_by(posts.c.side)).all())
+        more = len(rows) > limit
+        rows = rows[:limit]
+        liked = _liked(c, [r["id"] for r in rows], me)
+    side_counts = {k: counts.get(k, 0) for k in SIDES}
+    return {
+        "items": [_public(r, me, liked) for r in rows],
+        "side_counts": side_counts,
+        "total": sum(side_counts.values()),
+        "next_before": rows[-1]["id"] if more and sort != "top" else None,
+    }
 
 
-@router.post("/api/occupations/{oid}/comments")
-async def add_comment(oid: str, request: Request):
-    if oid not in engines.OCCUPATION_IDS:
-        return _err(request, 404, "NOT_FOUND", "직군을 찾을 수 없어요.")
+@router.get("/api/posts/{pid}")
+def get_post(pid: int, request: Request):
+    with engine.connect() as c:
+        row = c.execute(select(posts).where(and_(posts.c.id == pid, posts.c.hidden.is_(False)))).mappings().first()
+        if not row:
+            return _err(request, 404, "NOT_FOUND", "글을 찾을 수 없어요.")
+        return _public(row, _who(request), _liked(c, [pid], _who(request)))
+
+
+@router.post("/api/posts")
+async def add_post(request: Request):
     try:
         body = await request.json()
     except ValueError:
@@ -181,11 +222,14 @@ async def add_comment(oid: str, request: Request):
     if not isinstance(body, dict):
         return _err(request, 400, "INVALID_JSON", "요청 형식이 올바르지 않아요.")
     errors: dict[str, str] = {}
-    reaction = body.get("reaction")
+    side = body.get("side")
     text = body.get("body")
     nick = body.get("nickname")
-    if reaction not in REACTIONS:
-        errors["reaction"] = "지금 기분을 골라주세요."
+    oid = body.get("occupation_id") or None
+    if side not in SIDES:
+        errors["side"] = "AI편인지 인간편인지 골라주세요."
+    if oid is not None and oid not in engines.OCCUPATION_IDS:
+        errors["occupation_id"] = "직군을 찾을 수 없어요."
     if not isinstance(text, str) or not BODY_MIN <= len(text.strip()) <= BODY_MAX:
         errors["body"] = f"{BODY_MIN}~{BODY_MAX}자로 적어주세요."
     else:
@@ -200,68 +244,71 @@ async def add_comment(oid: str, request: Request):
     if nick is not None and nick != "":
         if not isinstance(nick, str) or len(nick.strip()) > NICK_MAX:
             errors["nickname"] = f"별명은 {NICK_MAX}자까지예요."
-        elif any(b in nick.lower() for b in _BANNED):
+        elif any(b in nick.lower().replace(" ", "") for b in _BANNED):
             errors["nickname"] = "다른 별명을 써주세요."
     if errors:
         return _err(request, 422, "INVALID_INPUT", "입력을 확인해주세요.", errors)
     me = _who(request)
     with engine.begin() as c:
-        recent = c.execute(select(func.count()).select_from(comments).where(and_(comments.c.author_hash == me, comments.c.created_at >= _now() - RATE_WINDOW))).scalar_one()
+        recent = c.execute(select(func.count()).select_from(posts).where(and_(posts.c.author_hash == me, posts.c.created_at >= _now() - RATE_WINDOW))).scalar_one()
         if recent >= RATE_MAX:
             return _err(request, 429, "RATE_LIMITED", "잠시 후에 다시 남겨주세요. (10분에 3개까지)")
-        new_id = c.execute(insert(comments).values(occupation_id=oid, reaction=reaction, body=text, nickname=(nick or "").strip() or None, author_hash=me, likes=0, reports=0, hidden=False)).inserted_primary_key[0]
-        row = c.execute(select(comments).where(comments.c.id == new_id)).mappings().one()
+        new_id = c.execute(insert(posts).values(side=side, body=text, nickname=(nick or "").strip() or None, occupation_id=oid, author_hash=me, likes=0, reports=0, hidden=False)).inserted_primary_key[0]
+        row = c.execute(select(posts).where(posts.c.id == new_id)).mappings().one()
     return JSONResponse(_public(row, me, set()), status_code=201)
 
 
-def _vote(cid: int, request: Request, kind: str):
+def _vote(pid: int, request: Request, kind: str):
     me = _who(request)
     with engine.begin() as c:
-        row = c.execute(select(comments).where(comments.c.id == cid)).mappings().first()
+        row = c.execute(select(posts).where(posts.c.id == pid)).mappings().first()
         if not row or row["hidden"]:
-            return _err(request, 404, "NOT_FOUND", "한마디를 찾을 수 없어요.")
+            return _err(request, 404, "NOT_FOUND", "글을 찾을 수 없어요.")
         if kind == "like" and row["author_hash"] == me:
-            return _err(request, 409, "OWN_COMMENT", "내 한마디에는 공감할 수 없어요.")
-        mine = and_(comment_votes.c.comment_id == cid, comment_votes.c.voter_hash == me, comment_votes.c.kind == kind)
-        if c.execute(select(func.count()).select_from(comment_votes).where(mine)).scalar_one():
+            return _err(request, 409, "OWN_POST", "내 글에는 공감할 수 없어요.")
+        mine = and_(post_votes.c.post_id == pid, post_votes.c.voter_hash == me, post_votes.c.kind == kind)
+        if c.execute(select(func.count()).select_from(post_votes).where(mine)).scalar_one():
             if kind == "like":  # toggle off
-                c.execute(delete(comment_votes).where(mine))
-                c.execute(update(comments).where(comments.c.id == cid).values(likes=comments.c.likes - 1))
-                return {"id": cid, "likes": row["likes"] - 1, "liked": False}
-            return {"id": cid, "reported": True}
-        c.execute(insert(comment_votes).values(comment_id=cid, voter_hash=me, kind=kind))
+                c.execute(delete(post_votes).where(mine))
+                c.execute(update(posts).where(posts.c.id == pid).values(likes=posts.c.likes - 1))
+                return {"id": pid, "likes": row["likes"] - 1, "liked": False}
+            return {"id": pid, "reported": True}
+        c.execute(insert(post_votes).values(post_id=pid, voter_hash=me, kind=kind))
         if kind == "like":
-            c.execute(update(comments).where(comments.c.id == cid).values(likes=comments.c.likes + 1))
-            return {"id": cid, "likes": row["likes"] + 1, "liked": True}
-        c.execute(update(comments).where(comments.c.id == cid).values(reports=comments.c.reports + 1, hidden=comments.c.reports + 1 >= HIDE_AFTER_REPORTS))
-        return {"id": cid, "reported": True}
+            c.execute(update(posts).where(posts.c.id == pid).values(likes=posts.c.likes + 1))
+            return {"id": pid, "likes": row["likes"] + 1, "liked": True}
+        c.execute(update(posts).where(posts.c.id == pid).values(reports=posts.c.reports + 1, hidden=posts.c.reports + 1 >= HIDE_AFTER_REPORTS))
+        return {"id": pid, "reported": True}
 
 
-@router.post("/api/comments/{cid}/like")
-def like_comment(cid: int, request: Request):
-    return _vote(cid, request, "like")
+@router.post("/api/posts/{pid}/like")
+def like_post(pid: int, request: Request):
+    return _vote(pid, request, "like")
 
 
-@router.post("/api/comments/{cid}/report")
-def report_comment(cid: int, request: Request):
-    return _vote(cid, request, "report")
+@router.post("/api/posts/{pid}/report")
+def report_post(pid: int, request: Request):
+    return _vote(pid, request, "report")
 
 
-@router.delete("/api/comments/{cid}")
-def delete_own_comment(cid: int, request: Request):
+@router.delete("/api/posts/{pid}")
+def delete_own_post(pid: int, request: Request):
     me = _who(request)
     with engine.begin() as c:
-        res = c.execute(delete(comments).where(and_(comments.c.id == cid, comments.c.author_hash == me)))
+        res = c.execute(delete(posts).where(and_(posts.c.id == pid, posts.c.author_hash == me)))
+        if res.rowcount:
+            c.execute(delete(post_votes).where(post_votes.c.post_id == pid))
     if res.rowcount == 0:
-        return _err(request, 404, "NOT_FOUND", "지울 수 있는 한마디가 없어요.")
+        return _err(request, 404, "NOT_FOUND", "지울 수 있는 글이 없어요.")
     return Response(status_code=204)
 
 
-@router.delete("/api/admin/comments/{cid}")
-def admin_delete_comment(cid: int, request: Request):
+@router.delete("/api/admin/posts/{pid}")
+def admin_delete_post(pid: int, request: Request):
     token = os.environ.get("ADMIN_TOKEN", "")
     if not token or not secrets.compare_digest(request.headers.get("x-admin-token", ""), token):
         return _err(request, 403, "FORBIDDEN", "권한이 없어요.")
     with engine.begin() as c:
-        c.execute(delete(comments).where(comments.c.id == cid))
+        c.execute(delete(post_votes).where(post_votes.c.post_id == pid))
+        c.execute(delete(posts).where(posts.c.id == pid))
     return Response(status_code=204)

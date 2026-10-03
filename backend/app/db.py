@@ -1,4 +1,4 @@
-"""Storage for the two community features: share cards and per-occupation comments.
+"""Storage for the community features: share cards and the "AI vs 인간" board.
 
 Only what the user chose to publish is stored. Diagnosis inputs are never saved.
 DATABASE_URL (Railway PostgreSQL) in production; a local SQLite file otherwise.
@@ -10,7 +10,7 @@ import os
 import pathlib
 
 from sqlalchemy import (
-    JSON, Boolean, Column, DateTime, ForeignKey, Integer, MetaData, String, Table, Text,
+    JSON, Boolean, Column, DateTime, Integer, MetaData, String, Table, Text,
     UniqueConstraint, create_engine, func,
 )
 
@@ -43,13 +43,13 @@ shares = Table(
     Column("revoked", Boolean, nullable=False, default=False),
 )
 
-comments = Table(
-    "comments", metadata,
+posts = Table(
+    "posts", metadata,                                    # AI vs 인간 게시판
     Column("id", Integer, primary_key=True, autoincrement=True),
-    Column("occupation_id", String(8), nullable=False, index=True),
-    Column("reaction", String(16), nullable=False),
+    Column("side", String(8), nullable=False),            # ai | human
     Column("body", Text, nullable=False),
     Column("nickname", String(20)),
+    Column("occupation_id", String(8), index=True),       # 선택: 내 직업 태그
     Column("author_hash", String(64), nullable=False),
     Column("likes", Integer, nullable=False, default=0),
     Column("reports", Integer, nullable=False, default=0),
@@ -57,12 +57,12 @@ comments = Table(
     Column("created_at", DateTime(timezone=True), server_default=func.now(), nullable=False),
 )
 
-comment_votes = Table(
-    "comment_votes", metadata,
-    Column("comment_id", Integer, ForeignKey("comments.id", ondelete="CASCADE"), nullable=False),
+post_votes = Table(
+    "post_votes", metadata,
+    Column("post_id", Integer, nullable=False, index=True),
     Column("voter_hash", String(64), nullable=False),
     Column("kind", String(8), nullable=False),            # like | report
-    UniqueConstraint("comment_id", "voter_hash", "kind"),
+    UniqueConstraint("post_id", "voter_hash", "kind"),
 )
 
 engine = create_engine(_url(), pool_pre_ping=True, future=True)

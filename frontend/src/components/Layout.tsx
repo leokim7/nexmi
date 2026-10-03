@@ -7,7 +7,7 @@ const NAV = [
   { to: '/', label: '홈', icon: 'home', end: true },
   { to: '/worker', label: '직업 미래', icon: 'briefcase' },
   { to: '/explore', label: '진로 탐색', icon: 'compass' },
-  { to: '/practice', label: '실천', icon: 'flag' },
+  { to: '/community', label: 'AI vs 인간', icon: 'users' },
   { to: '/me', label: '내 기록', icon: 'user' },
 ]
 const ALSO_ACTIVE: Record<string, string[]> = { '/explore': ['/occupations', '/compare', '/activities'] }

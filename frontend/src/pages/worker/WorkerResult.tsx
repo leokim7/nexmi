@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CrossingTimeline, DisruptionChart } from '../../components/charts'
-import { Comments } from '../../components/Comments'
+import { SidePoll } from '../../components/Board'
 import { Icon } from '../../components/Icon'
 import { ShareButton } from '../../components/ShareCard'
 import { workerHeadline } from '../../lib/community'
@@ -126,7 +126,7 @@ export default function WorkerResult() {
           </div>
         </section>
 
-        {occ && <Comments occupationId={occ.occupation_id} occupationName={occ.name_ko} />}
+        {occ && <SidePoll occupationId={occ.occupation_id} occupationName={occ.name_ko} />}
       </div>
     </div>
   )

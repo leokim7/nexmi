@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { Icon } from '../../components/Icon'
 import { useTitle } from '../../components/Layout'
 import { Empty, Notice, PageHead } from '../../components/ui'
 import { useCatalog } from '../../lib/catalog'
@@ -74,10 +73,7 @@ export default function ExplorerPlan() {
         </section>
         <Notice>계획을 체크해도 점수가 오르지 않아요. 체험을 완료하고 즐거움·다시 해보고 싶음을 기록한 뒤 다시 계산할 때만 결과가 달라져요.</Notice>
         <div className="btn-row stretch">
-          <Link to="/practice?mode=explorer" className="btn primary">
-            <Icon name="flag" /> 이번 주 과제 보기
-          </Link>
-          <Link to="/explore/result" className="btn">탐색 결과로</Link>
+          <Link to="/explore/result" className="btn primary">탐색 결과로</Link>
         </div>
         <p className="small muted">{cat.explorer_model_version} · 계획 항목은 검토된 고정 목록에서 골랐어요.</p>
       </div>

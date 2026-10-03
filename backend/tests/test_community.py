@@ -1,4 +1,4 @@
-"""Share cards and per-occupation comments."""
+"""Share cards and the AI vs 인간 board."""
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -47,45 +47,66 @@ def test_explorer_share_has_only_top3_names():
     assert len(card["top"]) <= 3 and "interests" not in card
 
 
-def test_comment_flow_like_report_hide():
+def test_board_post_side_counts_like_report_hide():
     h = other("writer")
-    r = client.post("/api/occupations/O16/comments", json={"reaction": "preparing", "body": "SQL 자동화 공부 중이에요", "nickname": "분석가"}, headers=h)
+    r = client.post("/api/posts", json={"side": "human", "body": "마지막 사인은 사람이 해요", "nickname": "분석가", "occupation_id": "O16"}, headers=h)
     assert r.status_code == 201, r.text
-    cid = r.json()["id"]
-    assert r.json()["mine"] is True
-    # own comment cannot be liked; others can, toggle
-    assert client.post(f"/api/comments/{cid}/like", headers=h).status_code == 409
-    assert client.post(f"/api/comments/{cid}/like", headers=other("a")).json() == {"id": cid, "likes": 1, "liked": True}
-    assert client.post(f"/api/comments/{cid}/like", headers=other("a")).json()["liked"] is False
-    lst = client.get("/api/occupations/O16/comments", headers=other("b")).json()
-    assert lst["total"] >= 1 and lst["counts"]["preparing"] >= 1
+    p = r.json()
+    assert p["mine"] is True and p["occupation_name"] == "데이터분석가" and p["side"] == "human"
+    pid = p["id"]
+    client.post("/api/posts", json={"side": "ai", "body": "반복 업무는 AI에게"}, headers=other("w2"))
+    board = client.get("/api/posts", headers=other("b")).json()
+    assert board["side_counts"]["human"] >= 1 and board["side_counts"]["ai"] >= 1
+    # filters
+    assert all(i["side"] == "ai" for i in client.get("/api/posts?side=ai").json()["items"])
+    job = client.get("/api/posts?occupation_id=O16").json()
+    assert [i["id"] for i in job["items"]] == [pid] and job["side_counts"] == {"ai": 0, "human": 1}
+    assert all(i["occupation_id"] is None for i in client.get("/api/posts?tag=none").json()["items"])
+    assert pid in [i["id"] for i in client.get("/api/posts?q=사인").json()["items"]]
+    assert pid in [i["id"] for i in client.get("/api/posts?q=데이터분석").json()["items"]]
+    assert client.get(f"/api/posts/{pid}").json()["id"] == pid
+    # own post cannot be liked; others toggle
+    assert client.post(f"/api/posts/{pid}/like", headers=h).status_code == 409
+    assert client.post(f"/api/posts/{pid}/like", headers=other("a")).json() == {"id": pid, "likes": 1, "liked": True}
+    assert client.get("/api/posts?sort=top").json()["items"][0]["id"] == pid
+    assert client.post(f"/api/posts/{pid}/like", headers=other("a")).json()["liked"] is False
     # 3 distinct reports hide it; duplicate reports don't count twice
     for ua in ("r1", "r1", "r2", "r3"):
-        client.post(f"/api/comments/{cid}/report", headers=other(ua))
-    assert cid not in [c["id"] for c in client.get("/api/occupations/O16/comments").json()["items"]]
+        client.post(f"/api/posts/{pid}/report", headers=other(ua))
+    assert client.get(f"/api/posts/{pid}").status_code == 404
+    assert pid not in [i["id"] for i in client.get("/api/posts").json()["items"]]
 
 
-def test_comment_validation_and_rate_limit():
+def test_board_pagination():
+    for i in range(3):
+        client.post("/api/posts", json={"side": "ai", "body": f"페이지 {i}"}, headers=other(f"pg{i}"))
+    first = client.get("/api/posts?limit=2").json()
+    assert len(first["items"]) == 2 and first["next_before"]
+    second = client.get(f"/api/posts?limit=2&before={first['next_before']}").json()
+    assert all(i["id"] < first["next_before"] for i in second["items"])
+
+
+def test_board_validation_and_rate_limit():
     h = other("spammer")
     bad = [
-        {"reaction": "angry", "body": "hello"},
-        {"reaction": "fine", "body": "x"},
-        {"reaction": "fine", "body": "연락주세요 010-1234-5678"},
-        {"reaction": "fine", "body": "여기 보세요 https://spam.example"},
-        {"reaction": "fine", "body": "이 시발 직업"},
+        {"side": "robot", "body": "hello"},
+        {"side": "ai", "body": "x"},
+        {"side": "ai", "body": "연락주세요 010-1234-5678"},
+        {"side": "ai", "body": "여기 보세요 https://spam.example"},
+        {"side": "ai", "body": "이 시발 직업"},
+        {"side": "ai", "body": "직업 없음", "occupation_id": "O99"},
     ]
     for b in bad:
-        assert client.post("/api/occupations/O01/comments", json=b, headers=h).status_code == 422, b
-    assert client.post("/api/occupations/O99/comments", json={"reaction": "fine", "body": "괜찮아요"}).status_code == 404
-    codes = [client.post("/api/occupations/O01/comments", json={"reaction": "fine", "body": f"한마디 {i}"}, headers=h).status_code for i in range(4)]
+        assert client.post("/api/posts", json=b, headers=h).status_code == 422, b
+    codes = [client.post("/api/posts", json={"side": "human", "body": f"한마디 {i}"}, headers=h).status_code for i in range(4)]
     assert codes == [201, 201, 201, 429]
 
 
 def test_delete_own_and_admin():
     h = other("deleter")
-    cid = client.post("/api/occupations/O02/comments", json={"reaction": "unsure", "body": "잘 모르겠어요"}, headers=h).json()["id"]
-    assert client.delete(f"/api/comments/{cid}", headers=other("someone")).status_code == 404
-    assert client.delete(f"/api/comments/{cid}", headers=h).status_code == 204
-    cid2 = client.post("/api/occupations/O02/comments", json={"reaction": "unsure", "body": "두 번째"}, headers=h).json()["id"]
-    assert client.delete(f"/api/admin/comments/{cid2}").status_code == 403
-    assert client.delete(f"/api/admin/comments/{cid2}", headers={"x-admin-token": "test-admin"}).status_code == 204
+    pid = client.post("/api/posts", json={"side": "human", "body": "잘 모르겠어요"}, headers=h).json()["id"]
+    assert client.delete(f"/api/posts/{pid}", headers=other("someone")).status_code == 404
+    assert client.delete(f"/api/posts/{pid}", headers=h).status_code == 204
+    pid2 = client.post("/api/posts", json={"side": "human", "body": "두 번째"}, headers=h).json()["id"]
+    assert client.delete(f"/api/admin/posts/{pid2}").status_code == 403
+    assert client.delete(f"/api/admin/posts/{pid2}", headers={"x-admin-token": "test-admin"}).status_code == 204

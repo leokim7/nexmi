@@ -52,8 +52,8 @@ export default function WorkerPlan() {
         </ul>
         <Notice>체크한다고 점수가 바로 바뀌지는 않아요. 실제로 일하는 방식이 바뀌면 다시 분석해서 확인해보세요.</Notice>
         <div className="btn-row stretch">
-          <Link to="/practice?mode=worker" className="btn primary">
-            <Icon name="pen" /> 업무 적용 기록하기
+          <Link to={cur ? `/community?job=${cur.input_snapshot.occupation_id}` : '/community'} className="btn primary">
+            <Icon name="users" /> 같은 직업 사람들과 이야기하기
           </Link>
           <Link to="/worker/result" className="btn">
             결과로 돌아가기

@@ -18,7 +18,7 @@ import OccupationDetail from './pages/explorer/OccupationDetail'
 import Compare from './pages/explorer/Compare'
 import ActivityPage from './pages/explorer/ActivityPage'
 import ExplorerPlan from './pages/explorer/ExplorerPlan'
-import Practice from './pages/common/Practice'
+import Community from './pages/common/Community'
 import Me from './pages/common/Me'
 import History from './pages/common/History'
 import Report from './pages/common/Report'
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
       { path: '/occupations/:id', element: <OccupationDetail /> },
       { path: '/compare', element: <Compare /> },
       { path: '/activities/:id', element: <ActivityPage /> },
-      { path: '/practice', element: <Practice /> },
+      { path: '/community', element: <Community /> },
       { path: '/me', element: <Me /> },
       { path: '/me/history', element: <History /> },
       { path: '/report/:mode', element: <Report /> },

@@ -9,7 +9,7 @@ import { community } from '../../lib/community'
 import { dateText, stageLabel, yearText } from '../../lib/labels'
 import { useStore } from '../../lib/store'
 
-type Pending = null | 'device-on' | 'device-off' | 'worker' | 'explorer' | 'practice' | 'all' | 'corrupt'
+type Pending = null | 'device-on' | 'device-off' | 'worker' | 'explorer' | 'all' | 'corrupt'
 
 export default function Me() {
   useTitle('내 기록')
@@ -22,21 +22,20 @@ export default function Me() {
   const subs = Object.values(data.explorer.submissions)
   const completed = subs.filter((x) => x.completions.length > 0)
   const drafts = subs.filter((x) => x.status === 'draft')
-  const empty = !w && !e && data.shares.length === 0 && subs.length === 0 && data.practice.journal.length === 0
+  const empty = !w && !e && data.shares.length === 0 && subs.length === 0
 
   const confirmText: Record<Exclude<Pending, null>, { title: string; body: string; label: string; danger?: boolean; run: () => void }> = {
     'device-on': { title: '이 기기에 기록을 저장할까요?', body: '분석 결과·체험 초안·기록이 이 브라우저(localStorage)에 저장되고, 다음에 열면 자동으로 이어져요. 서버로 보내지 않아요. 여러 사람이 쓰는 기기라면 켜지 마세요.', label: '저장 켜기', run: s.enableDevice },
     'device-off': { title: '기기 저장을 끄고 저장본을 지울까요?', body: '이 기기에 저장된 기록이 삭제돼요. 현재 탭의 내용은 탭을 닫기 전까지 남아 있어요.', label: '끄고 삭제', danger: true, run: s.disableDevice },
     worker: { title: '재직자 기록을 초기화할까요?', body: '분석 결과·이력·대응 시뮬레이션·계획이 지워져요. 진로 탐색 기록은 그대로예요.', label: '초기화', danger: true, run: () => s.resetMode('worker') },
     explorer: { title: '진로 탐색 기록을 초기화할까요?', body: '응답·결과·이력·체험 초안과 성찰·비교 목록이 지워져요. 재직자 기록은 그대로예요.', label: '초기화', danger: true, run: () => s.resetMode('explorer') },
-    practice: { title: '실천 기록을 초기화할까요?', body: '일지·목표·과제 완료 표시가 지워져요.', label: '초기화', danger: true, run: () => s.resetMode('practice') },
     all: { title: '모든 기록을 지울까요?', body: '현재 탭과(저장을 켰다면) 이 기기의 모든 기록이 지워져요. 되돌릴 수 없어요.', label: '모두 삭제', danger: true, run: s.resetAll },
     corrupt: { title: '손상된 저장본을 지울까요?', body: '읽을 수 없는 저장본을 삭제하고 기기 저장을 꺼요.', label: '삭제', danger: true, run: s.disableDevice },
   }
 
   return (
     <div className="wrap page">
-      <PageHead eyebrow="MY RECORDS" title="내 기록" lead="두 모드의 결과와 체험·실천 기록을 모아봐요. 두 모드의 점수를 합치지 않아요." />
+      <PageHead eyebrow="MY RECORDS" title="내 기록" lead="두 모드의 결과와 체험 기록, 공유 링크를 모아봐요. 두 모드의 점수를 합치지 않아요." />
       <div className="stack lg">
         <DeviceCard onAsk={setPending} />
 
@@ -106,16 +105,6 @@ export default function Me() {
           </div>
         )}
 
-        <section className="card" aria-labelledby="pr-h">
-          <div className="row between">
-            <h2 id="pr-h" className="h3">실천 기록</h2>
-            <Link to="/practice" className="link small">실천으로</Link>
-          </div>
-          <p className="small muted">
-            일지 {data.practice.journal.length}개 · 목표 {data.practice.goals.length}개 (완료 {data.practice.goals.filter((g) => g.completed).length}) · 과제 완료 {data.practice.missionsDone.length}개
-          </p>
-        </section>
-
         {data.shares.length > 0 && <MyShares />}
 
         <section className="card paper" aria-labelledby="dm-h">
@@ -124,10 +113,9 @@ export default function Me() {
           <div className="btn-row">
             <button className="btn sm danger" onClick={() => setPending('worker')}>재직자 기록 초기화</button>
             <button className="btn sm danger" onClick={() => setPending('explorer')}>진로 탐색 기록 초기화</button>
-            <button className="btn sm danger" onClick={() => setPending('practice')}>실천 기록 초기화</button>
             <button className="btn sm dark" onClick={() => setPending('all')}><Icon name="trash" /> 모두 삭제</button>
           </div>
-          <p className="small muted">공유 링크·계정 저장은 아직 제공하지 않아요. 제공되면 공유 철회와 계정 기록 삭제도 여기에서 함께 관리해요.</p>
+          <p className="small muted">계정 저장은 아직 제공하지 않아요. 공유 링크는 위 ‘내가 만든 공유 링크’에서, AI vs 인간 글은 글마다 ‘삭제’로 지울 수 있어요.</p>
         </section>
       </div>
       {pending && (

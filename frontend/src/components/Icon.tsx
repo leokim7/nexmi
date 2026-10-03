@@ -28,6 +28,7 @@ const P: Record<string, string> = {
   scale: 'M12 4v16M5 8h14M5 8l-3 6a3 3 0 0 0 6 0L5 8ZM19 8l-3 6a3 3 0 0 0 6 0l-3-6ZM8 20h8',
   bell: 'M6 16V11a6 6 0 0 1 12 0v5l2 2H4l2-2ZM10 21h4',
   device: 'M7 3h10v18H7zM11 18h2',
+  users: 'M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM2 21v-1a6 6 0 0 1 12 0v1M16 3.5a4 4 0 0 1 0 7M18 14a5 5 0 0 1 4 5v2',
 }
 
 export function Icon({ name, size, label }: { name: keyof typeof P | string; size?: number; label?: string }) {

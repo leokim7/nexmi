@@ -40,8 +40,8 @@ export default function Shared() {
             나도 해보기 <Icon name="arrow" />
           </Link>
           {isWorker && (
-            <Link to={`/occupations/${share.payload.occupation_id}?tab=talk`} className="btn lg">
-              {share.payload.occupation_name}들의 한마디
+            <Link to={`/community?job=${share.payload.occupation_id}`} className="btn lg">
+              {share.payload.occupation_name}들은 어느 편?
             </Link>
           )}
         </div>

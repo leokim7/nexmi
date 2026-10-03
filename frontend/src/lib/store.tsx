@@ -37,27 +37,9 @@ export interface Submission {
   updated_at: string
   completions: { at: string; enjoyment: number; repeat_interest: number }[]
 }
-export interface JournalEntry {
-  id: string
-  mode: Mode
-  created_at: string
-  title: string
-  occupation_id?: string
-  task_id?: string
-  activity_id?: string
-  minutes?: number
-  verification_minutes?: number
-  result_notes: string
-  reflection: string
-  next_action: string
-  mission_id?: string
-}
-export interface Goal { id: string; mode: Mode; title: string; check_at?: string; next_action: string; completed: boolean; created_at: string }
-
 export interface AppData {
   worker: { draft: WorkerDraft; current?: WorkerDiagnosis; history: WorkerDiagnosis[]; whatif?: { draft: WorkerDraft; result?: WorkerDiagnosis }; planDone: Record<string, boolean> }
   explorer: { draft: ExplorerDraft; current?: ExplorerDiagnosis; history: ExplorerDiagnosis[]; compare: string[]; submissions: Record<string, Submission>; planDone: Record<string, boolean> }
-  practice: { journal: JournalEntry[]; goals: Goal[]; missionsDone: string[] }
   /** 내가 만든 공유 링크 (삭제 키 포함 — 이 기기에서만 지울 수 있음) */
   shares: MyShare[]
 }
@@ -68,7 +50,6 @@ export const emptyExplorerDraft = (): ExplorerDraft => ({ interests: {}, skills:
 const empty = (): AppData => ({
   worker: { draft: emptyWorkerDraft(), history: [], planDone: {} },
   explorer: { draft: emptyExplorerDraft(), history: [], compare: [], submissions: {}, planDone: {} },
-  practice: { journal: [], goals: [], missionsDone: [] },
   shares: [],
 })
 
@@ -116,12 +97,11 @@ function readDevice(): { status: DeviceStatus; data?: AppData; savedAt?: string 
   if (!raw) return { status: 'on' }
   try {
     const parsed = JSON.parse(raw)
-    if (parsed?.schema !== SCHEMA || !parsed.data?.worker || !parsed.data?.explorer || !parsed.data?.practice) throw new Error('schema')
+    if (parsed?.schema !== SCHEMA || !parsed.data?.worker || !parsed.data?.explorer) throw new Error('schema')
     const base = empty()
     const data: AppData = {
       worker: { ...base.worker, ...parsed.data.worker },
       explorer: { ...base.explorer, ...parsed.data.explorer },
-      practice: { ...base.practice, ...parsed.data.practice },
       shares: Array.isArray(parsed.data.shares) ? parsed.data.shares : [],
     }
     return { status: 'on', data, savedAt: parsed.saved_at }
@@ -137,7 +117,7 @@ interface Store {
   device: { status: DeviceStatus; savedAt?: string; error?: string }
   enableDevice: () => void
   disableDevice: () => void
-  resetMode: (mode: Mode | 'practice' | 'shares') => void
+  resetMode: (mode: Mode | 'shares') => void
   resetAll: () => void
   /** 작성 중인 체험 초안이 있으면 이탈 경고를 띄운다 */
   dirtyActivity: string | null
@@ -186,7 +166,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setDevice({ status: storageAvailable() ? 'off' : 'unavailable' })
   }, [])
 
-  const resetMode = useCallback((mode: Mode | 'practice' | 'shares') => {
+  const resetMode = useCallback((mode: Mode | 'shares') => {
     const e = empty()
     setData((d) => ({ ...d, [mode]: e[mode] }))
   }, [])
