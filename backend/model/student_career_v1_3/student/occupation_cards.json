@@ -1,0 +1,2261 @@
+[
+  {
+    "occupation_id": "O01",
+    "name_ko": "CEO/경영자",
+    "family": "strategy",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O01_T01",
+      "O01_T02",
+      "O01_T03",
+      "O01_T04",
+      "O01_T05",
+      "O01_T06",
+      "O01_T07",
+      "O01_T08",
+      "O01_T09",
+      "O01_T10",
+      "O01_T11",
+      "O01_T12",
+      "O01_T13",
+      "O01_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "경제학",
+      "산업공학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "학교나 동아리의 문제를 정의하고 개선안을 제안하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O02",
+    "name_ko": "경영·사업기획",
+    "family": "strategy",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O02_T01",
+      "O02_T02",
+      "O02_T03",
+      "O02_T04",
+      "O02_T05",
+      "O02_T06",
+      "O02_T07",
+      "O02_T08",
+      "O02_T09",
+      "O02_T10",
+      "O02_T11",
+      "O02_T12",
+      "O02_T13",
+      "O02_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "경제학",
+      "산업공학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "학교나 동아리의 문제를 정의하고 개선안을 제안하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O03",
+    "name_ko": "PM/PO·서비스기획",
+    "family": "strategy",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O03_T01",
+      "O03_T02",
+      "O03_T03",
+      "O03_T04",
+      "O03_T05",
+      "O03_T06",
+      "O03_T07",
+      "O03_T08",
+      "O03_T09",
+      "O03_T10",
+      "O03_T11",
+      "O03_T12",
+      "O03_T13",
+      "O03_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "경제학",
+      "산업공학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "학교나 동아리의 문제를 정의하고 개선안을 제안하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O04",
+    "name_ko": "경영컨설턴트",
+    "family": "strategy",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O04_T01",
+      "O04_T02",
+      "O04_T03",
+      "O04_T04",
+      "O04_T05",
+      "O04_T06",
+      "O04_T07",
+      "O04_T08",
+      "O04_T09",
+      "O04_T10",
+      "O04_T11",
+      "O04_T12",
+      "O04_T13",
+      "O04_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "경제학",
+      "산업공학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "학교나 동아리의 문제를 정의하고 개선안을 제안하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O05",
+    "name_ko": "일반사무",
+    "family": "routine",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O05_T01",
+      "O05_T02",
+      "O05_T03",
+      "O05_T04",
+      "O05_T05",
+      "O05_T06",
+      "O05_T07",
+      "O05_T08",
+      "O05_T09",
+      "O05_T10",
+      "O05_T11",
+      "O05_T12",
+      "O05_T13",
+      "O05_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "회계학",
+      "행정학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 행사 예산과 일정표를 만들고 오류 검토하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O06",
+    "name_ko": "행정·비서",
+    "family": "routine",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O06_T01",
+      "O06_T02",
+      "O06_T03",
+      "O06_T04",
+      "O06_T05",
+      "O06_T06",
+      "O06_T07",
+      "O06_T08",
+      "O06_T09",
+      "O06_T10",
+      "O06_T11",
+      "O06_T12",
+      "O06_T13",
+      "O06_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "회계학",
+      "행정학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 행사 예산과 일정표를 만들고 오류 검토하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O07",
+    "name_ko": "HR/채용",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O07_T01",
+      "O07_T02",
+      "O07_T03",
+      "O07_T04",
+      "O07_T05",
+      "O07_T06",
+      "O07_T07",
+      "O07_T08",
+      "O07_T09",
+      "O07_T10",
+      "O07_T11",
+      "O07_T12",
+      "O07_T13",
+      "O07_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "교육학",
+      "심리학",
+      "경영학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O08",
+    "name_ko": "구매·조달",
+    "family": "routine",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O08_T01",
+      "O08_T02",
+      "O08_T03",
+      "O08_T04",
+      "O08_T05",
+      "O08_T06",
+      "O08_T07",
+      "O08_T08",
+      "O08_T09",
+      "O08_T10",
+      "O08_T11",
+      "O08_T12",
+      "O08_T13",
+      "O08_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "회계학",
+      "행정학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 행사 예산과 일정표를 만들고 오류 검토하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O09",
+    "name_ko": "회계·경리",
+    "family": "routine",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O09_T01",
+      "O09_T02",
+      "O09_T03",
+      "O09_T04",
+      "O09_T05",
+      "O09_T06",
+      "O09_T07",
+      "O09_T08",
+      "O09_T09",
+      "O09_T10",
+      "O09_T11",
+      "O09_T12",
+      "O09_T13",
+      "O09_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "회계학",
+      "행정학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 행사 예산과 일정표를 만들고 오류 검토하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O10",
+    "name_ko": "회계사",
+    "family": "regulated",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O10_T01",
+      "O10_T02",
+      "O10_T03",
+      "O10_T04",
+      "O10_T05",
+      "O10_T06",
+      "O10_T07",
+      "O10_T08",
+      "O10_T09",
+      "O10_T10",
+      "O10_T11",
+      "O10_T12",
+      "O10_T13",
+      "O10_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "법학 관련 학습",
+      "회계·세무",
+      "금융 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 사례에서 확인할 사실과 모르는 점을 구분하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O11",
+    "name_ko": "세무사",
+    "family": "regulated",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O11_T01",
+      "O11_T02",
+      "O11_T03",
+      "O11_T04",
+      "O11_T05",
+      "O11_T06",
+      "O11_T07",
+      "O11_T08",
+      "O11_T09",
+      "O11_T10",
+      "O11_T11",
+      "O11_T12",
+      "O11_T13",
+      "O11_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "법학 관련 학습",
+      "회계·세무",
+      "금융 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 사례에서 확인할 사실과 모르는 점을 구분하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O12",
+    "name_ko": "재무·금융분석가",
+    "family": "analytic",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O12_T01",
+      "O12_T02",
+      "O12_T03",
+      "O12_T04",
+      "O12_T05",
+      "O12_T06",
+      "O12_T07",
+      "O12_T08",
+      "O12_T09",
+      "O12_T10",
+      "O12_T11",
+      "O12_T12",
+      "O12_T13",
+      "O12_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "과학"
+    ],
+    "exploratory_paths": [
+      "통계학",
+      "컴퓨터공학",
+      "관련 자연·공학 분야"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "공개된 소규모 자료를 분석하고 가정과 한계 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O13",
+    "name_ko": "은행원",
+    "family": "regulated",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O13_T01",
+      "O13_T02",
+      "O13_T03",
+      "O13_T04",
+      "O13_T05",
+      "O13_T06",
+      "O13_T07",
+      "O13_T08",
+      "O13_T09",
+      "O13_T10",
+      "O13_T11",
+      "O13_T12",
+      "O13_T13",
+      "O13_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "경영학",
+      "경제학",
+      "금융 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 사례에서 확인할 사실과 모르는 점을 구분하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O14",
+    "name_ko": "보험심사·사무",
+    "family": "regulated",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O14_T01",
+      "O14_T02",
+      "O14_T03",
+      "O14_T04",
+      "O14_T05",
+      "O14_T06",
+      "O14_T07",
+      "O14_T08",
+      "O14_T09",
+      "O14_T10",
+      "O14_T11",
+      "O14_T12",
+      "O14_T13",
+      "O14_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "보험·금융",
+      "경영학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 사례에서 확인할 사실과 모르는 점을 구분하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O15",
+    "name_ko": "SW개발자",
+    "family": "agent",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O15_T01",
+      "O15_T02",
+      "O15_T03",
+      "O15_T04",
+      "O15_T05",
+      "O15_T06",
+      "O15_T07",
+      "O15_T08",
+      "O15_T09",
+      "O15_T10",
+      "O15_T11",
+      "O15_T12",
+      "O15_T13",
+      "O15_T14"
+    ],
+    "illustrative_subjects": [
+      "정보",
+      "수학",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "컴퓨터공학",
+      "소프트웨어학",
+      "정보보호학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "간단한 프로그램을 만들고 테스트 결과 기록하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O16",
+    "name_ko": "데이터분석가",
+    "family": "analytic",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O16_T01",
+      "O16_T02",
+      "O16_T03",
+      "O16_T04",
+      "O16_T05",
+      "O16_T06",
+      "O16_T07",
+      "O16_T08",
+      "O16_T09",
+      "O16_T10",
+      "O16_T11",
+      "O16_T12",
+      "O16_T13",
+      "O16_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "과학"
+    ],
+    "exploratory_paths": [
+      "통계학",
+      "컴퓨터공학",
+      "관련 자연·공학 분야"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "공개된 소규모 자료를 분석하고 가정과 한계 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O17",
+    "name_ko": "데이터사이언티스트",
+    "family": "analytic",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O17_T01",
+      "O17_T02",
+      "O17_T03",
+      "O17_T04",
+      "O17_T05",
+      "O17_T06",
+      "O17_T07",
+      "O17_T08",
+      "O17_T09",
+      "O17_T10",
+      "O17_T11",
+      "O17_T12",
+      "O17_T13",
+      "O17_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "과학"
+    ],
+    "exploratory_paths": [
+      "통계학",
+      "컴퓨터공학",
+      "관련 자연·공학 분야"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "공개된 소규모 자료를 분석하고 가정과 한계 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O18",
+    "name_ko": "AI엔지니어",
+    "family": "agent",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O18_T01",
+      "O18_T02",
+      "O18_T03",
+      "O18_T04",
+      "O18_T05",
+      "O18_T06",
+      "O18_T07",
+      "O18_T08",
+      "O18_T09",
+      "O18_T10",
+      "O18_T11",
+      "O18_T12",
+      "O18_T13",
+      "O18_T14"
+    ],
+    "illustrative_subjects": [
+      "정보",
+      "수학",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "컴퓨터공학",
+      "소프트웨어학",
+      "정보보호학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "간단한 프로그램을 만들고 테스트 결과 기록하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O19",
+    "name_ko": "DevOps/Cloud",
+    "family": "agent",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O19_T01",
+      "O19_T02",
+      "O19_T03",
+      "O19_T04",
+      "O19_T05",
+      "O19_T06",
+      "O19_T07",
+      "O19_T08",
+      "O19_T09",
+      "O19_T10",
+      "O19_T11",
+      "O19_T12",
+      "O19_T13",
+      "O19_T14"
+    ],
+    "illustrative_subjects": [
+      "정보",
+      "수학",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "컴퓨터공학",
+      "소프트웨어학",
+      "정보보호학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "간단한 프로그램을 만들고 테스트 결과 기록하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O20",
+    "name_ko": "정보보안",
+    "family": "agent",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O20_T01",
+      "O20_T02",
+      "O20_T03",
+      "O20_T04",
+      "O20_T05",
+      "O20_T06",
+      "O20_T07",
+      "O20_T08",
+      "O20_T09",
+      "O20_T10",
+      "O20_T11",
+      "O20_T12",
+      "O20_T13",
+      "O20_T14"
+    ],
+    "illustrative_subjects": [
+      "정보",
+      "수학",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "컴퓨터공학",
+      "소프트웨어학",
+      "정보보호학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "간단한 프로그램을 만들고 테스트 결과 기록하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O21",
+    "name_ko": "UX/UI디자이너",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O21_T01",
+      "O21_T02",
+      "O21_T03",
+      "O21_T04",
+      "O21_T05",
+      "O21_T06",
+      "O21_T07",
+      "O21_T08",
+      "O21_T09",
+      "O21_T10",
+      "O21_T11",
+      "O21_T12",
+      "O21_T13",
+      "O21_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "디자인",
+      "미디어·콘텐츠",
+      "광고·홍보"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O22",
+    "name_ko": "그래픽디자이너",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O22_T01",
+      "O22_T02",
+      "O22_T03",
+      "O22_T04",
+      "O22_T05",
+      "O22_T06",
+      "O22_T07",
+      "O22_T08",
+      "O22_T09",
+      "O22_T10",
+      "O22_T11",
+      "O22_T12",
+      "O22_T13",
+      "O22_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "디자인",
+      "미디어·콘텐츠",
+      "광고·홍보"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O23",
+    "name_ko": "영상제작·편집",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O23_T01",
+      "O23_T02",
+      "O23_T03",
+      "O23_T04",
+      "O23_T05",
+      "O23_T06",
+      "O23_T07",
+      "O23_T08",
+      "O23_T09",
+      "O23_T10",
+      "O23_T11",
+      "O23_T12",
+      "O23_T13",
+      "O23_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "영상·미디어",
+      "디자인"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O24",
+    "name_ko": "작가·카피라이터",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O24_T01",
+      "O24_T02",
+      "O24_T03",
+      "O24_T04",
+      "O24_T05",
+      "O24_T06",
+      "O24_T07",
+      "O24_T08",
+      "O24_T09",
+      "O24_T10",
+      "O24_T11",
+      "O24_T12",
+      "O24_T13",
+      "O24_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "국어국문",
+      "문예창작",
+      "광고·홍보"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O25",
+    "name_ko": "기자",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O25_T01",
+      "O25_T02",
+      "O25_T03",
+      "O25_T04",
+      "O25_T05",
+      "O25_T06",
+      "O25_T07",
+      "O25_T08",
+      "O25_T09",
+      "O25_T10",
+      "O25_T11",
+      "O25_T12",
+      "O25_T13",
+      "O25_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "언론·미디어",
+      "관심 취재 분야 전공"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O26",
+    "name_ko": "마케터",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O26_T01",
+      "O26_T02",
+      "O26_T03",
+      "O26_T04",
+      "O26_T05",
+      "O26_T06",
+      "O26_T07",
+      "O26_T08",
+      "O26_T09",
+      "O26_T10",
+      "O26_T11",
+      "O26_T12",
+      "O26_T13",
+      "O26_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "디자인",
+      "미디어·콘텐츠",
+      "광고·홍보"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O27",
+    "name_ko": "광고기획/AE",
+    "family": "creative",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 1,
+      "build": 0,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O27_T01",
+      "O27_T02",
+      "O27_T03",
+      "O27_T04",
+      "O27_T05",
+      "O27_T06",
+      "O27_T07",
+      "O27_T08",
+      "O27_T09",
+      "O27_T10",
+      "O27_T11",
+      "O27_T12",
+      "O27_T13",
+      "O27_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "미술",
+      "정보"
+    ],
+    "exploratory_paths": [
+      "디자인",
+      "미디어·콘텐츠",
+      "광고·홍보"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "같은 메시지를 두 가지 결과물로 만들고 사용자 피드백 비교하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O28",
+    "name_ko": "B2B영업",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O28_T01",
+      "O28_T02",
+      "O28_T03",
+      "O28_T04",
+      "O28_T05",
+      "O28_T06",
+      "O28_T07",
+      "O28_T08",
+      "O28_T09",
+      "O28_T10",
+      "O28_T11",
+      "O28_T12",
+      "O28_T13",
+      "O28_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "교육학",
+      "심리학",
+      "경영학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O29",
+    "name_ko": "판매직",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O29_T01",
+      "O29_T02",
+      "O29_T03",
+      "O29_T04",
+      "O29_T05",
+      "O29_T06",
+      "O29_T07",
+      "O29_T08",
+      "O29_T09",
+      "O29_T10",
+      "O29_T11",
+      "O29_T12",
+      "O29_T13",
+      "O29_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "교육학",
+      "심리학",
+      "경영학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O30",
+    "name_ko": "고객상담/CS",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O30_T01",
+      "O30_T02",
+      "O30_T03",
+      "O30_T04",
+      "O30_T05",
+      "O30_T06",
+      "O30_T07",
+      "O30_T08",
+      "O30_T09",
+      "O30_T10",
+      "O30_T11",
+      "O30_T12",
+      "O30_T13",
+      "O30_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "경영·서비스 관련 학습",
+      "다양한 전공 가능"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O31",
+    "name_ko": "변호사",
+    "family": "regulated",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O31_T01",
+      "O31_T02",
+      "O31_T03",
+      "O31_T04",
+      "O31_T05",
+      "O31_T06",
+      "O31_T07",
+      "O31_T08",
+      "O31_T09",
+      "O31_T10",
+      "O31_T11",
+      "O31_T12",
+      "O31_T13",
+      "O31_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "법률 분야 진입 경로 확인"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 사례에서 확인할 사실과 모르는 점을 구분하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O32",
+    "name_ko": "법무·법률사무",
+    "family": "regulated",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 0,
+      "persuade": 1,
+      "organize": 1,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O32_T01",
+      "O32_T02",
+      "O32_T03",
+      "O32_T04",
+      "O32_T05",
+      "O32_T06",
+      "O32_T07",
+      "O32_T08",
+      "O32_T09",
+      "O32_T10",
+      "O32_T11",
+      "O32_T12",
+      "O32_T13",
+      "O32_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "법학·행정 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 사례에서 확인할 사실과 모르는 점을 구분하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O33",
+    "name_ko": "교사",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O33_T01",
+      "O33_T02",
+      "O33_T03",
+      "O33_T04",
+      "O33_T05",
+      "O33_T06",
+      "O33_T07",
+      "O33_T08",
+      "O33_T09",
+      "O33_T10",
+      "O33_T11",
+      "O33_T12",
+      "O33_T13",
+      "O33_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "희망 교과 관련 전공과 교원 양성 경로 확인"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O34",
+    "name_ko": "교수·연구자",
+    "family": "analytic",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O34_T01",
+      "O34_T02",
+      "O34_T03",
+      "O34_T04",
+      "O34_T05",
+      "O34_T06",
+      "O34_T07",
+      "O34_T08",
+      "O34_T09",
+      "O34_T10",
+      "O34_T11",
+      "O34_T12",
+      "O34_T13",
+      "O34_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "과학"
+    ],
+    "exploratory_paths": [
+      "해당 학문 분야 전공"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "공개된 소규모 자료를 분석하고 가정과 한계 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O35",
+    "name_ko": "학원강사",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O35_T01",
+      "O35_T02",
+      "O35_T03",
+      "O35_T04",
+      "O35_T05",
+      "O35_T06",
+      "O35_T07",
+      "O35_T08",
+      "O35_T09",
+      "O35_T10",
+      "O35_T11",
+      "O35_T12",
+      "O35_T13",
+      "O35_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "희망 교과 관련 전공"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O36",
+    "name_ko": "의사",
+    "family": "clinical",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O36_T01",
+      "O36_T02",
+      "O36_T03",
+      "O36_T04",
+      "O36_T05",
+      "O36_T06",
+      "O36_T07",
+      "O36_T08",
+      "O36_T09",
+      "O36_T10",
+      "O36_T11",
+      "O36_T12",
+      "O36_T13",
+      "O36_T14"
+    ],
+    "illustrative_subjects": [
+      "생명과학",
+      "화학",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "의학 관련 정규 진입 경로 확인"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 환자 안내문을 읽기 쉽게 고치고 전문가 확인사항 정리하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O37",
+    "name_ko": "간호사",
+    "family": "clinical",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O37_T01",
+      "O37_T02",
+      "O37_T03",
+      "O37_T04",
+      "O37_T05",
+      "O37_T06",
+      "O37_T07",
+      "O37_T08",
+      "O37_T09",
+      "O37_T10",
+      "O37_T11",
+      "O37_T12",
+      "O37_T13",
+      "O37_T14"
+    ],
+    "illustrative_subjects": [
+      "생명과학",
+      "화학",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "간호학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 환자 안내문을 읽기 쉽게 고치고 전문가 확인사항 정리하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O38",
+    "name_ko": "약사",
+    "family": "clinical",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O38_T01",
+      "O38_T02",
+      "O38_T03",
+      "O38_T04",
+      "O38_T05",
+      "O38_T06",
+      "O38_T07",
+      "O38_T08",
+      "O38_T09",
+      "O38_T10",
+      "O38_T11",
+      "O38_T12",
+      "O38_T13",
+      "O38_T14"
+    ],
+    "illustrative_subjects": [
+      "생명과학",
+      "화학",
+      "국어"
+    ],
+    "exploratory_paths": [
+      "약학 관련 정규 진입 경로 확인"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상의 환자 안내문을 읽기 쉽게 고치고 전문가 확인사항 정리하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O39",
+    "name_ko": "심리·상담",
+    "family": "social",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 0,
+      "help": 1,
+      "persuade": 1,
+      "organize": 0,
+      "lead": 1,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O39_T01",
+      "O39_T02",
+      "O39_T03",
+      "O39_T04",
+      "O39_T05",
+      "O39_T06",
+      "O39_T07",
+      "O39_T08",
+      "O39_T09",
+      "O39_T10",
+      "O39_T11",
+      "O39_T12",
+      "O39_T13",
+      "O39_T14"
+    ],
+    "illustrative_subjects": [
+      "국어",
+      "사회",
+      "영어"
+    ],
+    "exploratory_paths": [
+      "심리학",
+      "상담 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "가상 상대의 요구를 듣고 이해한 내용을 확인하는 역할극",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O40",
+    "name_ko": "돌봄",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O40_T01",
+      "O40_T02",
+      "O40_T03",
+      "O40_T04",
+      "O40_T05",
+      "O40_T06",
+      "O40_T07",
+      "O40_T08",
+      "O40_T09",
+      "O40_T10",
+      "O40_T11",
+      "O40_T12",
+      "O40_T13",
+      "O40_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "돌봄 관련 직업교육"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O41",
+    "name_ko": "자연·공학연구원",
+    "family": "analytic",
+    "interest_tags": {
+      "investigate": 1,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 0,
+      "lead": 0,
+      "field": 0
+    },
+    "related_task_ids": [
+      "O41_T01",
+      "O41_T02",
+      "O41_T03",
+      "O41_T04",
+      "O41_T05",
+      "O41_T06",
+      "O41_T07",
+      "O41_T08",
+      "O41_T09",
+      "O41_T10",
+      "O41_T11",
+      "O41_T12",
+      "O41_T13",
+      "O41_T14"
+    ],
+    "illustrative_subjects": [
+      "수학",
+      "정보",
+      "과학"
+    ],
+    "exploratory_paths": [
+      "연구 대상 자연과학·공학 전공"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "공개된 소규모 자료를 분석하고 가정과 한계 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O42",
+    "name_ko": "기계·전기 엔지니어",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O42_T01",
+      "O42_T02",
+      "O42_T03",
+      "O42_T04",
+      "O42_T05",
+      "O42_T06",
+      "O42_T07",
+      "O42_T08",
+      "O42_T09",
+      "O42_T10",
+      "O42_T11",
+      "O42_T12",
+      "O42_T13",
+      "O42_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "기계공학",
+      "전기·전자공학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O43",
+    "name_ko": "건설기술자",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O43_T01",
+      "O43_T02",
+      "O43_T03",
+      "O43_T04",
+      "O43_T05",
+      "O43_T06",
+      "O43_T07",
+      "O43_T08",
+      "O43_T09",
+      "O43_T10",
+      "O43_T11",
+      "O43_T12",
+      "O43_T13",
+      "O43_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "토목·건축 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O44",
+    "name_ko": "전기·설비기사",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O44_T01",
+      "O44_T02",
+      "O44_T03",
+      "O44_T04",
+      "O44_T05",
+      "O44_T06",
+      "O44_T07",
+      "O44_T08",
+      "O44_T09",
+      "O44_T10",
+      "O44_T11",
+      "O44_T12",
+      "O44_T13",
+      "O44_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "전기·설비 관련 직업교육·공학"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O45",
+    "name_ko": "생산기술·품질",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O45_T01",
+      "O45_T02",
+      "O45_T03",
+      "O45_T04",
+      "O45_T05",
+      "O45_T06",
+      "O45_T07",
+      "O45_T08",
+      "O45_T09",
+      "O45_T10",
+      "O45_T11",
+      "O45_T12",
+      "O45_T13",
+      "O45_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "산업공학",
+      "생산·품질 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O46",
+    "name_ko": "제조·조립",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O46_T01",
+      "O46_T02",
+      "O46_T03",
+      "O46_T04",
+      "O46_T05",
+      "O46_T06",
+      "O46_T07",
+      "O46_T08",
+      "O46_T09",
+      "O46_T10",
+      "O46_T11",
+      "O46_T12",
+      "O46_T13",
+      "O46_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "제조 관련 직업교육"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O47",
+    "name_ko": "운전·배송",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O47_T01",
+      "O47_T02",
+      "O47_T03",
+      "O47_T04",
+      "O47_T05",
+      "O47_T06",
+      "O47_T07",
+      "O47_T08",
+      "O47_T09",
+      "O47_T10",
+      "O47_T11",
+      "O47_T12",
+      "O47_T13",
+      "O47_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "운송·물류 관련 학습"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O48",
+    "name_ko": "요리사",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O48_T01",
+      "O48_T02",
+      "O48_T03",
+      "O48_T04",
+      "O48_T05",
+      "O48_T06",
+      "O48_T07",
+      "O48_T08",
+      "O48_T09",
+      "O48_T10",
+      "O48_T11",
+      "O48_T12",
+      "O48_T13",
+      "O48_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "조리 관련 학습·직업교육"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O49",
+    "name_ko": "미용사",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O49_T01",
+      "O49_T02",
+      "O49_T03",
+      "O49_T04",
+      "O49_T05",
+      "O49_T06",
+      "O49_T07",
+      "O49_T08",
+      "O49_T09",
+      "O49_T10",
+      "O49_T11",
+      "O49_T12",
+      "O49_T13",
+      "O49_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "미용 관련 학습·직업교육"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  },
+  {
+    "occupation_id": "O50",
+    "name_ko": "농업종사자",
+    "family": "physical",
+    "interest_tags": {
+      "investigate": 0,
+      "create": 0,
+      "build": 1,
+      "help": 0,
+      "persuade": 0,
+      "organize": 1,
+      "lead": 0,
+      "field": 1
+    },
+    "related_task_ids": [
+      "O50_T01",
+      "O50_T02",
+      "O50_T03",
+      "O50_T04",
+      "O50_T05",
+      "O50_T06",
+      "O50_T07",
+      "O50_T08",
+      "O50_T09",
+      "O50_T10",
+      "O50_T11",
+      "O50_T12",
+      "O50_T13",
+      "O50_T14"
+    ],
+    "illustrative_subjects": [
+      "과학",
+      "기술 관련 학습",
+      "수학"
+    ],
+    "exploratory_paths": [
+      "농업 관련 학습·직업교육"
+    ],
+    "entry_requirements": null,
+    "entry_requirement_status": "not_verified",
+    "project_idea": "사진이나 모형에서 작업 순서와 위험요인을 찾아 설명하기",
+    "evidence_status": "author_designed_seed",
+    "path_note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+  }
+]

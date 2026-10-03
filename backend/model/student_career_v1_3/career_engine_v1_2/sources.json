@@ -1,0 +1,26 @@
+[
+  {
+    "source_id": "S01",
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+    "purpose": "Task-based exposure; transformation framing",
+    "provides_task_scores_for_this_dataset": false,
+    "checked_date": "2026-10-03",
+    "evidence_type": "framework_reference"
+  },
+  {
+    "source_id": "S02",
+    "url": "https://www.oecd.org/en/publications/introducing-the-oecd-ai-capability-indicators_be745f04-en.html",
+    "purpose": "Conceptual capability taxonomy; agency is our extension",
+    "provides_task_scores_for_this_dataset": false,
+    "checked_date": "2026-10-03",
+    "evidence_type": "framework_reference"
+  },
+  {
+    "source_id": "S03",
+    "url": "https://www.oecd.org/en/publications/artificial-intelligence-and-the-labour-market-in-korea_68ab1a5a-en/full-report/overview_ad148dd1.html",
+    "purpose": "Firm-level adoption context; not individual automation rates",
+    "provides_task_scores_for_this_dataset": false,
+    "checked_date": "2026-10-03",
+    "evidence_type": "framework_reference"
+  }
+]

@@ -1,0 +1,4762 @@
+[
+  {
+    "activity_id": "O01_A1",
+    "occupation_id": "O01",
+    "task_id": "O01_T01",
+    "title": "CEO/경영자 체험: 사업방향 설정",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘사업방향 설정’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O01_A2",
+    "occupation_id": "O01",
+    "task_id": "O01_T06",
+    "title": "CEO/경영자 체험: 파트너 협상",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘파트너 협상’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O02_A1",
+    "occupation_id": "O02",
+    "task_id": "O02_T01",
+    "title": "경영·사업기획 체험: 시장규모 조사",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘시장규모 조사’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O02_A2",
+    "occupation_id": "O02",
+    "task_id": "O02_T06",
+    "title": "경영·사업기획 체험: 성과지표 설계",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘성과지표 설계’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O03_A1",
+    "occupation_id": "O03",
+    "task_id": "O03_T01",
+    "title": "PM/PO·서비스기획 체험: 사용자 조사",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘사용자 조사’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O03_A2",
+    "occupation_id": "O03",
+    "task_id": "O03_T06",
+    "title": "PM/PO·서비스기획 체험: 프로토타입 제작",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘프로토타입 제작’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O04_A1",
+    "occupation_id": "O04",
+    "task_id": "O04_T01",
+    "title": "경영컨설턴트 체험: 고객문제 정의",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘고객문제 정의’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O04_A2",
+    "occupation_id": "O04",
+    "task_id": "O04_T06",
+    "title": "경영컨설턴트 체험: 개선안 설계",
+    "interest_tags": [
+      "lead",
+      "investigate",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘개선안 설계’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O05_A1",
+    "occupation_id": "O05",
+    "task_id": "O05_T01",
+    "title": "일반사무 체험: 자료 입력",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘자료 입력’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O05_A2",
+    "occupation_id": "O05",
+    "task_id": "O05_T06",
+    "title": "일반사무 체험: 비용증빙 취합",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘비용증빙 취합’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O06_A1",
+    "occupation_id": "O06",
+    "task_id": "O06_T01",
+    "title": "행정·비서 체험: 임원일정 조정",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘임원일정 조정’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O06_A2",
+    "occupation_id": "O06",
+    "task_id": "O06_T06",
+    "title": "행정·비서 체험: 결재문서 관리",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘결재문서 관리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O07_A1",
+    "occupation_id": "O07",
+    "task_id": "O07_T01",
+    "title": "HR/채용 체험: 채용요건 정의",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘채용요건 정의’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O07_A2",
+    "occupation_id": "O07",
+    "task_id": "O07_T06",
+    "title": "HR/채용 체험: 입사절차 진행",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘입사절차 진행’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O08_A1",
+    "occupation_id": "O08",
+    "task_id": "O08_T01",
+    "title": "구매·조달 체험: 구매수요 취합",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘구매수요 취합’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O08_A2",
+    "occupation_id": "O08",
+    "task_id": "O08_T06",
+    "title": "구매·조달 체험: 발주서 작성",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘발주서 작성’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O09_A1",
+    "occupation_id": "O09",
+    "task_id": "O09_T01",
+    "title": "회계·경리 체험: 전표 입력",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘전표 입력’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O09_A2",
+    "occupation_id": "O09",
+    "task_id": "O09_T06",
+    "title": "회계·경리 체험: 지급명세 준비",
+    "interest_tags": [
+      "organize",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘지급명세 준비’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O10_A1",
+    "occupation_id": "O10",
+    "task_id": "O10_T01",
+    "title": "회계사 체험: 감사계획 수립",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘감사계획 수립’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O10_A2",
+    "occupation_id": "O10",
+    "task_id": "O10_T06",
+    "title": "회계사 체험: 회계추정 검토",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘회계추정 검토’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O11_A1",
+    "occupation_id": "O11",
+    "task_id": "O11_T01",
+    "title": "세무사 체험: 세무자료 수집",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘세무자료 수집’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O11_A2",
+    "occupation_id": "O11",
+    "task_id": "O11_T06",
+    "title": "세무사 체험: 과세쟁점 검토",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘과세쟁점 검토’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O12_A1",
+    "occupation_id": "O12",
+    "task_id": "O12_T01",
+    "title": "재무·금융분석가 체험: 재무자료 수집",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘재무자료 수집’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O12_A2",
+    "occupation_id": "O12",
+    "task_id": "O12_T06",
+    "title": "재무·금융분석가 체험: 포트폴리오 분석",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘포트폴리오 분석’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O13_A1",
+    "occupation_id": "O13",
+    "task_id": "O13_T01",
+    "title": "은행원 체험: 계좌업무 처리",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘계좌업무 처리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O13_A2",
+    "occupation_id": "O13",
+    "task_id": "O13_T06",
+    "title": "은행원 체험: 송금 처리",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘송금 처리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O14_A1",
+    "occupation_id": "O14",
+    "task_id": "O14_T01",
+    "title": "보험심사·사무 체험: 청구서 접수",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘청구서 접수’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O14_A2",
+    "occupation_id": "O14",
+    "task_id": "O14_T06",
+    "title": "보험심사·사무 체험: 이상청구 탐지",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘이상청구 탐지’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O15_A1",
+    "occupation_id": "O15",
+    "task_id": "O15_T01",
+    "title": "SW개발자 체험: 요구사항 해석",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘요구사항 해석’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O15_A2",
+    "occupation_id": "O15",
+    "task_id": "O15_T06",
+    "title": "SW개발자 체험: 코드 리뷰",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘코드 리뷰’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O16_A1",
+    "occupation_id": "O16",
+    "task_id": "O16_T01",
+    "title": "데이터분석가 체험: 분석문제 정의",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘분석문제 정의’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O16_A2",
+    "occupation_id": "O16",
+    "task_id": "O16_T06",
+    "title": "데이터분석가 체험: 통계검정",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘통계검정’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O17_A1",
+    "occupation_id": "O17",
+    "task_id": "O17_T01",
+    "title": "데이터사이언티스트 체험: 연구문제 정의",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘연구문제 정의’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O17_A2",
+    "occupation_id": "O17",
+    "task_id": "O17_T06",
+    "title": "데이터사이언티스트 체험: 오차 분석",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘오차 분석’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O18_A1",
+    "occupation_id": "O18",
+    "task_id": "O18_T01",
+    "title": "AI엔지니어 체험: 모델요건 정의",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘모델요건 정의’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O18_A2",
+    "occupation_id": "O18",
+    "task_id": "O18_T06",
+    "title": "AI엔지니어 체험: 추론 최적화",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘추론 최적화’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O19_A1",
+    "occupation_id": "O19",
+    "task_id": "O19_T01",
+    "title": "DevOps/Cloud 체험: 인프라 설계",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘인프라 설계’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O19_A2",
+    "occupation_id": "O19",
+    "task_id": "O19_T06",
+    "title": "DevOps/Cloud 체험: 장애 진단",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘장애 진단’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O20_A1",
+    "occupation_id": "O20",
+    "task_id": "O20_T01",
+    "title": "정보보안 체험: 위협모델링",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘위협모델링’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O20_A2",
+    "occupation_id": "O20",
+    "task_id": "O20_T06",
+    "title": "정보보안 체험: 접근권한 검토",
+    "interest_tags": [
+      "build",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘접근권한 검토’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O21_A1",
+    "occupation_id": "O21",
+    "task_id": "O21_T01",
+    "title": "UX/UI디자이너 체험: 사용자 인터뷰",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘사용자 인터뷰’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O21_A2",
+    "occupation_id": "O21",
+    "task_id": "O21_T06",
+    "title": "UX/UI디자이너 체험: 디자인시스템 구축",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘디자인시스템 구축’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O22_A1",
+    "occupation_id": "O22",
+    "task_id": "O22_T01",
+    "title": "그래픽디자이너 체험: 브리프 해석",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘브리프 해석’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O22_A2",
+    "occupation_id": "O22",
+    "task_id": "O22_T06",
+    "title": "그래픽디자이너 체험: 브랜드가이드 적용",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘브랜드가이드 적용’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O23_A1",
+    "occupation_id": "O23",
+    "task_id": "O23_T01",
+    "title": "영상제작·편집 체험: 영상기획",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘영상기획’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O23_A2",
+    "occupation_id": "O23",
+    "task_id": "O23_T06",
+    "title": "영상제작·편집 체험: 컷 편집",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘컷 편집’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O24_A1",
+    "occupation_id": "O24",
+    "task_id": "O24_T01",
+    "title": "작가·카피라이터 체험: 주제 조사",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘주제 조사’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O24_A2",
+    "occupation_id": "O24",
+    "task_id": "O24_T06",
+    "title": "작가·카피라이터 체험: 문장 수정",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘문장 수정’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O25_A1",
+    "occupation_id": "O25",
+    "task_id": "O25_T01",
+    "title": "기자 체험: 취재주제 발굴",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘취재주제 발굴’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O25_A2",
+    "occupation_id": "O25",
+    "task_id": "O25_T06",
+    "title": "기자 체험: 사실 교차검증",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘사실 교차검증’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O26_A1",
+    "occupation_id": "O26",
+    "task_id": "O26_T01",
+    "title": "마케터 체험: 시장 조사",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘시장 조사’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O26_A2",
+    "occupation_id": "O26",
+    "task_id": "O26_T06",
+    "title": "마케터 체험: 광고집행 설정",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘광고집행 설정’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O27_A1",
+    "occupation_id": "O27",
+    "task_id": "O27_T01",
+    "title": "광고기획/AE 체험: 광고주 브리프 정리",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘광고주 브리프 정리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O27_A2",
+    "occupation_id": "O27",
+    "task_id": "O27_T06",
+    "title": "광고기획/AE 체험: 제작일정 조율",
+    "interest_tags": [
+      "create",
+      "investigate"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘제작일정 조율’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O28_A1",
+    "occupation_id": "O28",
+    "task_id": "O28_T01",
+    "title": "B2B영업 체험: 잠재고객 조사",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘잠재고객 조사’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O28_A2",
+    "occupation_id": "O28",
+    "task_id": "O28_T06",
+    "title": "B2B영업 체험: 제품시연",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘제품시연’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O29_A1",
+    "occupation_id": "O29",
+    "task_id": "O29_T01",
+    "title": "판매직 체험: 매장고객 응대",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘매장고객 응대’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O29_A2",
+    "occupation_id": "O29",
+    "task_id": "O29_T06",
+    "title": "판매직 체험: 교환반품 처리",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘교환반품 처리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O30_A1",
+    "occupation_id": "O30",
+    "task_id": "O30_T01",
+    "title": "고객상담/CS 체험: 문의 분류",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘문의 분류’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O30_A2",
+    "occupation_id": "O30",
+    "task_id": "O30_T06",
+    "title": "고객상담/CS 체험: 환불요청 처리",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘환불요청 처리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O31_A1",
+    "occupation_id": "O31",
+    "task_id": "O31_T01",
+    "title": "변호사 체험: 사건사실 파악",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘사건사실 파악’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O31_A2",
+    "occupation_id": "O31",
+    "task_id": "O31_T06",
+    "title": "변호사 체험: 의뢰인 상담",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘의뢰인 상담’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O32_A1",
+    "occupation_id": "O32",
+    "task_id": "O32_T01",
+    "title": "법무·법률사무 체험: 법률자료 검색",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘법률자료 검색’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O32_A2",
+    "occupation_id": "O32",
+    "task_id": "O32_T06",
+    "title": "법무·법률사무 체험: 법인서류 관리",
+    "interest_tags": [
+      "investigate",
+      "organize",
+      "persuade"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘법인서류 관리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O33_A1",
+    "occupation_id": "O33",
+    "task_id": "O33_T01",
+    "title": "교사 체험: 수업계획 수립",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘수업계획 수립’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O33_A2",
+    "occupation_id": "O33",
+    "task_id": "O33_T06",
+    "title": "교사 체험: 생활지도",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘생활지도’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O34_A1",
+    "occupation_id": "O34",
+    "task_id": "O34_T01",
+    "title": "교수·연구자 체험: 연구주제 설정",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘연구주제 설정’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O34_A2",
+    "occupation_id": "O34",
+    "task_id": "O34_T06",
+    "title": "교수·연구자 체험: 논문 작성",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘논문 작성’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O35_A1",
+    "occupation_id": "O35",
+    "task_id": "O35_T01",
+    "title": "학원강사 체험: 진도계획 작성",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘진도계획 작성’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O35_A2",
+    "occupation_id": "O35",
+    "task_id": "O35_T06",
+    "title": "학원강사 체험: 학부모 소통",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘학부모 소통’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O36_A1",
+    "occupation_id": "O36",
+    "task_id": "O36_T01",
+    "title": "의사 체험: 문진",
+    "interest_tags": [
+      "help",
+      "investigate",
+      "field"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘문진’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O36_A2",
+    "occupation_id": "O36",
+    "task_id": "O36_T06",
+    "title": "의사 체험: 치료계획 수립",
+    "interest_tags": [
+      "help",
+      "investigate",
+      "field"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘치료계획 수립’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O37_A1",
+    "occupation_id": "O37",
+    "task_id": "O37_T01",
+    "title": "간호사 체험: 환자상태 관찰",
+    "interest_tags": [
+      "help",
+      "investigate",
+      "field"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘환자상태 관찰’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O37_A2",
+    "occupation_id": "O37",
+    "task_id": "O37_T06",
+    "title": "간호사 체험: 환자교육",
+    "interest_tags": [
+      "help",
+      "investigate",
+      "field"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘환자교육’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O38_A1",
+    "occupation_id": "O38",
+    "task_id": "O38_T01",
+    "title": "약사 체험: 처방 검토",
+    "interest_tags": [
+      "help",
+      "investigate",
+      "field"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘처방 검토’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O38_A2",
+    "occupation_id": "O38",
+    "task_id": "O38_T06",
+    "title": "약사 체험: 약품품질 확인",
+    "interest_tags": [
+      "help",
+      "investigate",
+      "field"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘약품품질 확인’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O39_A1",
+    "occupation_id": "O39",
+    "task_id": "O39_T01",
+    "title": "심리·상담 체험: 초기면담",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘초기면담’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O39_A2",
+    "occupation_id": "O39",
+    "task_id": "O39_T06",
+    "title": "심리·상담 체험: 집단상담",
+    "interest_tags": [
+      "help",
+      "persuade",
+      "lead"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘집단상담’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O40_A1",
+    "occupation_id": "O40",
+    "task_id": "O40_T01",
+    "title": "돌봄 체험: 일상생활 지원",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘일상생활 지원’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O40_A2",
+    "occupation_id": "O40",
+    "task_id": "O40_T06",
+    "title": "돌봄 체험: 정서적 지지",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘정서적 지지’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O41_A1",
+    "occupation_id": "O41",
+    "task_id": "O41_T01",
+    "title": "자연·공학연구원 체험: 연구가설 수립",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘연구가설 수립’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O41_A2",
+    "occupation_id": "O41",
+    "task_id": "O41_T06",
+    "title": "자연·공학연구원 체험: 측정데이터 처리",
+    "interest_tags": [
+      "investigate",
+      "build"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘측정데이터 처리’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O42_A1",
+    "occupation_id": "O42",
+    "task_id": "O42_T01",
+    "title": "기계·전기 엔지니어 체험: 설계요건 분석",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘설계요건 분석’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O42_A2",
+    "occupation_id": "O42",
+    "task_id": "O42_T06",
+    "title": "기계·전기 엔지니어 체험: 시험 수행",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘시험 수행’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O43_A1",
+    "occupation_id": "O43",
+    "task_id": "O43_T01",
+    "title": "건설기술자 체험: 현장조사",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘현장조사’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O43_A2",
+    "occupation_id": "O43",
+    "task_id": "O43_T06",
+    "title": "건설기술자 체험: 물량 산출",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘물량 산출’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O44_A1",
+    "occupation_id": "O44",
+    "task_id": "O44_T01",
+    "title": "전기·설비기사 체험: 현장진단",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘현장진단’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O44_A2",
+    "occupation_id": "O44",
+    "task_id": "O44_T06",
+    "title": "전기·설비기사 체험: 예방정비",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘예방정비’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O45_A1",
+    "occupation_id": "O45",
+    "task_id": "O45_T01",
+    "title": "생산기술·품질 체험: 공정설계",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘공정설계’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O45_A2",
+    "occupation_id": "O45",
+    "task_id": "O45_T06",
+    "title": "생산기술·품질 체험: 공정개선",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘공정개선’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O46_A1",
+    "occupation_id": "O46",
+    "task_id": "O46_T01",
+    "title": "제조·조립 체험: 부품 준비",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘부품 준비’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O46_A2",
+    "occupation_id": "O46",
+    "task_id": "O46_T06",
+    "title": "제조·조립 체험: 자재 운반",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘자재 운반’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O47_A1",
+    "occupation_id": "O47",
+    "task_id": "O47_T01",
+    "title": "운전·배송 체험: 운행계획 확인",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘운행계획 확인’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O47_A2",
+    "occupation_id": "O47",
+    "task_id": "O47_T06",
+    "title": "운전·배송 체험: 배송지 확인",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘배송지 확인’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O48_A1",
+    "occupation_id": "O48",
+    "task_id": "O48_T01",
+    "title": "요리사 체험: 메뉴 설계",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘메뉴 설계’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O48_A2",
+    "occupation_id": "O48",
+    "task_id": "O48_T06",
+    "title": "요리사 체험: 음식 담기",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘음식 담기’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O49_A1",
+    "occupation_id": "O49",
+    "task_id": "O49_T01",
+    "title": "미용사 체험: 고객스타일 상담",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘고객스타일 상담’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O49_A2",
+    "occupation_id": "O49",
+    "task_id": "O49_T06",
+    "title": "미용사 체험: 펌 시술",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘펌 시술’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O50_A1",
+    "occupation_id": "O50",
+    "task_id": "O50_T01",
+    "title": "농업종사자 체험: 재배계획 수립",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘재배계획 수립’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  },
+  {
+    "activity_id": "O50_A2",
+    "occupation_id": "O50",
+    "task_id": "O50_T06",
+    "title": "농업종사자 체험: 병해충 예찰",
+    "interest_tags": [
+      "field",
+      "build",
+      "organize"
+    ],
+    "mode": "fictional_case_only",
+    "steps": [
+      "해당 업무의 목적과 필요한 정보를 적는다.",
+      "가상의 상황에서 ‘병해충 예찰’을 수행하는 초안이나 절차도를 만든다.",
+      "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+    ],
+    "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+    "stage_variants": {
+      "middle": {
+        "minutes": 20,
+        "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+      },
+      "high": {
+        "minutes": 40,
+        "scope": "조건이 다른 가상 사례 두 개 비교"
+      },
+      "university": {
+        "minutes": 60,
+        "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+      },
+      "jobseeker": {
+        "minutes": 60,
+        "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+      }
+    },
+    "rubric": [
+      "목적을 설명했는가",
+      "필요한 정보를 구분했는가",
+      "결과 확인 방법을 제시했는가"
+    ],
+    "reflection": [
+      "과정이 즐거웠나요?",
+      "어떤 부분을 다시 해보고 싶나요?",
+      "완성 난도는 어땠나요?"
+    ],
+    "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+    "evidence_status": "author_designed_seed"
+  }
+]

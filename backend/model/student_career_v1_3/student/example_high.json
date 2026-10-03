@@ -1,0 +1,14 @@
+{
+  "stage": "high",
+  "interests": {
+    "investigate": 85,
+    "create": 75,
+    "build": 90,
+    "help": 50,
+    "persuade": 35,
+    "organize": 60,
+    "lead": 65,
+    "field": 40
+  },
+  "weekly_minutes": 40
+}

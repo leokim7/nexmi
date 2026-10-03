@@ -1,0 +1,14 @@
+{
+  "stage": "university",
+  "interests": {
+    "investigate": 80,
+    "create": 55,
+    "build": 90,
+    "help": 40,
+    "persuade": 50,
+    "organize": 70,
+    "lead": 75,
+    "field": 30
+  },
+  "weekly_minutes": 40
+}

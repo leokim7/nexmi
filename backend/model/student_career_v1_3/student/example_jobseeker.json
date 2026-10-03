@@ -1,0 +1,17 @@
+{
+  "stage": "jobseeker",
+  "interests": {
+    "investigate": 80,
+    "create": 60,
+    "build": 75,
+    "help": 65,
+    "persuade": 70,
+    "organize": 65,
+    "lead": 60,
+    "field": 40
+  },
+  "weekly_minutes": 90,
+  "skills": {},
+  "activity_results": [],
+  "favorite_occupations": []
+}

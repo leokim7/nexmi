@@ -1,0 +1,627 @@
+{
+  "model_version": "1.5.0-explorer-seed",
+  "stage": "jobseeker",
+  "data_quality": "unvalidated_exploration",
+  "recommendations": [
+    {
+      "occupation_id": "O12",
+      "name_ko": "재무·금융분석가",
+      "family": "analytic",
+      "exploration_index": 77.5,
+      "interest_index": 77.5,
+      "observed_interest": null,
+      "evidence_count": 0,
+      "readiness_index": null,
+      "readiness_note": "자기보고와 가상의 요구수준 비교; 수행능력 인증 아님",
+      "why": [
+        "자료를 찾고 원인을 분석하기에 대한 관심 80",
+        "도구·코드·물건 만들기에 대한 관심 75"
+      ],
+      "skill_gaps": [
+        {
+          "capability": "critical_thinking",
+          "status": "unknown",
+          "seed_requirement": 84.6,
+          "self_report": null
+        },
+        {
+          "capability": "problem_solving",
+          "status": "unknown",
+          "seed_requirement": 84.0,
+          "self_report": null
+        },
+        {
+          "capability": "knowledge",
+          "status": "unknown",
+          "seed_requirement": 83.5,
+          "self_report": null
+        },
+        {
+          "capability": "language",
+          "status": "unknown",
+          "seed_requirement": 80.4,
+          "self_report": null
+        }
+      ],
+      "education_path": {
+        "subjects": [
+          "수학",
+          "정보",
+          "과학"
+        ],
+        "options": [
+          "통계학",
+          "컴퓨터공학",
+          "관련 자연·공학 분야"
+        ],
+        "status": "not_verified",
+        "note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+      },
+      "ai_change": {
+        "status": "qualitative_seed",
+        "message": "업무별 AI 보조 가능성과 인간 검토·책임·현장 역할을 탐색합니다. AI 변화는 추천 순위에 가산·감점하지 않습니다.",
+        "task_ids": [
+          "O12_T01",
+          "O12_T02",
+          "O12_T03"
+        ]
+      },
+      "next_activity": {
+        "activity_id": "O12_A1",
+        "occupation_id": "O12",
+        "task_id": "O12_T01",
+        "title": "재무·금융분석가 체험: 재무자료 수집",
+        "interest_tags": [
+          "investigate",
+          "build"
+        ],
+        "mode": "fictional_case_only",
+        "steps": [
+          "해당 업무의 목적과 필요한 정보를 적는다.",
+          "가상의 상황에서 ‘재무자료 수집’을 수행하는 초안이나 절차도를 만든다.",
+          "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+        ],
+        "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+        "stage_variants": {
+          "middle": {
+            "minutes": 20,
+            "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+          },
+          "high": {
+            "minutes": 40,
+            "scope": "조건이 다른 가상 사례 두 개 비교"
+          },
+          "university": {
+            "minutes": 60,
+            "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+          },
+          "jobseeker": {
+            "minutes": 60,
+            "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+          }
+        },
+        "rubric": [
+          "목적을 설명했는가",
+          "필요한 정보를 구분했는가",
+          "결과 확인 방법을 제시했는가"
+        ],
+        "reflection": [
+          "과정이 즐거웠나요?",
+          "어떤 부분을 다시 해보고 싶나요?",
+          "완성 난도는 어땠나요?"
+        ],
+        "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+        "evidence_status": "author_designed_seed",
+        "selected_variant": {
+          "minutes": 60,
+          "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+        },
+        "sessions": 1
+      },
+      "plan": [
+        "이번 주: 직업의 실제 업무를 읽고 확인할 질문 작성",
+        "다음 단계: 선택한 미니 과제 수행",
+        "체험 후: 즐거움·재도전 의향과 피드백 기록",
+        "재탐색: 새로운 관심 응답과 체험 결과로 다시 계산"
+      ]
+    },
+    {
+      "occupation_id": "O15",
+      "name_ko": "SW개발자",
+      "family": "agent",
+      "exploration_index": 77.5,
+      "interest_index": 77.5,
+      "observed_interest": null,
+      "evidence_count": 0,
+      "readiness_index": null,
+      "readiness_note": "자기보고와 가상의 요구수준 비교; 수행능력 인증 아님",
+      "why": [
+        "자료를 찾고 원인을 분석하기에 대한 관심 80",
+        "도구·코드·물건 만들기에 대한 관심 75"
+      ],
+      "skill_gaps": [
+        {
+          "capability": "problem_solving",
+          "status": "unknown",
+          "seed_requirement": 80.6,
+          "self_report": null
+        },
+        {
+          "capability": "agency",
+          "status": "unknown",
+          "seed_requirement": 80.6,
+          "self_report": null
+        },
+        {
+          "capability": "knowledge",
+          "status": "unknown",
+          "seed_requirement": 80.2,
+          "self_report": null
+        },
+        {
+          "capability": "critical_thinking",
+          "status": "unknown",
+          "seed_requirement": 76.9,
+          "self_report": null
+        }
+      ],
+      "education_path": {
+        "subjects": [
+          "정보",
+          "수학",
+          "영어"
+        ],
+        "options": [
+          "컴퓨터공학",
+          "소프트웨어학",
+          "정보보호학"
+        ],
+        "status": "not_verified",
+        "note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+      },
+      "ai_change": {
+        "status": "qualitative_seed",
+        "message": "업무별 AI 보조 가능성과 인간 검토·책임·현장 역할을 탐색합니다. AI 변화는 추천 순위에 가산·감점하지 않습니다.",
+        "task_ids": [
+          "O15_T01",
+          "O15_T02",
+          "O15_T03"
+        ]
+      },
+      "next_activity": {
+        "activity_id": "O15_A1",
+        "occupation_id": "O15",
+        "task_id": "O15_T01",
+        "title": "SW개발자 체험: 요구사항 해석",
+        "interest_tags": [
+          "build",
+          "investigate"
+        ],
+        "mode": "fictional_case_only",
+        "steps": [
+          "해당 업무의 목적과 필요한 정보를 적는다.",
+          "가상의 상황에서 ‘요구사항 해석’을 수행하는 초안이나 절차도를 만든다.",
+          "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+        ],
+        "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+        "stage_variants": {
+          "middle": {
+            "minutes": 20,
+            "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+          },
+          "high": {
+            "minutes": 40,
+            "scope": "조건이 다른 가상 사례 두 개 비교"
+          },
+          "university": {
+            "minutes": 60,
+            "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+          },
+          "jobseeker": {
+            "minutes": 60,
+            "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+          }
+        },
+        "rubric": [
+          "목적을 설명했는가",
+          "필요한 정보를 구분했는가",
+          "결과 확인 방법을 제시했는가"
+        ],
+        "reflection": [
+          "과정이 즐거웠나요?",
+          "어떤 부분을 다시 해보고 싶나요?",
+          "완성 난도는 어땠나요?"
+        ],
+        "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+        "evidence_status": "author_designed_seed",
+        "selected_variant": {
+          "minutes": 60,
+          "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+        },
+        "sessions": 1
+      },
+      "plan": [
+        "이번 주: 직업의 실제 업무를 읽고 확인할 질문 작성",
+        "다음 단계: 선택한 미니 과제 수행",
+        "체험 후: 즐거움·재도전 의향과 피드백 기록",
+        "재탐색: 새로운 관심 응답과 체험 결과로 다시 계산"
+      ]
+    },
+    {
+      "occupation_id": "O16",
+      "name_ko": "데이터분석가",
+      "family": "analytic",
+      "exploration_index": 77.5,
+      "interest_index": 77.5,
+      "observed_interest": null,
+      "evidence_count": 0,
+      "readiness_index": null,
+      "readiness_note": "자기보고와 가상의 요구수준 비교; 수행능력 인증 아님",
+      "why": [
+        "자료를 찾고 원인을 분석하기에 대한 관심 80",
+        "도구·코드·물건 만들기에 대한 관심 75"
+      ],
+      "skill_gaps": [
+        {
+          "capability": "critical_thinking",
+          "status": "unknown",
+          "seed_requirement": 84.6,
+          "self_report": null
+        },
+        {
+          "capability": "problem_solving",
+          "status": "unknown",
+          "seed_requirement": 84.0,
+          "self_report": null
+        },
+        {
+          "capability": "knowledge",
+          "status": "unknown",
+          "seed_requirement": 83.5,
+          "self_report": null
+        },
+        {
+          "capability": "language",
+          "status": "unknown",
+          "seed_requirement": 80.4,
+          "self_report": null
+        }
+      ],
+      "education_path": {
+        "subjects": [
+          "수학",
+          "정보",
+          "과학"
+        ],
+        "options": [
+          "통계학",
+          "컴퓨터공학",
+          "관련 자연·공학 분야"
+        ],
+        "status": "not_verified",
+        "note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+      },
+      "ai_change": {
+        "status": "qualitative_seed",
+        "message": "업무별 AI 보조 가능성과 인간 검토·책임·현장 역할을 탐색합니다. AI 변화는 추천 순위에 가산·감점하지 않습니다.",
+        "task_ids": [
+          "O16_T01",
+          "O16_T02",
+          "O16_T03"
+        ]
+      },
+      "next_activity": {
+        "activity_id": "O16_A1",
+        "occupation_id": "O16",
+        "task_id": "O16_T01",
+        "title": "데이터분석가 체험: 분석문제 정의",
+        "interest_tags": [
+          "investigate",
+          "build"
+        ],
+        "mode": "fictional_case_only",
+        "steps": [
+          "해당 업무의 목적과 필요한 정보를 적는다.",
+          "가상의 상황에서 ‘분석문제 정의’을 수행하는 초안이나 절차도를 만든다.",
+          "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+        ],
+        "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+        "stage_variants": {
+          "middle": {
+            "minutes": 20,
+            "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+          },
+          "high": {
+            "minutes": 40,
+            "scope": "조건이 다른 가상 사례 두 개 비교"
+          },
+          "university": {
+            "minutes": 60,
+            "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+          },
+          "jobseeker": {
+            "minutes": 60,
+            "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+          }
+        },
+        "rubric": [
+          "목적을 설명했는가",
+          "필요한 정보를 구분했는가",
+          "결과 확인 방법을 제시했는가"
+        ],
+        "reflection": [
+          "과정이 즐거웠나요?",
+          "어떤 부분을 다시 해보고 싶나요?",
+          "완성 난도는 어땠나요?"
+        ],
+        "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+        "evidence_status": "author_designed_seed",
+        "selected_variant": {
+          "minutes": 60,
+          "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+        },
+        "sessions": 1
+      },
+      "plan": [
+        "이번 주: 직업의 실제 업무를 읽고 확인할 질문 작성",
+        "다음 단계: 선택한 미니 과제 수행",
+        "체험 후: 즐거움·재도전 의향과 피드백 기록",
+        "재탐색: 새로운 관심 응답과 체험 결과로 다시 계산"
+      ]
+    },
+    {
+      "occupation_id": "O18",
+      "name_ko": "AI엔지니어",
+      "family": "agent",
+      "exploration_index": 77.5,
+      "interest_index": 77.5,
+      "observed_interest": null,
+      "evidence_count": 0,
+      "readiness_index": null,
+      "readiness_note": "자기보고와 가상의 요구수준 비교; 수행능력 인증 아님",
+      "why": [
+        "자료를 찾고 원인을 분석하기에 대한 관심 80",
+        "도구·코드·물건 만들기에 대한 관심 75"
+      ],
+      "skill_gaps": [
+        {
+          "capability": "problem_solving",
+          "status": "unknown",
+          "seed_requirement": 84.0,
+          "self_report": null
+        },
+        {
+          "capability": "knowledge",
+          "status": "unknown",
+          "seed_requirement": 83.5,
+          "self_report": null
+        },
+        {
+          "capability": "agency",
+          "status": "unknown",
+          "seed_requirement": 83.5,
+          "self_report": null
+        },
+        {
+          "capability": "critical_thinking",
+          "status": "unknown",
+          "seed_requirement": 80.2,
+          "self_report": null
+        }
+      ],
+      "education_path": {
+        "subjects": [
+          "정보",
+          "수학",
+          "영어"
+        ],
+        "options": [
+          "컴퓨터공학",
+          "소프트웨어학",
+          "정보보호학"
+        ],
+        "status": "not_verified",
+        "note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+      },
+      "ai_change": {
+        "status": "qualitative_seed",
+        "message": "업무별 AI 보조 가능성과 인간 검토·책임·현장 역할을 탐색합니다. AI 변화는 추천 순위에 가산·감점하지 않습니다.",
+        "task_ids": [
+          "O18_T01",
+          "O18_T02",
+          "O18_T03"
+        ]
+      },
+      "next_activity": {
+        "activity_id": "O18_A1",
+        "occupation_id": "O18",
+        "task_id": "O18_T01",
+        "title": "AI엔지니어 체험: 모델요건 정의",
+        "interest_tags": [
+          "build",
+          "investigate"
+        ],
+        "mode": "fictional_case_only",
+        "steps": [
+          "해당 업무의 목적과 필요한 정보를 적는다.",
+          "가상의 상황에서 ‘모델요건 정의’을 수행하는 초안이나 절차도를 만든다.",
+          "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+        ],
+        "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+        "stage_variants": {
+          "middle": {
+            "minutes": 20,
+            "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+          },
+          "high": {
+            "minutes": 40,
+            "scope": "조건이 다른 가상 사례 두 개 비교"
+          },
+          "university": {
+            "minutes": 60,
+            "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+          },
+          "jobseeker": {
+            "minutes": 60,
+            "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+          }
+        },
+        "rubric": [
+          "목적을 설명했는가",
+          "필요한 정보를 구분했는가",
+          "결과 확인 방법을 제시했는가"
+        ],
+        "reflection": [
+          "과정이 즐거웠나요?",
+          "어떤 부분을 다시 해보고 싶나요?",
+          "완성 난도는 어땠나요?"
+        ],
+        "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+        "evidence_status": "author_designed_seed",
+        "selected_variant": {
+          "minutes": 60,
+          "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+        },
+        "sessions": 1
+      },
+      "plan": [
+        "이번 주: 직업의 실제 업무를 읽고 확인할 질문 작성",
+        "다음 단계: 선택한 미니 과제 수행",
+        "체험 후: 즐거움·재도전 의향과 피드백 기록",
+        "재탐색: 새로운 관심 응답과 체험 결과로 다시 계산"
+      ]
+    },
+    {
+      "occupation_id": "O05",
+      "name_ko": "일반사무",
+      "family": "routine",
+      "exploration_index": 72.5,
+      "interest_index": 72.5,
+      "observed_interest": null,
+      "evidence_count": 0,
+      "readiness_index": null,
+      "readiness_note": "자기보고와 가상의 요구수준 비교; 수행능력 인증 아님",
+      "why": [
+        "자료를 찾고 원인을 분석하기에 대한 관심 80",
+        "자료·일정·절차를 정리하기에 대한 관심 65"
+      ],
+      "skill_gaps": [
+        {
+          "capability": "language",
+          "status": "unknown",
+          "seed_requirement": 76.0,
+          "self_report": null
+        },
+        {
+          "capability": "agency",
+          "status": "unknown",
+          "seed_requirement": 52.9,
+          "self_report": null
+        },
+        {
+          "capability": "problem_solving",
+          "status": "unknown",
+          "seed_requirement": 49.0,
+          "self_report": null
+        },
+        {
+          "capability": "knowledge",
+          "status": "unknown",
+          "seed_requirement": 48.5,
+          "self_report": null
+        }
+      ],
+      "education_path": {
+        "subjects": [
+          "수학",
+          "정보",
+          "국어"
+        ],
+        "options": [
+          "경영학",
+          "회계학",
+          "행정학"
+        ],
+        "status": "not_verified",
+        "note": "관련 학습 예시이며 필수 전공·입시요건·자격 취득요건이 아님"
+      },
+      "ai_change": {
+        "status": "qualitative_seed",
+        "message": "업무별 AI 보조 가능성과 인간 검토·책임·현장 역할을 탐색합니다. AI 변화는 추천 순위에 가산·감점하지 않습니다.",
+        "task_ids": [
+          "O05_T01",
+          "O05_T02",
+          "O05_T03"
+        ]
+      },
+      "next_activity": {
+        "activity_id": "O05_A1",
+        "occupation_id": "O05",
+        "task_id": "O05_T01",
+        "title": "일반사무 체험: 자료 입력",
+        "interest_tags": [
+          "organize",
+          "investigate"
+        ],
+        "mode": "fictional_case_only",
+        "steps": [
+          "해당 업무의 목적과 필요한 정보를 적는다.",
+          "가상의 상황에서 ‘자료 입력’을 수행하는 초안이나 절차도를 만든다.",
+          "결과를 확인하는 방법과 사람이 판단할 부분을 표시한다."
+        ],
+        "deliverable": "1쪽 초안 또는 절차도와 자기 성찰 기록",
+        "stage_variants": {
+          "middle": {
+            "minutes": 20,
+            "scope": "간단한 가상 사례와 결과 그림/짧은 글"
+          },
+          "high": {
+            "minutes": 40,
+            "scope": "조건이 다른 가상 사례 두 개 비교"
+          },
+          "university": {
+            "minutes": 60,
+            "scope": "자료 근거·검증 기준·한계를 포함한 포트폴리오 초안"
+          },
+          "jobseeker": {
+            "minutes": 60,
+            "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+          }
+        },
+        "rubric": [
+          "목적을 설명했는가",
+          "필요한 정보를 구분했는가",
+          "결과 확인 방법을 제시했는가"
+        ],
+        "reflection": [
+          "과정이 즐거웠나요?",
+          "어떤 부분을 다시 해보고 싶나요?",
+          "완성 난도는 어땠나요?"
+        ],
+        "restrictions": "의료·법률·금융 판단, 전기 작업, 도로 운행, 화학 시술 등 실제 실행 대신 가상 사례·사진·모형만 사용. 전문 자격이나 수행 능력을 인증하지 않음",
+        "evidence_status": "author_designed_seed",
+        "selected_variant": {
+          "minutes": 60,
+          "scope": "직무 결과물·검증 과정·다음 연습 계획 작성; 경력 전환 고민자도 사용"
+        },
+        "sessions": 1
+      },
+      "plan": [
+        "이번 주: 직업의 실제 업무를 읽고 확인할 질문 작성",
+        "다음 단계: 선택한 미니 과제 수행",
+        "체험 후: 즐거움·재도전 의향과 피드백 기록",
+        "재탐색: 새로운 관심 응답과 체험 결과로 다시 계산"
+      ]
+    }
+  ],
+  "favorite_exploration": [],
+  "aptitude_probability": null,
+  "career_deadline": null,
+  "uncertainties": [
+    "직군 매핑과 흥미 축은 저자 설계값이며 표준화된 적성검사가 아닙니다.",
+    "교육 경로는 탐색 예시이며 최신 진입요건은 별도 확인이 필요합니다."
+  ],
+  "status": "exploration_ready",
+  "selection_policy": "exploration_index descending; maximum 2 per family; equal scores ordered by ID, not evidence of superiority",
+  "interest_response_coverage": 1.0
+}

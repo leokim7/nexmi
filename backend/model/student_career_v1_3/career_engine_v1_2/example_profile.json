@@ -1,0 +1,11 @@
+{
+  "occupation_id": "O15",
+  "career_level": "mid",
+  "ai_maturity": "integrated",
+  "ai_fluency": 75,
+  "domain_expertise": 75,
+  "problem_definition": 75,
+  "learning_velocity": 75,
+  "cross_functional": 50,
+  "decision_authority": 50
+}

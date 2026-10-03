@@ -1,0 +1,41 @@
+{
+  "colors": {
+    "ink": "#172b3c",
+    "muted": "#627584",
+    "primary": "#286951",
+    "primary_soft": "#eaf3ed",
+    "background": "#f7f8f4",
+    "border": "#dbe3df",
+    "warm": "#eee2bd",
+    "danger": "#b54235"
+  },
+  "font": "system-ui, -apple-system, Malgun Gothic, sans-serif",
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radii": {
+    "control": 12,
+    "card": 18,
+    "hero": 24
+  },
+  "type_px": {
+    "body": 16,
+    "caption": 13,
+    "h1_mobile": 30,
+    "h1_desktop": 38,
+    "h2": 23
+  },
+  "breakpoints_px": {
+    "mobile_max": 799,
+    "desktop_min": 800
+  },
+  "touch_target_min_px": 44,
+  "content_max_width_px": 1280
+}

@@ -1,0 +1,35 @@
+{
+  "model_version": "1.2.0-seed",
+  "base_year": 2026,
+  "horizon_year": 2040,
+  "capabilities": {
+    "language": 85,
+    "problem_solving": 75,
+    "creativity": 70,
+    "critical_thinking": 60,
+    "knowledge": 80,
+    "social": 35,
+    "vision": 75,
+    "manipulation": 20,
+    "robotics": 20,
+    "agency": 60
+  },
+  "scenario_growth": {
+    "slow": 0.025,
+    "base": 0.055,
+    "fast": 0.09
+  },
+  "thresholds": {
+    "assistance": 60,
+    "task_disruption": 30,
+    "career_transformation": 60
+  },
+  "adoption_levels": {
+    "none": 0.15,
+    "individual": 0.35,
+    "official": 0.55,
+    "integrated": 0.75,
+    "agent": 0.9
+  },
+  "note": "Every coefficient is an unvalidated engineering assumption. Scenario ranges are not statistical confidence intervals."
+}

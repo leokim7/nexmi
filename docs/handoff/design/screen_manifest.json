@@ -1,0 +1,468 @@
+[
+  {
+    "id": "SC-01",
+    "key": "home",
+    "name": "서비스 소개",
+    "route": "/explorer/",
+    "prototype_hash": "home",
+    "data_binding": "정적 카피",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-02",
+    "key": "stage",
+    "name": "학습 단계",
+    "route": "/explorer/start",
+    "prototype_hash": "stage",
+    "data_binding": "profile.stage",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-03",
+    "key": "interest",
+    "name": "관심 활동 진단",
+    "route": "/explorer/diagnosis/interests",
+    "prototype_hash": "interest",
+    "data_binding": "profile.interests",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-04",
+    "key": "context",
+    "name": "경험·시간",
+    "route": "/explorer/diagnosis/context",
+    "prototype_hash": "context",
+    "data_binding": "experiences,weekly_minutes,favorite_occupations",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-05",
+    "key": "skills",
+    "name": "준비 수준",
+    "route": "/explorer/diagnosis/skills",
+    "prototype_hash": "skills",
+    "data_binding": "profile.skills",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-06",
+    "key": "processing",
+    "name": "계산 중·실패",
+    "route": "/explorer/diagnosis/processing",
+    "prototype_hash": "processing",
+    "data_binding": "POST /student/diagnoses",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-07",
+    "key": "insufficient",
+    "name": "정보 부족",
+    "route": "/explorer/diagnosis/more",
+    "prototype_hash": "insufficient",
+    "data_binding": "status,next_questions",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-08",
+    "key": "results",
+    "name": "추천 후보",
+    "route": "/explorer/diagnoses/:id",
+    "prototype_hash": "results",
+    "data_binding": "recommendations,data_quality",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-09",
+    "key": "explore",
+    "name": "직군 탐색",
+    "route": "/explorer/occupations",
+    "prototype_hash": "explore",
+    "data_binding": "occupation_cards",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-10",
+    "key": "occupation",
+    "name": "직군 상세",
+    "route": "/explorer/occupations/:id",
+    "prototype_hash": "occupation",
+    "data_binding": "occupation,tasks,recommendation?",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-11",
+    "key": "compare",
+    "name": "직군 비교",
+    "route": "/explorer/compare",
+    "prototype_hash": "compare",
+    "data_binding": "compare_ids",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-12",
+    "key": "activity",
+    "name": "체험 소개",
+    "route": "/explorer/activities/:id",
+    "prototype_hash": "activity",
+    "data_binding": "activities.stage_variants",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-13",
+    "key": "workspace",
+    "name": "체험 작업",
+    "route": "/explorer/activities/:id/work",
+    "prototype_hash": "workspace",
+    "data_binding": "activity_submission.draft",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-14",
+    "key": "reflection",
+    "name": "체험 성찰",
+    "route": "/explorer/activities/:id/reflect",
+    "prototype_hash": "reflection",
+    "data_binding": "activity_results",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-15",
+    "key": "completion",
+    "name": "체험 완료",
+    "route": "/explorer/activities/:id/done",
+    "prototype_hash": "completion",
+    "data_binding": "submission,status",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-16",
+    "key": "path",
+    "name": "교육 경로",
+    "route": "/explorer/occupations/:id/path",
+    "prototype_hash": "path",
+    "data_binding": "education_path",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-17",
+    "key": "ai",
+    "name": "AI와 업무 변화",
+    "route": "/explorer/occupations/:id/ai",
+    "prototype_hash": "ai",
+    "data_binding": "task_ids,qualitative_seed",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-18",
+    "key": "plan",
+    "name": "준비 계획",
+    "route": "/explorer/plan",
+    "prototype_hash": "plan",
+    "data_binding": "plan_items,weekly_minutes",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-19",
+    "key": "dashboard",
+    "name": "나의 탐색",
+    "route": "/explorer/me",
+    "prototype_hash": "dashboard",
+    "data_binding": "latest_diagnosis,favorites,submissions",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-20",
+    "key": "history",
+    "name": "변화 비교",
+    "route": "/explorer/me/history",
+    "prototype_hash": "history",
+    "data_binding": "diagnosis_snapshots",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-21",
+    "key": "report",
+    "name": "리포트",
+    "route": "/explorer/reports/:id",
+    "prototype_hash": "report",
+    "data_binding": "report_snapshot",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-22",
+    "key": "save",
+    "name": "저장 선택",
+    "route": "/explorer/save",
+    "prototype_hash": "save",
+    "data_binding": "consent,draft",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-23",
+    "key": "settings",
+    "name": "기록 관리",
+    "route": "/explorer/settings",
+    "prototype_hash": "settings",
+    "data_binding": "localDraft/accountRecords",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-24",
+    "key": "share",
+    "name": "공유 범위",
+    "route": "/explorer/reports/:id/share",
+    "prototype_hash": "share",
+    "data_binding": "share_grant",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "SC-25",
+    "key": "admin",
+    "name": "콘텐츠 검토",
+    "route": "/explorer/admin/content",
+    "prototype_hash": "admin",
+    "data_binding": "content_versions,evidence",
+    "group": "explorer",
+    "prototype_file": "index.html"
+  },
+  {
+    "id": "ENTRY-01",
+    "key": "entry",
+    "name": "두 그룹 선택",
+    "route": "/",
+    "prototype_file": "entry.html",
+    "group": "common"
+  },
+  {
+    "id": "W-01",
+    "key": "home",
+    "name": "재직자 시작",
+    "route": "/worker/home",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-02",
+    "key": "occupation",
+    "name": "직군·역할",
+    "route": "/worker/occupation",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-03",
+    "key": "weights",
+    "name": "업무 비중",
+    "route": "/worker/weights",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-04",
+    "key": "organization",
+    "name": "조직 정보",
+    "route": "/worker/organization",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-05",
+    "key": "personal",
+    "name": "개인 역할",
+    "route": "/worker/personal",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-06",
+    "key": "review",
+    "name": "입력 확인",
+    "route": "/worker/review",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-07",
+    "key": "processing",
+    "name": "계산·실패",
+    "route": "/worker/processing",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-08",
+    "key": "result",
+    "name": "예상 종료일·요약",
+    "route": "/worker/result",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-09",
+    "key": "tasks",
+    "name": "업무별 변화",
+    "route": "/worker/tasks",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-10",
+    "key": "outlook",
+    "name": "연도별 전망",
+    "route": "/worker/outlook",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-11",
+    "key": "evidence",
+    "name": "계산 근거",
+    "route": "/worker/evidence",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-12",
+    "key": "whatif",
+    "name": "대응 시뮬레이션",
+    "route": "/worker/whatif",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-13",
+    "key": "comparison",
+    "name": "변경 전후",
+    "route": "/worker/comparison",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-14",
+    "key": "plan",
+    "name": "실행 계획",
+    "route": "/worker/plan",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-15",
+    "key": "dashboard",
+    "name": "재직자 대시보드",
+    "route": "/worker/dashboard",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-16",
+    "key": "history",
+    "name": "분석 이력",
+    "route": "/worker/history",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-17",
+    "key": "save",
+    "name": "저장 선택",
+    "route": "/worker/save",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-18",
+    "key": "report",
+    "name": "재직자 리포트",
+    "route": "/worker/report",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "W-19",
+    "key": "settings",
+    "name": "기록 관리",
+    "route": "/worker/settings",
+    "prototype_file": "worker.html",
+    "group": "worker"
+  },
+  {
+    "id": "R-01",
+    "key": "home",
+    "name": "지속 방문 홈",
+    "route": "/common/home",
+    "prototype_file": "hub.html",
+    "group": "common"
+  },
+  {
+    "id": "R-02",
+    "key": "journal",
+    "name": "적용·체험 기록",
+    "route": "/common/journal",
+    "prototype_file": "hub.html",
+    "group": "common"
+  },
+  {
+    "id": "R-03",
+    "key": "missions",
+    "name": "다음 과제",
+    "route": "/common/missions",
+    "prototype_file": "hub.html",
+    "group": "common"
+  },
+  {
+    "id": "R-04",
+    "key": "updates",
+    "name": "내 분야 업데이트",
+    "route": "/common/updates",
+    "prototype_file": "hub.html",
+    "group": "common"
+  },
+  {
+    "id": "R-05",
+    "key": "history",
+    "name": "누적 활동",
+    "route": "/common/history",
+    "prototype_file": "hub.html",
+    "group": "common"
+  },
+  {
+    "id": "R-06",
+    "key": "goals",
+    "name": "목표 관리",
+    "route": "/common/goals",
+    "prototype_file": "hub.html",
+    "group": "common"
+  },
+  {
+    "id": "R-07",
+    "key": "notifications",
+    "name": "알림 설정",
+    "route": "/common/notifications",
+    "prototype_file": "hub.html",
+    "group": "common"
+  }
+]

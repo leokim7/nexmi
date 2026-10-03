@@ -1,0 +1,219 @@
+[
+  {
+    "id": "S01",
+    "text": "현재 학습 단계를 선택해주세요.",
+    "target": "stage",
+    "type": "enum",
+    "options": [
+      "middle",
+      "high",
+      "university",
+      "jobseeker"
+    ],
+    "required": true
+  },
+  {
+    "id": "S02",
+    "text": "자료를 찾고 원인을 분석하기 활동을 해보고 싶은가요?",
+    "target": "interests.investigate",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S03",
+    "text": "글·그림·영상·아이디어 만들기 활동을 해보고 싶은가요?",
+    "target": "interests.create",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S04",
+    "text": "도구·코드·물건 만들기 활동을 해보고 싶은가요?",
+    "target": "interests.build",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S05",
+    "text": "다른 사람을 돕고 가르치기 활동을 해보고 싶은가요?",
+    "target": "interests.help",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S06",
+    "text": "제안하고 설득·협상하기 활동을 해보고 싶은가요?",
+    "target": "interests.persuade",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S07",
+    "text": "자료·일정·절차를 정리하기 활동을 해보고 싶은가요?",
+    "target": "interests.organize",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S08",
+    "text": "목표·우선순위를 정하고 조율하기 활동을 해보고 싶은가요?",
+    "target": "interests.lead",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S09",
+    "text": "현장을 관찰하고 직접 움직이기 활동을 해보고 싶은가요?",
+    "target": "interests.field",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "allow_unknown": true,
+    "mapping": "추천에만 반영; 능력이나 적성 점수로 해석하지 않음"
+  },
+  {
+    "id": "S10",
+    "text": "어떤 과목·활동을 경험했나요?",
+    "target": "experiences",
+    "type": "list",
+    "mapping": "설명용; 성적이나 경험 부족으로 후보 제외하지 않음"
+  },
+  {
+    "id": "S11",
+    "text": "스스로 할 수 있는 업무 역량을 알려주세요.",
+    "target": "skills",
+    "type": "capability_scale",
+    "allow_unknown": true,
+    "mapping": "준비 수준에만 반영; 흥미 추천 순위와 분리"
+  },
+  {
+    "id": "S12",
+    "text": "체험에 쓸 수 있는 주당 시간은?",
+    "target": "weekly_minutes",
+    "type": "number",
+    "mapping": "활동계획 분할"
+  },
+  {
+    "id": "S13",
+    "text": "원하는 학습 방식은?",
+    "target": "learning_preference",
+    "type": "enum",
+    "options": [
+      "read",
+      "make",
+      "discuss",
+      "observe"
+    ],
+    "mapping": "수집 전용"
+  },
+  {
+    "id": "S14",
+    "text": "일에서 중요하게 생각하는 것은?",
+    "target": "values",
+    "type": "list",
+    "mapping": "수집 전용; 미검증 가치관 적합점수 없음"
+  },
+  {
+    "id": "S15",
+    "text": "이미 관심 있는 직업이 있나요?",
+    "target": "favorite_occupations",
+    "type": "occupation_list",
+    "mapping": "추천과 별도로 탐색목록에 추가"
+  },
+  {
+    "id": "S16",
+    "text": "활동 후 과정이 즐거웠나요?",
+    "target": "activity_results[].enjoyment",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "mapping": "해당 직군의 탐색점수 일부 보완"
+  },
+  {
+    "id": "S17",
+    "text": "이 활동을 다시 해보고 싶나요?",
+    "target": "activity_results[].repeat_interest",
+    "type": "scale",
+    "options": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "mapping": "해당 직군의 탐색점수 일부 보완"
+  },
+  {
+    "id": "S18",
+    "text": "결과물에 대한 피드백과 어려웠던 점은?",
+    "target": "activity_results[].reflection",
+    "type": "text",
+    "mapping": "수집 전용; 자동 적성 판정 없음"
+  }
+]
